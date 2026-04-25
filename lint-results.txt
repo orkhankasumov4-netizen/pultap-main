@@ -1,0 +1,346 @@
+
+> pultap-az@0.0.0 lint
+> eslint .
+
+
+/Users/qehreman/Desktop/global-connect-main/src/components/home/TopLoansTable.tsx
+  159:136  warning  disallow literal string: <div className="font-semibold tabular-nums">{fmt(c.amountMin, i18n.language)}–{fmt(c.amountMax, i18n.language)} ₼</div>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/layout/ErrorBoundary.tsx
+  38:69  warning  disallow literal string: <h1 className="text-2xl font-bold mb-2 text-foreground">
+              Gözlənilməz xəta baş verdi
+            </h1>                                                                                                                                                                            i18next/no-literal-string
+  41:55  warning  disallow literal string: <p className="text-muted-foreground mb-8">
+              Təəssüf ki, səhifəni yükləyərkən problem yarandı. Zəhmət olmasa, bir az sonra yenidən cəhd edin.
+            </p>                                                                                                                     i18next/no-literal-string
+  50:56  warning  disallow literal string: <Button 
+                onClick={() => window.location.reload()} 
+                className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90"
+              >
+                <RefreshCcw className="mr-2 h-4 w-4" />
+                Yenilə
+              </Button>  i18next/no-literal-string
+  58:50  warning  disallow literal string: <Button 
+                variant="outline"
+                onClick={() => window.location.href = '/'}
+                className="w-full sm:w-auto"
+              >
+                <Home className="mr-2 h-4 w-4" />
+                Ana səhifə
+              </Button>                        i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/layout/Footer.tsx
+  53:62  warning  disallow literal string: <span className="text-xl font-display font-bold">Pultap.az</span>                                           i18next/no-literal-string
+  60:99  warning  disallow literal string: <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary-glow" /> info@pultap.az</li>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/layout/MobileSidebar.tsx
+  27:64  warning  disallow literal string: <span className="text-lg font-display font-bold">
+                Pultap<span className="text-primary">.az</span>
+              </span>  i18next/no-literal-string
+  28:54  warning  disallow literal string: <span className="text-primary">.az</span>                                                                                                i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/layout/Navbar.tsx
+   58:75   warning  disallow literal string: <span className="text-xl font-display font-bold tracking-tight">
+            Pultap<span className="text-primary">.az</span>
+          </span>                                                                                                                           i18next/no-literal-string
+   59:50   warning  disallow literal string: <span className="text-primary">.az</span>                                                                                                                                                                                                                                i18next/no-literal-string
+  161:20   warning  disallow literal string: <button 
+                    onClick={() => logout()}
+                    className="w-full text-left px-3 py-2 text-sm text-destructive hover:bg-muted rounded-md transition-colors"
+                  >
+                    Sistemdən çıx
+                  </button>  i18next/no-literal-string
+  168:224  warning  disallow literal string: <Link to={lp("/giris")} className="hidden sm:inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
+              Giriş
+            </Link>              i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/layout/navConfig.ts
+   6:81  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  10:9   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/qehreman/Desktop/global-connect-main/src/components/shared/PagePlaceholder.tsx
+  16:23  warning  disallow literal string: <title>{title} | Pultap.az</title>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/site/BoktProductCard.tsx
+  44:70  warning  disallow literal string: <div className="font-bold text-sm">{fmt(product.amountMax)} ₼</div>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/site/CreditCalculator.tsx
+  43:73  warning  disallow literal string: <span className="text-lg font-bold">{fmt(amount, localeTag)} ₼</span>                i18next/no-literal-string
+  66:85  warning  disallow literal string: <div className="text-lg font-bold leading-tight">{fmt(monthly, localeTag)} ₼</div>   i18next/no-literal-string
+  70:83  warning  disallow literal string: <div className="text-lg font-bold leading-tight">{fmt(total, localeTag)} ₼</div>     i18next/no-literal-string
+  74:86  warning  disallow literal string: <div className="text-lg font-bold leading-tight">{fmt(interest, localeTag)} ₼</div>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/site/CreditCard.tsx
+  51:69  warning  disallow literal string: <div className="font-bold text-sm">{fmt(credit.amountMax)} ₼</div>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/site/CreditsListPage.tsx
+  105:17  warning  disallow literal string: <span>500 ₼</span>      i18next/no-literal-string
+  105:35  warning  disallow literal string: <span>150.000 ₼</span>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/site/CurrencyTicker.tsx
+  32:72  warning  disallow literal string: <span className="text-muted-foreground">{c.sell.toFixed(4)} ₼</span>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/site/DepositCalculator.tsx
+  21:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/qehreman/Desktop/global-connect-main/src/components/site/InstitutionsList.tsx
+  66:23  warning  disallow literal string: <title>{title} | Pultap.az</title>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/site/LoanCalculator.tsx
+   19:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+  103:79  warning  disallow literal string: <div className="mt-1 text-4xl font-bold">{fmt2(totals.firstPayment)} ₼</div>                           i18next/no-literal-string
+  145:66  warning  disallow literal string: <td className="px-4 py-2.5">{fmt2(r.payment)} ₼</td>                                                   i18next/no-literal-string
+  146:68  warning  disallow literal string: <td className="px-4 py-2.5">{fmt2(r.principal)} ₼</td>                                                 i18next/no-literal-string
+  147:79  warning  disallow literal string: <td className="px-4 py-2.5 text-accent">{fmt2(r.interest)} ₼</td>                                      i18next/no-literal-string
+  148:99  warning  disallow literal string: <td className="px-4 py-2.5 text-right text-muted-foreground">{fmt2(r.balance)} ₼</td>                  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/site/OfflineBanner.tsx
+  25:13  warning  disallow literal string: <span>⚠️ Offline rejimdəsiniz — məlumatlar son yenilənmə tarixindən göstərilir</span>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/badge.tsx
+  29:17  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/breadcrumb.tsx
+  77:31  warning  disallow literal string: <span className="sr-only">More</span>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/button.tsx
+  47:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/carousel.tsx
+  189:35  warning  disallow literal string: <span className="sr-only">Previous slide</span>  i18next/no-literal-string
+  217:35  warning  disallow literal string: <span className="sr-only">Next slide</span>      i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/command.tsx
+  24:11  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/dialog.tsx
+  47:35  warning  disallow literal string: <span className="sr-only">Close</span>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/form.tsx
+  129:10  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/navigation-menu.tsx
+  111:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/pagination.tsx
+  52:11  warning  disallow literal string: <span>Previous</span>                        i18next/no-literal-string
+  59:11  warning  disallow literal string: <span>Next</span>                            i18next/no-literal-string
+  68:31  warning  disallow literal string: <span className="sr-only">More pages</span>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/sheet.tsx
+  62:37  warning  disallow literal string: <span className="sr-only">Close</span>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/sidebar.tsx
+  237:35  warning  disallow literal string: <span className="sr-only">Toggle Sidebar</span>                                                        i18next/no-literal-string
+  640:3   warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/sonner.tsx
+  27:19  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/textarea.tsx
+  5:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+/Users/qehreman/Desktop/global-connect-main/src/components/ui/toggle.tsx
+  37:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/qehreman/Desktop/global-connect-main/src/context/CompareContext.tsx
+  35:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/qehreman/Desktop/global-connect-main/src/i18n/locale-routing.tsx
+  16:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+  27:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+  37:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+  49:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+  85:6   warning  React Hook useMemo has an unnecessary dependency: 'locale'. Either exclude it or remove the dependency array                    react-hooks/exhaustive-deps
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/admin/AdminLayout.tsx
+  27:95   warning  disallow literal string: <Link to="/" className="text-xl font-bold font-display tracking-tight text-primary">
+            Pultap<span className="text-foreground">Admin</span>
+          </Link>                                                   i18next/no-literal-string
+  28:53   warning  disallow literal string: <span className="text-foreground">Admin</span>                                                                                                                                                                            i18next/no-literal-string
+  32:105  warning  disallow literal string: <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4 px-2">
+            Əsas Menyu
+          </p>                                                                                      i18next/no-literal-string
+  59:48   warning  disallow literal string: <Button variant="ghost" className="w-full justify-start text-red-500 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950">
+            <LogOut className="h-4 w-4 mr-2" />
+            Çıxış et
+          </Button>  i18next/no-literal-string
+  85:67   warning  disallow literal string: <div className="text-sm font-medium leading-none">Admin İstifadəçi</div>                                                                                                                                                  i18next/no-literal-string
+  86:69   warning  disallow literal string: <div className="text-xs text-muted-foreground mt-1">admin@pultap.az</div>                                                                                                                                                 i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/admin/DashboardPage.tsx
+  16:61  warning  disallow literal string: <h2 className="text-2xl font-bold tracking-tight">Xoş gəldiniz, Admin!</h2>                        i18next/no-literal-string
+  17:53  warning  disallow literal string: <p className="text-muted-foreground mt-1">Sistemin ümumi vəziyyətinə buradan baxa bilərsiniz.</p>  i18next/no-literal-string
+  19:63  warning  disallow literal string: <Button className="bg-primary hover:bg-primary-hover">Hesabatı yüklə</Button>                      i18next/no-literal-string
+  47:14  warning  disallow literal string: <p>İstifadəçi aktivliyi qrafiki (Tezliklə)</p>                                                     i18next/no-literal-string
+  50:46  warning  disallow literal string: <h3 className="font-semibold mb-4">Son aktivliklər</h3>                                            i18next/no-literal-string
+  56:46  warning  disallow literal string: <p className="font-medium">Sistemdə güncəlləmə</p>                                                 i18next/no-literal-string
+  57:64  warning  disallow literal string: <p className="text-xs text-muted-foreground">Bot vasitəsilə yeni faizlər çəkildi.</p>              i18next/no-literal-string
+  59:72  warning  disallow literal string: <div className="ml-auto text-xs text-muted-foreground">2s əvvəl</div>                              i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/admin/LoansPage.tsx
+  18:61  warning  disallow literal string: <h2 className="text-2xl font-bold tracking-tight">Kreditlər</h2>                                                                                              i18next/no-literal-string
+  19:53  warning  disallow literal string: <p className="text-muted-foreground mt-1">Bütün mövcud kredit məhsullarının idarə edilməsi.</p>                                                               i18next/no-literal-string
+  22:39  warning  disallow literal string: <Button className="bg-primary hover:bg-primary-hover gap-2">
+          <Plus className="h-4 w-4" /> Yeni Kredit
+        </Button>                             i18next/no-literal-string
+  43:57  warning  disallow literal string: <th className="px-6 py-3 font-semibold">Məhsulun adı</th>                                                                                                     i18next/no-literal-string
+  44:57  warning  disallow literal string: <th className="px-6 py-3 font-semibold">Bank</th>                                                                                                             i18next/no-literal-string
+  45:57  warning  disallow literal string: <th className="px-6 py-3 font-semibold">Növü</th>                                                                                                             i18next/no-literal-string
+  46:68  warning  disallow literal string: <th className="px-6 py-3 font-semibold text-right">Faiz</th>                                                                                                  i18next/no-literal-string
+  47:68  warning  disallow literal string: <th className="px-6 py-3 font-semibold text-right">Məbləğ (Max)</th>                                                                                          i18next/no-literal-string
+  48:68  warning  disallow literal string: <th className="px-6 py-3 font-semibold text-right">Əməliyyat</th>                                                                                             i18next/no-literal-string
+  77:56  warning  disallow literal string: <td className="px-6 py-4 text-right tabular-nums text-muted-foreground">
+                      {loan.amountMax.toLocaleString()} ₼
+                    </td>  i18next/no-literal-string
+  94:92  warning  disallow literal string: <td colSpan={6} className="px-6 py-12 text-center text-muted-foreground">
+                    Heç bir məlumat tapılmadı.
+                  </td>              i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/auth/AdminLogin.tsx
+  34:16   warning  disallow literal string: <title>Admin Giriş | Pultap.az</title>                                                                                                               i18next/no-literal-string
+  42:87   warning  disallow literal string: <h1 className="text-2xl font-bold font-display tracking-tight text-primary">Pultap Admin</h1>                                                        i18next/no-literal-string
+  43:61   warning  disallow literal string: <p className="text-sm text-muted-foreground mt-2">Sistemə daxil olmaq üçün məlumatları daxil edin</p>                                                i18next/no-literal-string
+  55:54   warning  disallow literal string: <label className="text-sm font-medium">İstifadəçi adı</label>                                                                                        i18next/no-literal-string
+  70:54   warning  disallow literal string: <label className="text-sm font-medium">Şifrə</label>                                                                                                 i18next/no-literal-string
+  84:107  warning  disallow literal string: <Button type="submit" className="w-full h-11 bg-primary hover:bg-primary-hover font-semibold">
+              Sistemə daxil ol
+            </Button>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/auth/Login.tsx
+   41:52  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   60:16  warning  disallow literal string: <title>Sistemə Giriş | Pultap.az</title>                                                                                                                                                                                                                                           i18next/no-literal-string
+   68:61  warning  disallow literal string: <h2 className="text-2xl font-bold tracking-tight">Pultap-a Xoş Gəlmisiniz</h2>                                                                                                                                                                                                     i18next/no-literal-string
+   69:61  warning  disallow literal string: <p className="text-sm text-muted-foreground mt-2">Şəxsi kabinetinizə daxil olun</p>                                                                                                                                                                                                i18next/no-literal-string
+   76:56  warning  disallow literal string: <label className="text-sm font-medium">E-poçt və ya Nömrə</label>                                                                                                                                                                                                                  i18next/no-literal-string
+   91:58  warning  disallow literal string: <label className="text-sm font-medium">Şifrə</label>                                                                                                                                                                                                                               i18next/no-literal-string
+   92:80  warning  disallow literal string: <a href="#" className="text-xs text-primary hover:underline">Şifrəni unutmusunuz?</a>                                                                                                                                                                                              i18next/no-literal-string
+  117:70  warning  disallow literal string: <span className="bg-card px-2 text-muted-foreground">və ya Google ilə</span>                                                                                                                                                                                                       i18next/no-literal-string
+  132:77  warning  disallow literal string: <div className="text-center text-sm text-muted-foreground pt-2">
+              Hesabınız yoxdur?{" "}
+              <Link to={lp("/qeydiyyat")} className="text-primary hover:underline font-medium">
+                Qeydiyyatdan keçin
+              </Link>
+            </div>  i18next/no-literal-string
+  134:96  warning  disallow literal string: <Link to={lp("/qeydiyyat")} className="text-primary hover:underline font-medium">
+                Qeydiyyatdan keçin
+              </Link>                                                                                                                                         i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/auth/Register.tsx
+   67:52  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-explicit-any
+   86:16  warning  disallow literal string: <title>Qeydiyyat | Pultap.az</title>                                                                                                                                                                                                                                                                                                       i18next/no-literal-string
+   94:61  warning  disallow literal string: <h2 className="text-2xl font-bold tracking-tight">Yeni Hesab Yaradın</h2>                                                                                                                                                                                                                                                                  i18next/no-literal-string
+  105:58  warning  disallow literal string: <label className="text-sm font-medium">Ad və Soyad *</label>                                                                                                                                                                                                                                                                               i18next/no-literal-string
+  119:58  warning  disallow literal string: <label className="text-sm font-medium">Mobil Nömrə *</label>                                                                                                                                                                                                                                                                               i18next/no-literal-string
+  134:58  warning  disallow literal string: <label className="text-sm font-medium">E-poçt (istəyə görə)</label>                                                                                                                                                                                                                                                                        i18next/no-literal-string
+  148:58  warning  disallow literal string: <label className="text-sm font-medium">Şifrə *</label>                                                                                                                                                                                                                                                                                     i18next/no-literal-string
+  172:72  warning  disallow literal string: <span className="bg-card px-2 text-muted-foreground">və ya Google ilə</span>                                                                                                                                                                                                                                                               i18next/no-literal-string
+  187:79  warning  disallow literal string: <div className="text-center text-sm text-muted-foreground pt-2">
+                Artıq hesabınız var?{" "}
+                <Link to={lp("/giris")} className="text-primary hover:underline font-medium">
+                  Sistemə daxil olun
+                </Link>
+              </div>                                                 i18next/no-literal-string
+  189:94  warning  disallow literal string: <Link to={lp("/giris")} className="text-primary hover:underline font-medium">
+                  Sistemə daxil olun
+                </Link>                                                                                                                                                                                                 i18next/no-literal-string
+  197:53  warning  disallow literal string: <p><strong>{formData.phone}</strong> nömrəsinə 6 rəqəmli təsdiq kodu göndərildi.</p>                                                                                                                                                                                                                                                       i18next/no-literal-string
+  226:52  warning  disallow literal string: <button 
+                  type="button" 
+                  onClick={() => setStep(1)} 
+                  className="text-sm text-muted-foreground hover:text-foreground inline-flex items-center gap-1"
+                >
+                  <ArrowLeft className="w-3 h-3" /> Nömrəni dəyişmək üçün geri qayıt
+                </button>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/bokt/PtsCredit.tsx
+   62:42  warning  disallow literal string: <title>{t("nav.items.ptsCredit")} | Pultap</title>                                                                                                                                                                                                                                       i18next/no-literal-string
+   86:93  warning  disallow literal string: <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                Avtomobil girovu ilə kredit
+              </h1>                                                                                                                                           i18next/no-literal-string
+   89:78  warning  disallow literal string: <p className="text-lg sm:text-xl text-green-50 mb-8 max-w-2xl">
+                BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.
+              </p>                                                                                                   i18next/no-literal-string
+   99:61  warning  disallow literal string: <div className="text-sm text-green-100">Maksimal məbləğ</div>                                                                                                                                                                                                                            i18next/no-literal-string
+  100:48  warning  disallow literal string: <div className="font-bold">80,000 ₼-dək</div>                                                                                                                                                                                                                                            i18next/no-literal-string
+  108:61  warning  disallow literal string: <div className="text-sm text-green-100">Müddət</div>                                                                                                                                                                                                                                     i18next/no-literal-string
+  109:48  warning  disallow literal string: <div className="font-bold">36 ayadək</div>                                                                                                                                                                                                                                               i18next/no-literal-string
+  117:61  warning  disallow literal string: <div className="text-sm text-green-100">Rəsmiləşdirmə</div>                                                                                                                                                                                                                              i18next/no-literal-string
+  118:48  warning  disallow literal string: <div className="font-bold">24 saat ərzində</div>                                                                                                                                                                                                                                         i18next/no-literal-string
+  131:64  warning  disallow literal string: <h2 className="text-2xl font-bold text-gray-900 flex items-center">
+                <Car className="w-6 h-6 mr-2 text-green-600" />
+                Ən yaxşı PTS girovu təklifləri
+              </h2>                                                                                   i18next/no-literal-string
+  134:49  warning  disallow literal string: <p className="text-gray-500 mt-2">
+                Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri
+              </p>                                                                                                                                                             i18next/no-literal-string
+  152:71  warning  disallow literal string: <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Toplu müraciət ilə şansınızı artırın
+                </h3>                                                                                                                                                      i18next/no-literal-string
+  155:51  warning  disallow literal string: <p className="text-gray-600 mb-6">
+                  Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.
+                </p>                                                                                             i18next/no-literal-string
+  174:39  warning  disallow literal string: <span className="text-sm font-bold text-green-600">
+                        {product.rate}%-dən
+                      </span>                                                                                                                                                            i18next/no-literal-string
+  185:54  warning  disallow literal string: <div className="text-green-100 mb-6">
+                  Təşkilat seçildi
+                </div>                                                                                                                                                                                          i18next/no-literal-string
+  193:18  warning  disallow literal string: <Button 
+                  onClick={handleApply}
+                  variant="secondary" 
+                  size="lg" 
+                  className="w-full font-bold text-green-700 hover:bg-white bg-white/90"
+                >
+                  Müraciət et
+                </Button>  i18next/no-literal-string
+  196:60  warning  disallow literal string: <p className="text-xs text-green-200 mt-4">
+                  Müraciət pulsuzdur və kredit tarixçənizə təsir etmir
+                </p>                                                                                                                                                  i18next/no-literal-string
+  208:69  warning  disallow literal string: <h2 className="text-2xl font-bold text-gray-900 mb-8">Daha çox təklif</h2>                                                                                                                                                                                                               i18next/no-literal-string
+  224:65  warning  disallow literal string: <h2 className="text-3xl md:text-4xl font-bold mb-4">5 dəqiqəyə qərar</h2>                                                                                                                                                                                                                i18next/no-literal-string
+  225:73  warning  disallow literal string: <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+              Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!
+            </p>                                                                                                             i18next/no-literal-string
+  231:43  warning  disallow literal string: <span className="text-sm">Minimum sənədləşmə</span>                                                                                                                                                                                                                                      i18next/no-literal-string
+  235:43  warning  disallow literal string: <span className="text-sm">Avtomobil idarəetmədə qalır</span>                                                                                                                                                                                                                             i18next/no-literal-string
+  239:43  warning  disallow literal string: <span className="text-sm">Yüksək təsdiq faizi</span>                                                                                                                                                                                                                                     i18next/no-literal-string
+  249:64  warning  disallow literal string: <h2 className="text-2xl font-bold text-gray-900">Bütün PTS Kreditləri</h2>                                                                                                                                                                                                               i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/compare/ComparePage.tsx
+  77:60  warning  disallow literal string: <span key={c.id} className="font-semibold">
+              {fmt(Math.round(monthly(10000, c.rate, 24)))} ₼
+            </span>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/contact/ContactPage.tsx
+  112:122  warning  disallow literal string: <a href="tel:+994551234567" className="text-lg font-semibold hover:text-primary transition-colors">
+                        +994 (55) 123:45 67
+                      </a>  i18next/no-literal-string
+  124:126  warning  disallow literal string: <a href="mailto:info@pultap.az" className="text-lg font-semibold hover:text-primary transition-colors">
+                        info@pultap.az
+                      </a>   i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/currency/Rates.tsx
+  98:96  warning  disallow literal string: <div className="mt-1 text-lg font-bold">{((c.buy + c.sell) / 2).toFixed(4)} ₼</div>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/institutions/BankDetailPage.tsx
+  32:23  error  React Hook "useMemo" is called conditionally. React Hooks must be called in the exact same order in every component render  react-hooks/rules-of-hooks
+  33:24  error  React Hook "useMemo" is called conditionally. React Hooks must be called in the exact same order in every component render  react-hooks/rules-of-hooks
+  34:21  error  React Hook "useMemo" is called conditionally. React Hooks must be called in the exact same order in every component render  react-hooks/rules-of-hooks
+
+/Users/qehreman/Desktop/global-connect-main/src/pages/qna/QnaPage.tsx
+  136:103  warning  disallow literal string: <div className="flex items-center gap-1 text-xs text-yellow-500 font-medium mt-1">
+                      ★ {expert.rating} <span className="text-muted-foreground ml-1">({expert.answers} {t("qna.answers")})</span>
+                    </div>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/test/api/cbar.test.tsx
+  16:34  warning  disallow literal string: <div data-testid="success">Loaded</div>  i18next/no-literal-string
+
+/Users/qehreman/Desktop/global-connect-main/src/test/components/LoanCalculator.test.tsx
+  10:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/qehreman/Desktop/global-connect-main/tailwind.config.ts
+  130:13  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+✖ 146 problems (11 errors, 135 warnings)
+

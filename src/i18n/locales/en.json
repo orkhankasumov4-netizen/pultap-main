@@ -1,0 +1,1147 @@
+{
+  "common": {
+    "currency": "AZN",
+    "month": "mo",
+    "months": "months",
+    "more": "Details",
+    "viewMore": "View details",
+    "all": "All",
+    "popular": "Popular",
+    "go": "Open",
+    "compare": "Compare",
+    "search": "Search",
+    "menu": "Menu",
+    "social": "Social",
+    "loading": "Loading…",
+    "subscribe": "Subscribe",
+    "open": "Open",
+    "close": "Close",
+    "calculate": "Calculate",
+    "home": "Home",
+    "yes": "Yes",
+    "no": "No",
+    "any": "Any",
+    "results": "results found",
+    "noResults": "No results found.",
+    "filters": "Filters",
+    "resetFilters": "Reset filters",
+    "details": "Details",
+    "apply": "Apply",
+    "order": "Order",
+    "free": "Free",
+    "addToCompare": "Add to compare",
+    "swap": "Swap currencies",
+    "comingSoon": "This page is being prepared",
+    "comingSoonDesc": "Content will be added in the next steps."
+  },
+  "topbar": {
+    "phone": "+994 (00) 000-00-00",
+    "stats": "22 banks · 56 NBCO · 987+ products",
+    "rates": "USD 1.70 · EUR 1.84"
+  },
+  "nav": {
+    "items": {
+      "ptsCredit": "PTS Secured",
+      "allCredits": "All loans",
+      "allCreditsDesc": "Every bank offer",
+      "onlineCredit": "Online loan",
+      "onlineCreditDesc": "Instant decision",
+      "cashCredit": "Cash loan",
+      "cashCreditDesc": "Fast, paperless",
+      "creditHistory": "Credit history",
+      "creditHistoryDesc": "Check your credit score",
+      "creditCalc": "Loan calculator",
+      "creditCalcDesc": "Estimate monthly payment",
+      "depositCalc": "Deposit calculator",
+      "allBokt": "All NBCO loans",
+      "boktCash": "NBCO cash loan",
+      "lombard": "Pawnshop loan",
+      "ptsCreditDesc": "Get a loan with your car",
+      "boktList": "List of NBCOs",
+      "creditCards": "Credit cards",
+      "creditCardsDesc": "With grace period",
+      "debitCards": "Debit cards",
+      "debitCardsDesc": "Cashback & rewards",
+      "allDeposits": "All deposits",
+      "manatDeposits": "AZN deposits",
+      "fxDeposits": "Foreign currency deposits",
+      "allMortgage": "All mortgage offers",
+      "stateMortgage": "State mortgage",
+      "internalMortgage": "Bank mortgage",
+      "currencyRates": "Exchange rates",
+      "currencyRatesDesc": "Official CBAR rates",
+      "universalConverter": "Universal converter",
+      "usdAzn": "USD → AZN",
+      "eurAzn": "EUR → AZN",
+      "rubAzn": "RUB → AZN"
+    },
+    "credits": "Loans",
+    "bokt": "NBCO",
+    "cards": "Cards",
+    "deposits": "Deposits",
+    "mortgage": "Mortgage",
+    "currency": "Currency",
+    "banks": "Banks",
+    "headings": {
+      "bankCredits": "Bank loans",
+      "tools": "Tools",
+      "rates": "Exchange rates",
+      "converter": "Converter"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "errorEmpty": "Email address cannot be empty.",
+      "errorInvalid": "Please enter a valid email.",
+      "success": "Successfully subscribed!",
+      "title": "Don't miss our updates",
+      "desc": "The best loan and deposit offers, weekly.",
+      "placeholder": "Your email address"
+    },
+    "tagline": "Pultap is an innovative financial platform. Here you can easily and quickly access various financial offers tailored to your personal and business needs",
+    "workHours": "Monday – Friday, 09:00 to 18:00",
+    "address": "Caspian Plaza, business center, Jafar Jabbarly street, 44, Baku",
+    "products": "Products",
+    "tools": "Tools",
+    "company": "Company",
+    "links": {
+      "bankCredits": "Bank loans",
+      "boktCredits": "NBCO loans",
+      "deposits": "Deposits",
+      "cards": "Bank cards",
+      "mortgage": "Mortgage",
+      "creditCalc": "Loan calculator",
+      "depositCalc": "Deposit calculator",
+      "converter": "Currency converter",
+      "rates": "Exchange rates",
+      "creditHistory": "Credit history",
+      "banks": "Banks",
+      "bokt": "NBCOs",
+      "about": "About us",
+      "contact": "Contact",
+      "ads": "Advertising",
+      "adPlacement": "Advertise on the site",
+      "blog": "Blog",
+      "qna": "Q&A",
+      "glossary": "Glossary"
+    },
+    "copyright": "© {{year}} Pultap.az — All rights reserved.",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "cookies": "Cookies"
+  },
+  "home": {
+    "hero": {
+      "badge": "22 banks · 56 NBCO · 987+ products",
+      "titleA": "Compare financial",
+      "titleHighlight": "products",
+      "titleB": "and choose the best deal",
+      "subtitle": "Loans, deposits, cards and mortgages — every Azerbaijani bank's offer in one place.",
+      "tabs": {
+        "credit": "Loan",
+        "deposit": "Deposit",
+        "card": "Card",
+        "mortgage": "Mortgage"
+      },
+      "placeholders": {
+        "credit": "Loan amount (AZN)",
+        "deposit": "Deposit amount (AZN)",
+        "card": "Monthly spend (AZN)",
+        "mortgage": "Property value (AZN)"
+      },
+      "cta": "Compare",
+      "popular": "Popular:",
+      "trust": {
+        "free": "Free and independent",
+        "instant": "Instant results",
+        "updated": "Updated daily"
+      }
+    },
+    "ticker": {
+      "title": "CBAR rates"
+    },
+    "categories": {
+      "eyebrow": "Categories",
+      "title": "Find the right financial solution for you",
+      "items": {
+        "credits": {
+          "title": "Bank loans",
+          "desc": "Online and cash loans"
+        },
+        "bokt": {
+          "title": "NBCO loans",
+          "desc": "Fast loans from NBCOs"
+        },
+        "deposits": {
+          "title": "Deposits",
+          "desc": "AZN, USD, EUR offers"
+        },
+        "cards": {
+          "title": "Bank cards",
+          "desc": "Credit and debit cards"
+        },
+        "mortgage": {
+          "title": "Mortgage",
+          "desc": "State and bank mortgage"
+        },
+        "currency": {
+          "title": "Currency",
+          "desc": "Rates and converter"
+        },
+        "calculators": {
+          "title": "Calculators",
+          "desc": "Loan and deposit calculators"
+        },
+        "banks": {
+          "title": "Banks",
+          "desc": "All banks and NBCOs"
+        }
+      }
+    },
+    "topLoans": {
+      "eyebrow": "Lowest rates",
+      "title": "This week's best loan deals",
+      "all": "All loans",
+      "th": {
+        "product": "Bank / Product",
+        "rate": "Rate",
+        "amount": "Amount (AZN)",
+        "term": "Term"
+      },
+      "amount": "Amount",
+      "term": "Term"
+    },
+    "banksWall": {
+      "eyebrow": "Partners",
+      "title": "Trusted banks and NBCOs",
+      "subtitle": "Official partnerships with institutions licensed by the Central Bank.",
+      "viewAll": "See all 22 banks →"
+    },
+    "why": {
+      "eyebrow": "Why Pultap.az?",
+      "title": "For your right financial decision",
+      "items": {
+        "free": {
+          "title": "100% free and independent",
+          "desc": "No hidden fees. We work with every bank on equal terms."
+        },
+        "fast": {
+          "title": "Compare in seconds",
+          "desc": "Real-time filters, instant results. Share any offer via URL."
+        },
+        "transparent": {
+          "title": "Transparent calculations",
+          "desc": "APR, hidden fees and full repayment schedule — fully disclosed."
+        },
+        "loved": {
+          "title": "Loved by users",
+          "desc": "350K+ active users and an average 4.7-star rating."
+        }
+      }
+    },
+    "cta": {
+      "titleA": "Calculate your monthly",
+      "titleHighlight": "payment now",
+      "subtitle": "Use the loan calculator to test each bank's actual terms and pick the best deal.",
+      "openCalc": "Open calculator",
+      "viewCredits": "Browse loans",
+      "stats": {
+        "offers": "Active offers",
+        "banks": "Bank partners",
+        "users": "Users",
+        "rating": "Rating"
+      }
+    }
+  },
+  "language": {
+    "switch": "Change language",
+    "current": "Current language"
+  },
+  "lists": {
+    "loanType": "Loan type",
+    "loanTypes": {
+      "online": "Online loan",
+      "cash": "Cash loan",
+      "mortgage": "Mortgage",
+      "auto": "Auto loan"
+    },
+    "boktType": "Type",
+    "boktTypes": {
+      "cash": "Cash loan",
+      "lombard": "Pawnshop loan"
+    },
+    "search": "Search",
+    "searchPlaceholder": {
+      "loan": "Loan name...",
+      "deposit": "Deposit name...",
+      "card": "Card name...",
+      "bokt": "Product name...",
+      "bank": "Search banks...",
+      "boktInst": "Search NBCOs..."
+    },
+    "amount": "Amount",
+    "term": "Term",
+    "amountWithUnit": "Amount: {{value}} AZN",
+    "termWithUnit": "Term: {{value}} months",
+    "maxRate": "Max rate: {{value}}%",
+    "minRate": "Min rate: {{value}}%",
+    "maxFee": "Max annual fee: {{value}} AZN",
+    "minCashbackVal": "Min cashback: {{value}}%",
+    "banks": "Banks",
+    "bokts": "NBCOs",
+    "collateral": "Collateral",
+    "insurance": "Insurance",
+    "minCashback": "Min cashback",
+    "maxAnnualFee": "Max annual fee",
+    "extras": "Extras",
+    "feeFreeOnly": "Fee-free cards only",
+    "currencyFilter": "Currency",
+    "currencyOptions": {
+      "azn": "AZN — Manat",
+      "usd": "USD — Dollar",
+      "eur": "EUR — Euro"
+    },
+    "maxTerm": "Max term: {{value}} months",
+    "minAmountLte": "Min deposit ≤ {{value}}",
+    "sort": {
+      "rateAsc": "Lowest rate",
+      "rateDesc": "Highest rate",
+      "amountDesc": "Largest amount",
+      "termDesc": "Longest term",
+      "minAsc": "Lowest min deposit",
+      "cashbackDesc": "Highest cashback",
+      "feeAsc": "Lowest annual fee",
+      "limitDesc": "Largest limit",
+      "ratingDesc": "Highest rating",
+      "nameAsc": "Name (A–Z)",
+      "branchesDesc": "Most branches",
+      "establishedAsc": "Oldest"
+    },
+    "compareBar": "{{n}}/3 in compare",
+    "clear": "Clear",
+    "noLoans": "No results match the selected filters.",
+    "noCards": "No cards match the selected filters.",
+    "noDeposits": "No deposits match the selected filters."
+  },
+  "institutions": {
+    "breadcrumb": {
+      "banks": "Banks",
+      "bokt": "NBCO"
+    },
+    "stats": {
+      "bank": "Banks",
+      "bokt": "NBCOs",
+      "branches": "Branches",
+      "atms": "ATMs",
+      "avgRating": "Average rating"
+    },
+    "mini": {
+      "established": "Founded",
+      "branches": "Branches",
+      "atms": "ATMs",
+      "reviews": "Reviews"
+    },
+    "viewProducts": "View products",
+    "details": "Details"
+  },
+  "calc": {
+    "loan": {
+      "title": "Loan calculator",
+      "subtitle": "Monthly payment, total interest and repayment schedule",
+      "method": {
+        "annuity": "Annuity",
+        "differentiated": "Differentiated"
+      },
+      "field": {
+        "amount": "Loan amount",
+        "term": "Term",
+        "rate": "Annual interest rate"
+      },
+      "showSchedule": "Show repayment schedule",
+      "hideSchedule": "Hide schedule",
+      "viewLoans": "Loans matching these terms",
+      "monthly": "Monthly payment",
+      "firstLast": "First payment • last payment: {{value}} AZN",
+      "totalPayment": "Total payment",
+      "totalInterest": "Total interest",
+      "principal": "Principal",
+      "termLabel": "Term",
+      "disclaimer": "This calculation is for information only. Actual terms may vary depending on the bank's policy.",
+      "scheduleTitle": "Repayment schedule",
+      "scheduleMonths": "{{n}} months",
+      "th": {
+        "month": "Month",
+        "payment": "Payment",
+        "principal": "Principal",
+        "interest": "Interest",
+        "balance": "Balance"
+      }
+    },
+    "deposit": {
+      "title": "Deposit calculator",
+      "subtitle": "Calculate your earnings instantly",
+      "mode": {
+        "simple": "Simple interest",
+        "capitalized": "Compounding"
+      },
+      "field": {
+        "amount": "Deposit amount",
+        "term": "Term",
+        "rate": "Annual rate"
+      },
+      "viewDeposits": "View matching deposits",
+      "totalAtEnd": "You receive at the end of term",
+      "principalPlusInterest": "Initial amount + interest earnings",
+      "interestEarned": "Interest earned",
+      "monthlyAvg": "Monthly average",
+      "initial": "Initial amount",
+      "effectiveAnnual": "Effective annual",
+      "disclaimer": "This calculation is informational. Actual bank terms may differ."
+    }
+  },
+  "rates": {
+    "liveFromCbar": "Live rates from CBAR",
+    "tab": {
+      "cbar": "Central Bank",
+      "banksFor": "Banks for {{code}}"
+    },
+    "cbarTitle": "Official CBAR exchange rates",
+    "cbarSubtitle": "For today, in manat equivalent",
+    "updatedNow": "Updated: just now",
+    "th": {
+      "currency": "Currency",
+      "code": "Code",
+      "buy": "Buy (AZN)",
+      "sell": "Sell (AZN)",
+      "avg": "Mid (AZN)",
+      "change24": "24h change",
+      "bank": "Bank",
+      "cashBuy": "Cash buy",
+      "cashSell": "Cash sell",
+      "wireBuy": "Wire buy",
+      "wireSell": "Wire sell",
+      "spread": "Spread"
+    },
+    "banksTitle": "Banks for {{code}}/AZN",
+    "banksSubtitle": "Pick another currency from the cards above",
+    "bankNotFound": "No banks found"
+  },
+  "creditHistory": {
+    "why": [
+      "To know your credit rating",
+      "To assess your chances before applying for a new loan",
+      "To identify forgotten or unauthorized loans in your name"
+    ],
+    "metaTitle": "Credit history check",
+    "metaDesc": "Check your credit history online via the Central Credit Registry.",
+    "title": "Credit history check",
+    "lead": "Reviewing your credit history before each loan application increases your chance of approval.",
+    "online": "Online check",
+    "onlineSub": "With your ID number and full name",
+    "fields": {
+      "name": "Full name",
+      "fin": "ID (FIN) code",
+      "dob": "Date of birth",
+      "phone": "Mobile number"
+    },
+    "placeholders": {
+      "name": "John Smith",
+      "fin": "ABC1234",
+      "phone": "+994 (XX) XXX-XX-XX"
+    },
+    "submit": "Check history",
+    "features": {
+      "secret": {
+        "t": "Fully confidential",
+        "d": "Data is encrypted"
+      },
+      "instant": {
+        "t": "Instant result",
+        "d": "Within 30 seconds"
+      },
+      "official": {
+        "t": "Official source",
+        "d": "Direct from CCR"
+      }
+    },
+    "whyTitle": "Why does it matter?"
+  },
+  "mortgageState": {
+    "terms": [
+      "Citizenship of the Republic of Azerbaijan",
+      "Official and stable income",
+      "Positive credit history",
+      "Life insurance requirement"
+    ],
+    "title": "State mortgage",
+    "lead": "Subsidised mortgage backed by the Mortgage Fund — low rate and long term.",
+    "stats": {
+      "rate": "Annual rate",
+      "down": "Down payment",
+      "term": "Term",
+      "max": "Max amount"
+    },
+    "statsValues": {
+      "rate": "4–8 %",
+      "down": "from 10 %",
+      "term": "up to 30 years",
+      "max": "350,000 AZN"
+    },
+    "offersTitle": "State mortgage offers",
+    "termsTitle": "Eligibility criteria",
+    "calcCta": "Calculate monthly payment"
+  },
+  "mortgageInternal": {
+    "adv": [
+      "Less documentation required",
+      "Fast processing time",
+      "More flexible income verification",
+      "More choices in the secondary market"
+    ],
+    "title": "Bank mortgage",
+    "lead": "Mortgages funded from the bank's own resources — more flexible terms.",
+    "offersTitle": "Bank mortgage offers",
+    "advTitle": "Advantages",
+    "calcCta": "Calculate"
+  },
+  "converter": {
+    "metaTitle": "Currency converter",
+    "metaDesc": "Online currency converter: USD, EUR, RUB, TRY, GBP, GEL — to manat and back.",
+    "title": "Currency converter",
+    "lead": "Instant conversion across 7 currencies — based on the Central Bank's mid rate.",
+    "universal": "Universal converter",
+    "pairs": {
+      "usd": "Dollar → Manat",
+      "eur": "Euro → Manat",
+      "rub": "Ruble → Manat"
+    },
+    "pageTitleUsd": "Dollar — Manat converter",
+    "pageTitleEur": "Euro — Manat converter",
+    "pageTitleRub": "Ruble — Manat converter",
+    "metaUsd": "USD/AZN online converter — instant conversion and live rate.",
+    "metaEur": "EUR/AZN online converter — instant conversion and live rate.",
+    "metaRub": "RUB/AZN online converter — instant conversion and live rate.",
+    "youGive": "You give",
+    "youGet": "You get",
+    "cbarRates": "Central Bank rates"
+  },
+  "calcDeposit": {
+    "metaTitle": "Deposit calculator",
+    "metaDesc": "Calculate your deposit return with simple interest and compounding methods online.",
+    "title": "Deposit calculator",
+    "lead": "Forecast your earnings using amount, term and annual interest rate."
+  },
+  "calcLoan": {
+    "metaTitle": "Loan calculator",
+    "metaDesc": "Calculate monthly payment, total interest and repayment schedule online. Annuity and differentiated payment methods.",
+    "title": "Loan calculator",
+    "lead": "Enter the amount, term and rate — see the monthly payment and total interest instantly."
+  },
+  "card": {
+    "annualFee": "Annual fee",
+    "kindCredit": "Credit card",
+    "kindDebit": "Debit card",
+    "cashback": "Cashback",
+    "annual": "Annual",
+    "limit": "Limit",
+    "rate": "Rate",
+    "amount": "Amount",
+    "term": "Term",
+    "min": "Min.",
+    "interestMonthly": "Interest paid monthly",
+    "withCollateral": "Secured",
+    "withoutCollateral": "Unsecured",
+    "lombard": "Pawn",
+    "cash": "Cash"
+  },
+  "pages": {
+    "credits": {
+      "title": "Bank loans",
+      "desc": "Compare every Azerbaijani bank's loan offers and pick the best deal.",
+      "crumb": "Loans"
+    },
+    "online": {
+      "title": "Online loans",
+      "desc": "Loans approved fully online without paperwork.",
+      "crumb": "Online loan"
+    },
+    "cash": {
+      "title": "Cash loans",
+      "desc": "Cash loans from banks — compare terms and apply.",
+      "crumb": "Cash loan"
+    },
+    "boktAll": {
+      "title": "NBCO loans",
+      "desc": "Cash and pawnshop loans from non-bank credit organisations.",
+      "crumb": "NBCO loans"
+    },
+    "boktCash": {
+      "title": "NBCO cash loans",
+      "desc": "Fast, paperless cash loans from NBCOs.",
+      "crumb": "Cash"
+    },
+    "boktLomb": {
+      "title": "Pawnshop loans",
+      "desc": "Loans secured by gold, vehicles and other collateral.",
+      "crumb": "Pawnshop"
+    },
+    "creditCards": {
+      "title": "Credit cards",
+      "desc": "Credit cards with grace period, cashback and premium perks.",
+      "parent": "Bank cards",
+      "crumb": "Credit cards"
+    },
+    "debitCards": {
+      "title": "Debit cards",
+      "desc": "Debit cards with cashback, rewards and free service.",
+      "parent": "Bank cards",
+      "crumb": "Debit cards"
+    },
+    "depositsAll": {
+      "title": "Bank deposits",
+      "desc": "Compare all bank deposit offers and pick the highest yield.",
+      "crumb": "Deposits"
+    },
+    "depositsAzn": {
+      "title": "AZN deposits",
+      "desc": "Highest-yielding deposit offers in Azerbaijani manat.",
+      "crumb": "AZN deposits"
+    },
+    "depositsFx": {
+      "title": "Foreign currency deposits",
+      "desc": "Deposit offers in USD and EUR.",
+      "crumb": "Foreign currency deposits"
+    },
+    "mortgageAll": {
+      "title": "Mortgages",
+      "desc": "All state and bank mortgage offers in one place.",
+      "crumb": "Mortgage"
+    },
+    "rates": {
+      "title": "Exchange rates",
+      "desc": "Current buy and sell rates from the Central Bank and commercial banks — on one page.",
+      "crumb": "Exchange rates"
+    },
+    "banks": {
+      "title": "Banks of Azerbaijan",
+      "desc": "Ratings, branch network and contact details of every licensed bank in Azerbaijan.",
+      "crumb": "Banks"
+    },
+    "bokt": {
+      "title": "NBCO directory",
+      "desc": "Every non-bank credit organisation in Azerbaijan — ratings, products and contacts.",
+      "crumb": "NBCOs"
+    },
+    "converter": {
+      "crumb": "Converter"
+    },
+    "creditHistoryCrumb": "Credit history"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "Sorry, the page you are looking for does not exist.",
+    "back": "Return to home"
+  },
+  "offline": {
+    "title": "No Internet Connection | Pultap.az",
+    "heading": "You are Offline",
+    "description": "You have no internet connection. Please restore the connection for full website functionality. You can see the last saved exchange rates below.",
+    "retryBtn": "Retry",
+    "lastRates": "Last Saved Exchange Rates",
+    "offlineData": "Offline Data",
+    "buy": "Buy",
+    "sell": "Sell"
+  },
+  "seo": {
+    "calcDeposit": {
+      "keywords": "deposit calculator, savings, income"
+    },
+    "calcLoan": {
+      "keywords": "loan calculator, monthly payment, rate"
+    },
+    "converter": {
+      "keywords": "currency converter, exchange rate"
+    },
+    "creditHistory": {
+      "keywords": "credit history, check, rating"
+    },
+    "home": {
+      "keywords": "loans, deposits, cards, mortgage",
+      "title": "Pultap.az — Compare loans, deposits and bank cards",
+      "description": "Compare loan, deposit, bank card and mortgage offers from every Azerbaijani bank in one place. Free, fast and independent."
+    },
+    "lists": {
+      "keywords": "compare, best offers"
+    },
+    "rates": {
+      "keywords": "exchange rates, dollar, euro"
+    },
+    "compare": {
+      "keywords": "loan comparison, bank loans, interest rate comparison, pultap, best loan"
+    }
+  },
+  "compare": {
+    "bank": "Bank",
+    "monthlyExample": "Monthly payment (10 000 ₼, 24 months)",
+    "pageTitle": "Compare | Pultap.az",
+    "pageDesc": "Compare loans side-by-side — interest, amount, term, monthly payment.",
+    "crumb": "Compare",
+    "title": "Loan Comparison",
+    "subtitle": "Compare selected loans side-by-side.",
+    "empty": "Comparison list is empty",
+    "emptyHint": "Add products to comparison using the + button from the loan list.",
+    "goToCredits": "Go to Loans",
+    "selected": "loans are being compared",
+    "criteria": "Criteria"
+  },
+  "creditDetail": {
+    "bankPage": "Bank page",
+    "calculator": "Calculator",
+    "conditions": "Conditions",
+    "req": {
+      "age": "Age",
+      "citizenship": "Citizenship",
+      "docs": "Documents",
+      "docsValue": "ID Card",
+      "income": "Income proof",
+      "incomeValue": "Required"
+    },
+    "requirements": "Requirements",
+    "type": "Type",
+    "amountRange": "Amount range",
+    "termRange": "Term range",
+    "backToList": "All loans"
+  },
+  "qna": {
+    "metaTitle": "Q&A | Pultap.az",
+    "metaDesc": "Find answers from experts on your finance and banking questions.",
+    "title": "Q&A Center",
+    "askExpert": "Ask the Experts",
+    "desc": "Address your questions regarding finance, banking, loans, and mortgages to our experts or benefit from existing answers.",
+    "searchPlaceholder": "Search questions...",
+    "experts": "Our Experts",
+    "askBtn": "Ask a Question",
+    "topicFilters": "Topic Filters",
+    "popularExperts": "Popular Experts",
+    "answers": "answers",
+    "askExpertTitle": "Ask an Expert",
+    "askDesc": "When your question is answered by our experts, you will receive an SMS and Email notification. You can also track the status in your personal account.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Ex: Ali Mammadov",
+    "categoryLabel": "Category",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "example@mail.com",
+    "phoneLabel": "Mobile Number",
+    "phonePlaceholder": "+994 (00) 000-00-00",
+    "questionLabel": "Your Question",
+    "questionPlaceholder": "Write your question in detail here...",
+    "anonymousLabel": "I want my name to be hidden when the question is published",
+    "cancel": "Cancel",
+    "submit": "Submit Question",
+    "popularQuestions": "Popular Questions",
+    "questionsFor": "Questions on {{topic}}",
+    "resultsCount": "{{count}} results",
+    "views": "views",
+    "answeredBy": "Answered by:",
+    "noQuestions": "No questions found",
+    "noQuestionsDesc": "Change your search criteria or ask a new question.",
+    "topics": {
+      "Bütün Mövzular": "All Topics",
+      "Kreditlər": "Loans",
+      "Depozitlər": "Deposits",
+      "Plastik Kartlar": "Plastic Cards",
+      "İpoteka": "Mortgages",
+      "Hüquqi Məsələlər": "Legal Issues"
+    }
+  },
+  "glossary": {
+    "metaTitle": "Financial Glossary | Pultap.az",
+    "metaDesc": "Simple explanations of banking, finance, and economic terms.",
+    "title": "Financial Glossary",
+    "desc": "Understanding banking, finance, and insurance terms is now easier. Find simple explanations for over 1000 terms here.",
+    "searchPlaceholder": "Search for a term...",
+    "alphabetSearch": "Alphabetical Search",
+    "all": "All",
+    "resultsCount": "{{count}} terms",
+    "noResults": "No terms found",
+    "noResultsDesc": "Change your search criteria or select another letter."
+  },
+  "contact": {
+    "metaTitle": "Contact | Pultap.az",
+    "metaDesc": "Contact the Pultap.az platform.",
+    "title": "Contact Us",
+    "hero": {
+      "title": "Contact Us",
+      "desc": "Feel free to contact us for questions, suggestions, or collaboration."
+    },
+    "info": {
+      "title": "Contact Information",
+      "phone": {
+        "label": "Phone"
+      },
+      "email": {
+        "label": "Email Address"
+      },
+      "address": {
+        "label": "Address",
+        "value": "Caspian Plaza business center,<br />Jafar Jabbarly street, 44, Baku"
+      }
+    },
+    "hours": {
+      "title": "Working Hours",
+      "desc": "Monday – Friday, 09:00 to 18:00"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "desc": "Your feedback is important to us. Fill out the form to contact us.",
+      "fields": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Your full name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "Your email address"
+        },
+        "phone": {
+          "label": "Contact Number",
+          "placeholder": "Your contact number"
+        },
+        "message": {
+          "label": "Your Message",
+          "placeholder": "What would you like to tell us?"
+        }
+      },
+      "submitLoading": "Sending...",
+      "submit": "Send",
+      "toast": {
+        "fillRequired": "All fields are required.",
+        "invalidEmail": "Please enter a valid email address.",
+        "success": "Your message has been received. Thank you!",
+        "error": "An error occurred while sending your message. Please try again."
+      }
+    }
+  },
+  "about": {
+    "metaTitle": "About Us | Pultap.az",
+    "metaDesc": "Pultap.az - Azerbaijan's largest credit, deposit, and financial comparison platform.",
+    "title": "About Us",
+    "hero": {
+      "title": "Your Trusted Guide in Financial Decisions",
+      "desc": "Pultap.az is Azerbaijan's most advanced and comprehensive financial products comparison platform. We help users make the right decisions by easily comparing offers from banks and non-bank credit organizations."
+    },
+    "stats": {
+      "partners": {
+        "value": "50+",
+        "label": "Partner Banks & NBCOs"
+      },
+      "users": {
+        "value": "350K+",
+        "label": "Monthly Active Users"
+      },
+      "comparisons": {
+        "value": "1M+",
+        "label": "Comparisons Made"
+      },
+      "secure": {
+        "value": "100%",
+        "label": "Security & Privacy"
+      }
+    },
+    "description": {
+      "intro": "Our goal is to make financial services accessible, transparent, and understandable for everyone.",
+      "servicesIntro": "On our platform, users can easily find the most advantageous options for the following services:",
+      "servicesList": {
+        "cash": "<strong>Cash loans</strong> – interest rates and terms offered by various banks,",
+        "mortgage": "<strong>Mortgage loans</strong> – state and internal mortgage programs,",
+        "nbfc": "<strong>NBCO loans</strong> – opportunities offered by non-bank credit organizations,",
+        "cards": "<strong>Bank cards</strong> – offers for debit and credit cards,",
+        "deposits": "<strong>Deposits</strong> – profitable deposit terms in AZN and foreign currencies,",
+        "exchange": "<strong>Exchange rates</strong> – constantly updated bank rates and currency converter."
+      },
+      "applyOnline": "Through our site, you can directly apply online to the bank's system for the credit or card product you choose, saving your time and money.",
+      "calculators": "Also, through the comprehensive credit and deposit calculators on our platform, you can accurately calculate your future payments and earnings.",
+      "blog": "As the Pultap.az team, we attach special importance to increasing financial literacy and regularly publish useful articles and market news."
+    },
+    "features": {
+      "mission": {
+        "title": "Our Mission",
+        "description": "To empower our users to make the best financial decisions by providing them with unbiased, accurate, and up-to-date information."
+      },
+      "values": {
+        "title": "Our Values",
+        "description": "Transparency, user-centricity, innovation, and security form the basis of our activities."
+      },
+      "benefits": {
+        "objective": "Completely objective and impartial comparison",
+        "updated": "Constantly updated and verified information",
+        "userFriendly": "User-friendly and fast interface"
+      }
+    },
+    "team": {
+      "badge": "Our Team",
+      "title": "Pultap.az Team",
+      "desc": "The professional and experienced team behind the project.",
+      "members": {
+        "orxan": {
+          "name": "Orkhan Mammadov",
+          "role": "Project Manager / CEO"
+        },
+        "aysel": {
+          "name": "Aysel Aliyeva",
+          "role": "Financial Analyst"
+        },
+        "elvin": {
+          "name": "Elvin Guliyev",
+          "role": "Lead Developer (CTO)"
+        },
+        "nezrin": {
+          "name": "Nazrin Hasanova",
+          "role": "Marketing Manager"
+        }
+      }
+    }
+  },
+  "terms": {
+    "metaTitle": "Terms of Use | Pultap.az",
+    "metaDesc": "Terms of use for the Pultap.az platform.",
+    "title": "Terms of Use",
+    "lastUpdated": "Last updated: April 24, 2026",
+    "content": {
+      "p1": "1. General Provisions",
+      "p2": "1.1 Pultap.az is an online platform for information and comparison purposes. We are not a bank or NBCO, we do not provide loans or deposits.",
+      "p3": "1.2 All financial data (rates, commissions, terms) placed on the platform is for informational purposes only. Actual terms may vary depending on the banks' policies.",
+      "p4": "2. Disclaimer",
+      "p5": "2.1 The site administration does not guarantee the absolute accuracy and relevance of the information posted on the platform.",
+      "p6": "2.2 Pultap.az is not responsible for any contract, credit obligation, or financial loss concluded between the user and a financial institution.",
+      "p7": "3. Copyright",
+      "p8": "3.1 The design, logo, graphic elements, and database of the site are protected by copyright. Unauthorized copying or use is prohibited.",
+      "p9": "4. Privacy",
+      "p10": "4.1 Your personal information is used only with your permission and for the purpose of providing relevant services.",
+      "p11": "4.2 Pultap.az does not sell user information to third parties and does not share it except as provided by law.",
+      "p12": "5. Suspension or Modification of Service",
+      "p13": "5.1 The site administration reserves the right to suspend or modify the platform's operation at any time and without prior notice.",
+      "p14": "6. Legislation",
+      "p15": "6.1 These terms are governed by and construed in accordance with the laws of the Republic of Azerbaijan.",
+      "p16": "6.2 Any disputes that may arise shall be resolved in the courts of the Republic of Azerbaijan.",
+      "p17": "7. Contact",
+      "p18": "7.1 If you have any questions regarding the terms of use, you can contact us at info@pultap.az."
+    },
+    "desc": "Rules and legal terms for using the platform.",
+    "c1_title": "1. General Provisions",
+    "c1_desc": "1.1 Pultap.az is an online platform for informational and comparison purposes. We are not a bank or NBCO, and do not provide loans or deposits.\n\n1.2 All financial information on the platform is for informational purposes only. Actual terms may vary based on bank policies.",
+    "c2_title": "2. Disclaimer",
+    "c2_desc": "2.1 The site administration does not guarantee the absolute accuracy and relevance of the information posted on the platform.\n\n2.2 Pultap.az is not responsible for any agreement, loan obligation, or financial loss incurred between the user and a financial institution.",
+    "c3_title": "3. Copyright",
+    "c3_desc": "3.1 The site's design, logo, graphic elements, and database are protected by copyright. Unauthorized copying or use is prohibited."
+  },
+  "advertise": {
+    "metaTitle": "Pultap.az - Advertising",
+    "metaDesc": "Advertising opportunities on the Pultap.az platform. Banner, sponsor, and blog ads to reach a large audience.",
+    "title": "Advertising",
+    "hero": {
+      "title": "Advertising Opportunities",
+      "desc": "Reach the right and active audience by advertising on the Pultap.az platform."
+    },
+    "benefits": {
+      "audience": {
+        "title": "Large Audience",
+        "desc": "Reach thousands of active and potential customers every month."
+      },
+      "conversion": {
+        "title": "High Conversion",
+        "desc": "High sales potential thanks to a targeted audience interested in financial services."
+      },
+      "premium": {
+        "title": "Premium Positions",
+        "desc": "Ability to place ads in the most prominent and effective sections of the site."
+      }
+    },
+    "formats": {
+      "title": "Ad Formats",
+      "desc": "Various ad types tailored to your goals and budget.",
+      "banner": {
+        "title": "Banner Ads",
+        "desc": "Premium banner spots on the homepage and internal pages.",
+        "price": "Contact us",
+        "features": [
+          "Priority position on homepage",
+          "Mobile and desktop compatibility",
+          "Statistics and click reports"
+        ]
+      },
+      "sponsor": {
+        "title": "Sponsored Products",
+        "desc": "Featured and distinct spots in credit and card lists.",
+        "price": "Contact us",
+        "features": [
+          "Top spots in comparison lists",
+          "Distinctive visual design",
+          "Higher conversion rate"
+        ]
+      },
+      "blog": {
+        "title": "Blog and PR Articles",
+        "desc": "Comprehensive articles about your company and products.",
+        "price": "Contact us",
+        "features": [
+          "PR material written by experts",
+          "Long-term SEO benefits",
+          "Social media sharing"
+        ]
+      }
+    },
+    "form": {
+      "title": "Ad Request",
+      "desc": "Fill out the form for detailed information about advertising opportunities.",
+      "fields": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Enter your name"
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": "Enter company name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "Example: name@company.az"
+        },
+        "phone": {
+          "label": "Mobile Number",
+          "placeholder": "+994 (XX) XXX-XX-XX"
+        },
+        "message": {
+          "label": "Your Message",
+          "placeholder": "Write about your ad goals and interested formats..."
+        }
+      },
+      "submitLoading": "Sending...",
+      "submit": "Submit Request",
+      "consent": "By submitting, you consent to the processing of your personal data.",
+      "toast": {
+        "fillRequired": "Please fill all required fields.",
+        "invalidEmail": "Please enter a valid email address.",
+        "success": "Your request has been successfully sent. We will contact you soon!"
+      }
+    }
+  },
+  "ptsCredit": {
+    "title": "Car pledge loan",
+    "desc": "Get an online loan from NBCOs by pledging your car. The car stays with you.",
+    "maxAmount": "Maximum amount",
+    "upto80k": "Up to 80,000 ₼",
+    "duration": "Duration",
+    "upto36m": "Up to 36 months",
+    "processing": "Processing",
+    "within24h": "Within 24 hours",
+    "bestOffers": "Best PTS pledge offers",
+    "bestOffersDesc": "The most profitable car pledge loans chosen for you",
+    "multiApply": "Increase your chances with multi-apply",
+    "multiApplyDesc": "Apply to several NBCOs at the same time to increase your chance of getting a loan and finding the best conditions.",
+    "fromPercent": "from %",
+    "orgsSelected": "Organizations selected",
+    "apply": "Apply",
+    "applyNote": "Applying is free and does not affect your credit history",
+    "moreOffers": "More offers",
+    "decisionIn5": "Decision in 5 minutes",
+    "decisionDesc": "Immediate processing. Most importantly - the car stays in your use!",
+    "minDocs": "Minimum documentation",
+    "carStays": "Car stays in your possession",
+    "highApproval": "High approval rate",
+    "allPtsCredits": "All PTS Credits",
+    "error": "Error",
+    "selectAtLeastOne": "Please select at least one organization.",
+    "applySuccess": "Application sent successfully",
+    "applySuccessDesc": "Your application to {{count}} selected organizations has been registered."
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "loginSuccess": "Successfully logged in!",
+    "loginError": "Error during login",
+    "loginPageTitle": "Login | Pultap.az",
+    "welcomeTitle": "Welcome to Pultap",
+    "loginDesc": "Login to your personal account",
+    "emailOrPhone": "Email or Phone Number",
+    "emailOrPhonePlaceholder": "Your email or mobile number",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "passwordPlaceholder": "••••••••",
+    "loggingIn": "Logging in...",
+    "loginBtn": "Login",
+    "orWithGoogle": "or with Google",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Register",
+    "googleLoginFail": "Google login failed",
+    "fillRequiredFields": "Please fill in all required fields.",
+    "testOtpSent": "Test confirmation code: 123456 (Sent to your number: {{phone}})",
+    "invalidOtp": "The code you entered is invalid.",
+    "registerSuccess": "Account created successfully!",
+    "googleRegisterFail": "Google registration failed",
+    "registerPageTitle": "Registration | Pultap.az",
+    "registerTitle": "Create New Account",
+    "registerDesc1": "Enter your details to join Pultap",
+    "registerDesc2": "Enter the code sent to your number",
+    "fullName": "Full Name *",
+    "fullNamePlaceholder": "Your First and Last Name",
+    "phoneLabel": "Mobile Number *",
+    "emailOptional": "Email (optional)",
+    "passwordRequired": "Password *",
+    "wait": "Please wait...",
+    "registerBtn": "Register",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginInsteadLink": "Login to the system",
+    "otpSentMsg": "A 6-digit confirmation code has been sent to",
+    "verifying": "Verifying...",
+    "verifyAndContinue": "Verify and Continue",
+    "goBackToChangePhone": "Go back to change number"
+  },
+  "errorBoundary": {
+    "title": "An unexpected error occurred",
+    "description": "Unfortunately, there was a problem loading the page. Please try again later.",
+    "refresh": "Refresh",
+    "home": "Home page"
+  },
+  "bankDetail": {
+    "about": "About",
+    "allCredits": "All loans",
+    "allDeposits": "All deposits",
+    "backToList": "All banks",
+    "cards": "Cards",
+    "credits": "Loans",
+    "deposits": "Deposits",
+    "since": "Established"
+  },
+  "blog": {
+    "backToList": "Back to blogs",
+    "crumb": "Blog",
+    "min": "min",
+    "noResults": "No results found",
+    "pageTitle": "Blog",
+    "readMore": "Read more",
+    "readTime": "Read time",
+    "related": "Related articles",
+    "results": "results",
+    "searchPlaceholder": "Search article...",
+    "title": "Blog"
+  },
+  "creditTypes": {
+    "auto": "Auto",
+    "cash": "Cash",
+    "mortgage": "Mortgage",
+    "online": "Online"
+  },
+  "credit": {
+    "amount": "Amount",
+    "rate": "Rate",
+    "term": "Term"
+  },
+  "deposit": {
+    "currency": "Currency",
+    "rate": "Rate",
+    "term": "Term"
+  },
+  "rate-asc": "Rate (Ascending)",
+  "rate-desc": "Rate (Descending)"
+}

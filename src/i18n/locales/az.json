@@ -1,0 +1,1640 @@
+{
+  "common": {
+    "currency": "₼",
+    "month": "ay",
+    "months": "ay",
+    "more": "Ətraflı",
+    "viewMore": "Ətraflı bax",
+    "all": "Hamısı",
+    "popular": "Populyar",
+    "go": "Keç",
+    "compare": "Müqayisə et",
+    "search": "Axtar",
+    "menu": "Menyu",
+    "social": "Sosial",
+    "loading": "Yüklənir…",
+    "subscribe": "Abunə ol",
+    "open": "Aç",
+    "close": "Bağla",
+    "calculate": "Hesabla",
+    "home": "Ana səhifə",
+    "yes": "Var",
+    "no": "Yox",
+    "any": "Hamısı",
+    "results": "nəticə tapıldı",
+    "noResults": "Heç bir nəticə tapılmadı.",
+    "filters": "Filtrlər",
+    "resetFilters": "Filtrləri sıfırla",
+    "details": "Ətraflı",
+    "apply": "Müraciət et",
+    "order": "Sifariş et",
+    "free": "Pulsuz",
+    "addToCompare": "Müqayisəyə əlavə et",
+    "swap": "Valyutaları dəyiş",
+    "comingSoon": "Bu səhifə hazırlanır",
+    "comingSoonDesc": "Növbəti addımlarda kontent əlavə olunacaq."
+  },
+  "topbar": {
+    "phone": "+994 (00) 000-00-00",
+    "stats": "22 bank · 56 BOKT · 987+ məhsul",
+    "rates": "USD 1.70 · EUR 1.84"
+  },
+  "nav": {
+    "items": {
+      "ptsCredit": "PTS Girovlu",
+      "allCredits": "Bütün kreditlər",
+      "allCreditsDesc": "Bütün bank təklifləri",
+      "onlineCredit": "Onlayn kredit",
+      "onlineCreditDesc": "Anında qərar",
+      "cashCredit": "Nağd pul krediti",
+      "cashCreditDesc": "Sənədsiz, sürətli",
+      "creditHistory": "Kredit tarixçəsi",
+      "creditHistoryDesc": "Kredit reytinqinizi yoxlayın",
+      "creditCalc": "Kredit kalkulyatoru",
+      "creditCalcDesc": "Aylıq ödəniş hesabla",
+      "depositCalc": "Depozit kalkulyatoru",
+      "allBokt": "Bütün BOKT kreditləri",
+      "boktCash": "BOKT nağd pul krediti",
+      "lombard": "Lombard krediti",
+      "ptsCreditDesc": "Avtomobilinizlə kredit alın",
+      "boktList": "BOKT-ların siyahısı",
+      "creditCards": "Kredit kartları",
+      "creditCardsDesc": "Faizsiz dövrlə",
+      "debitCards": "Debet kartları",
+      "debitCardsDesc": "Cashback və bonuslar",
+      "allDeposits": "Bütün depozitlər",
+      "manatDeposits": "Manatla depozit",
+      "fxDeposits": "Xarici valyutada depozit",
+      "allMortgage": "Bütün ipoteka təklifləri",
+      "stateMortgage": "Dövlət ipotekası",
+      "internalMortgage": "Daxili ipoteka",
+      "currencyRates": "Valyuta kursları",
+      "currencyRatesDesc": "CBAR rəsmi məzənnələri",
+      "universalConverter": "Universal konvertor",
+      "usdAzn": "USD → AZN",
+      "eurAzn": "EUR → AZN",
+      "rubAzn": "RUB → AZN"
+    },
+    "credits": "Kreditlər",
+    "bokt": "BOKT",
+    "cards": "Kartlar",
+    "deposits": "Depozit",
+    "mortgage": "İpoteka",
+    "currency": "Valyuta",
+    "banks": "Banklar",
+    "headings": {
+      "bankCredits": "Bank kreditləri",
+      "tools": "Alətlər",
+      "rates": "Məzənnələr",
+      "converter": "Konvertor"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "errorEmpty": "E-mail ünvanı boş ola bilməz.",
+      "errorInvalid": "Düzgün e-mail daxil edin.",
+      "success": "Uğurla abunə oldunuz!",
+      "title": "Yenilikləri qaçırma",
+      "desc": "Həftəlik ən sərfəli kredit və depozit təklifləri.",
+      "placeholder": "Email ünvanınız"
+    },
+    "tagline": "Pultap – innovativ maliyyə platformasıdır. Burada fərdi və biznes ehtiyaclarınıza uyğun müxtəlif maliyyə təkliflərinə asan və tez çıxış əldə edə bilərsiniz",
+    "workHours": "Bazar ertəsi – Cümə, saat 09:00-dan 18:00-dək",
+    "address": "Caspian Plaza, biznes mərkəzi, Cəfər Cabbarlı küçəsi, 44, Bakı",
+    "products": "Məhsullar",
+    "tools": "Alətlər",
+    "company": "Şirkət",
+    "links": {
+      "bankCredits": "Bank kreditləri",
+      "boktCredits": "BOKT kreditləri",
+      "deposits": "Depozitlər",
+      "cards": "Bank kartları",
+      "mortgage": "İpoteka",
+      "creditCalc": "Kredit kalkulyatoru",
+      "depositCalc": "Depozit kalkulyatoru",
+      "converter": "Valyuta konvertoru",
+      "rates": "Valyuta kursları",
+      "creditHistory": "Kredit tarixçəsi",
+      "banks": "Banklar",
+      "bokt": "BOKT-lar",
+      "about": "Haqqımızda",
+      "contact": "Əlaqə",
+      "ads": "Reklam",
+      "adPlacement": "Saytda reklam yerləşdirilməsi",
+      "blog": "Bloq",
+      "qna": "Sual-Cavab",
+      "glossary": "Lüğət"
+    },
+    "copyright": "© {{year}} Pultap.az — Bütün hüquqlar qorunur.",
+    "privacy": "Məxfilik siyasəti",
+    "terms": "İstifadə şərtləri",
+    "cookies": "Cookies"
+  },
+  "home": {
+    "hero": {
+      "badge": "22 bank · 56 BOKT · 987+ məhsul",
+      "titleA": "Maliyyə məhsullarını",
+      "titleHighlight": "müqayisə edin",
+      "titleB": "ən sərfəlisini seçin",
+      "subtitle": "Kredit, depozit, kart və ipoteka — Azərbaycandakı bütün bankların təkliflərini bir yerdə.",
+      "tabs": {
+        "credit": "Kredit",
+        "deposit": "Depozit",
+        "card": "Kart",
+        "mortgage": "İpoteka"
+      },
+      "placeholders": {
+        "credit": "Kredit məbləği (₼)",
+        "deposit": "Yatırım məbləği (₼)",
+        "card": "Aylıq xərc (₼)",
+        "mortgage": "Mənzil dəyəri (₼)"
+      },
+      "cta": "Müqayisə et",
+      "popular": "Populyar:",
+      "trust": {
+        "free": "Pulsuz və müstəqil",
+        "instant": "Anında nəticə",
+        "updated": "Gündəlik yenilənir",
+        "ptsCredit": {
+          "title": "Avtomobil girovu ilə kredit",
+          "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+          "maxAmount": "Maksimal məbləğ",
+          "upto80k": "80,000 ₼-dək",
+          "duration": "Müddət",
+          "upto36m": "36 ayadək",
+          "processing": "Rəsmiləşdirmə",
+          "within24h": "24 saat ərzində",
+          "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+          "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+          "multiApply": "Toplu müraciət ilə şansınızı artırın",
+          "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+          "fromPercent": "%-dən",
+          "orgsSelected": "Təşkilat seçildi",
+          "apply": "Müraciət et",
+          "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+          "moreOffers": "Daha çox təklif",
+          "decisionIn5": "5 dəqiqəyə qərar",
+          "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+          "minDocs": "Minimum sənədləşmə",
+          "carStays": "Avtomobil idarəetmədə qalır",
+          "highApproval": "Yüksək təsdiq faizi",
+          "allPtsCredits": "Bütün PTS Kreditləri",
+          "error": "Xəta",
+          "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+          "applySuccess": "Müraciət uğurla göndərildi",
+          "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+        }
+      }
+    },
+    "ticker": {
+      "title": "CBAR məzənnələri"
+    },
+    "categories": {
+      "eyebrow": "Kateqoriyalar",
+      "title": "Sizə uyğun maliyyə həllini seçin",
+      "items": {
+        "credits": {
+          "title": "Bank kreditləri",
+          "desc": "Onlayn və nağd pul kreditləri"
+        },
+        "bokt": {
+          "title": "BOKT kreditləri",
+          "desc": "BOKT-lardan sürətli kredit"
+        },
+        "deposits": {
+          "title": "Depozitlər",
+          "desc": "AZN, USD, EUR təklifləri"
+        },
+        "cards": {
+          "title": "Bank kartları",
+          "desc": "Kredit və debet kartları"
+        },
+        "mortgage": {
+          "title": "İpoteka",
+          "desc": "Dövlət və daxili ipoteka"
+        },
+        "currency": {
+          "title": "Valyuta",
+          "desc": "Məzənnələr və konvertor"
+        },
+        "calculators": {
+          "title": "Kalkulyatorlar",
+          "desc": "Kredit və depozit hesablama"
+        },
+        "banks": {
+          "title": "Banklar",
+          "desc": "Bütün banklar və BOKT-lar",
+          "ptsCredit": {
+            "title": "Avtomobil girovu ilə kredit",
+            "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+            "maxAmount": "Maksimal məbləğ",
+            "upto80k": "80,000 ₼-dək",
+            "duration": "Müddət",
+            "upto36m": "36 ayadək",
+            "processing": "Rəsmiləşdirmə",
+            "within24h": "24 saat ərzində",
+            "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+            "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+            "multiApply": "Toplu müraciət ilə şansınızı artırın",
+            "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+            "fromPercent": "%-dən",
+            "orgsSelected": "Təşkilat seçildi",
+            "apply": "Müraciət et",
+            "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+            "moreOffers": "Daha çox təklif",
+            "decisionIn5": "5 dəqiqəyə qərar",
+            "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+            "minDocs": "Minimum sənədləşmə",
+            "carStays": "Avtomobil idarəetmədə qalır",
+            "highApproval": "Yüksək təsdiq faizi",
+            "allPtsCredits": "Bütün PTS Kreditləri",
+            "error": "Xəta",
+            "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+            "applySuccess": "Müraciət uğurla göndərildi",
+            "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+          }
+        },
+        "ptsCredit": {
+          "title": "Avtomobil girovu ilə kredit",
+          "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+          "maxAmount": "Maksimal məbləğ",
+          "upto80k": "80,000 ₼-dək",
+          "duration": "Müddət",
+          "upto36m": "36 ayadək",
+          "processing": "Rəsmiləşdirmə",
+          "within24h": "24 saat ərzində",
+          "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+          "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+          "multiApply": "Toplu müraciət ilə şansınızı artırın",
+          "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+          "fromPercent": "%-dən",
+          "orgsSelected": "Təşkilat seçildi",
+          "apply": "Müraciət et",
+          "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+          "moreOffers": "Daha çox təklif",
+          "decisionIn5": "5 dəqiqəyə qərar",
+          "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+          "minDocs": "Minimum sənədləşmə",
+          "carStays": "Avtomobil idarəetmədə qalır",
+          "highApproval": "Yüksək təsdiq faizi",
+          "allPtsCredits": "Bütün PTS Kreditləri",
+          "error": "Xəta",
+          "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+          "applySuccess": "Müraciət uğurla göndərildi",
+          "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+        }
+      }
+    },
+    "topLoans": {
+      "eyebrow": "Ən aşağı faiz",
+      "title": "Bu həftənin ən sərfəli kreditləri",
+      "all": "Bütün kreditlər",
+      "th": {
+        "product": "Bank / Məhsul",
+        "rate": "Faiz",
+        "amount": "Məbləğ (₼)",
+        "term": "Müddət"
+      },
+      "amount": "Məbləğ",
+      "term": "Müddət"
+    },
+    "banksWall": {
+      "eyebrow": "Tərəfdaşlar",
+      "title": "Etibarlı banklar və BOKT-lar",
+      "subtitle": "Mərkəzi Bank tərəfindən lisenziyalı təşkilatlarla rəsmi əməkdaşlıq.",
+      "viewAll": "Bütün 22 bankı gör →"
+    },
+    "why": {
+      "eyebrow": "Niyə Pultap.az?",
+      "title": "Düzgün maliyyə qərarınız üçün",
+      "items": {
+        "free": {
+          "title": "100% pulsuz və müstəqil",
+          "desc": "Heç bir gizli komissiya yoxdur. Bütün banklarla eyni şərtlərlə işləyirik."
+        },
+        "fast": {
+          "title": "Saniyələrlə müqayisə",
+          "desc": "Real vaxt rejimində filtrlər, ani nəticə. Təklifi URL ilə paylaşa bilərsiniz."
+        },
+        "transparent": {
+          "title": "Şəffaf hesablamalar",
+          "desc": "FEDD, gizli komissiyalar, tam ödəniş cədvəli — hər şey açıq."
+        },
+        "loved": {
+          "title": "İstifadəçilər tərəfindən sevilən",
+          "desc": "350K+ aktiv istifadəçi və 4.7 ulduz orta reytinq.",
+          "ptsCredit": {
+            "title": "Avtomobil girovu ilə kredit",
+            "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+            "maxAmount": "Maksimal məbləğ",
+            "upto80k": "80,000 ₼-dək",
+            "duration": "Müddət",
+            "upto36m": "36 ayadək",
+            "processing": "Rəsmiləşdirmə",
+            "within24h": "24 saat ərzində",
+            "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+            "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+            "multiApply": "Toplu müraciət ilə şansınızı artırın",
+            "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+            "fromPercent": "%-dən",
+            "orgsSelected": "Təşkilat seçildi",
+            "apply": "Müraciət et",
+            "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+            "moreOffers": "Daha çox təklif",
+            "decisionIn5": "5 dəqiqəyə qərar",
+            "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+            "minDocs": "Minimum sənədləşmə",
+            "carStays": "Avtomobil idarəetmədə qalır",
+            "highApproval": "Yüksək təsdiq faizi",
+            "allPtsCredits": "Bütün PTS Kreditləri",
+            "error": "Xəta",
+            "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+            "applySuccess": "Müraciət uğurla göndərildi",
+            "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+          }
+        },
+        "ptsCredit": {
+          "title": "Avtomobil girovu ilə kredit",
+          "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+          "maxAmount": "Maksimal məbləğ",
+          "upto80k": "80,000 ₼-dək",
+          "duration": "Müddət",
+          "upto36m": "36 ayadək",
+          "processing": "Rəsmiləşdirmə",
+          "within24h": "24 saat ərzində",
+          "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+          "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+          "multiApply": "Toplu müraciət ilə şansınızı artırın",
+          "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+          "fromPercent": "%-dən",
+          "orgsSelected": "Təşkilat seçildi",
+          "apply": "Müraciət et",
+          "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+          "moreOffers": "Daha çox təklif",
+          "decisionIn5": "5 dəqiqəyə qərar",
+          "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+          "minDocs": "Minimum sənədləşmə",
+          "carStays": "Avtomobil idarəetmədə qalır",
+          "highApproval": "Yüksək təsdiq faizi",
+          "allPtsCredits": "Bütün PTS Kreditləri",
+          "error": "Xəta",
+          "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+          "applySuccess": "Müraciət uğurla göndərildi",
+          "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+        }
+      }
+    },
+    "cta": {
+      "titleA": "Aylıq ödənişinizi",
+      "titleHighlight": "indi hesablayın",
+      "subtitle": "Kredit kalkulyatoru ilə hər bankın faktiki şərtlərini sınayın və ən sərfəlisini seçin.",
+      "openCalc": "Kalkulyatoru aç",
+      "viewCredits": "Kreditlərə bax",
+      "stats": {
+        "offers": "Aktiv təklif",
+        "banks": "Bank tərəfdaş",
+        "users": "İstifadəçi",
+        "rating": "Reytinq",
+        "ptsCredit": {
+          "title": "Avtomobil girovu ilə kredit",
+          "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+          "maxAmount": "Maksimal məbləğ",
+          "upto80k": "80,000 ₼-dək",
+          "duration": "Müddət",
+          "upto36m": "36 ayadək",
+          "processing": "Rəsmiləşdirmə",
+          "within24h": "24 saat ərzində",
+          "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+          "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+          "multiApply": "Toplu müraciət ilə şansınızı artırın",
+          "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+          "fromPercent": "%-dən",
+          "orgsSelected": "Təşkilat seçildi",
+          "apply": "Müraciət et",
+          "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+          "moreOffers": "Daha çox təklif",
+          "decisionIn5": "5 dəqiqəyə qərar",
+          "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+          "minDocs": "Minimum sənədləşmə",
+          "carStays": "Avtomobil idarəetmədə qalır",
+          "highApproval": "Yüksək təsdiq faizi",
+          "allPtsCredits": "Bütün PTS Kreditləri",
+          "error": "Xəta",
+          "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+          "applySuccess": "Müraciət uğurla göndərildi",
+          "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+        }
+      },
+      "ptsCredit": {
+        "title": "Avtomobil girovu ilə kredit",
+        "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+        "maxAmount": "Maksimal məbləğ",
+        "upto80k": "80,000 ₼-dək",
+        "duration": "Müddət",
+        "upto36m": "36 ayadək",
+        "processing": "Rəsmiləşdirmə",
+        "within24h": "24 saat ərzində",
+        "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+        "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+        "multiApply": "Toplu müraciət ilə şansınızı artırın",
+        "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+        "fromPercent": "%-dən",
+        "orgsSelected": "Təşkilat seçildi",
+        "apply": "Müraciət et",
+        "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+        "moreOffers": "Daha çox təklif",
+        "decisionIn5": "5 dəqiqəyə qərar",
+        "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+        "minDocs": "Minimum sənədləşmə",
+        "carStays": "Avtomobil idarəetmədə qalır",
+        "highApproval": "Yüksək təsdiq faizi",
+        "allPtsCredits": "Bütün PTS Kreditləri",
+        "error": "Xəta",
+        "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+        "applySuccess": "Müraciət uğurla göndərildi",
+        "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+      }
+    }
+  },
+  "language": {
+    "switch": "Dili dəyiş",
+    "current": "Cari dil"
+  },
+  "lists": {
+    "loanType": "Kredit növü",
+    "loanTypes": {
+      "online": "Onlayn kredit",
+      "cash": "Nağd kredit",
+      "mortgage": "İpoteka",
+      "auto": "Avtokredit"
+    },
+    "boktType": "Növ",
+    "boktTypes": {
+      "cash": "Nağd kredit",
+      "lombard": "Lombard krediti"
+    },
+    "search": "Axtarış",
+    "searchPlaceholder": {
+      "loan": "Kredit adı...",
+      "deposit": "Depozit adı...",
+      "card": "Kart adı...",
+      "bokt": "Məhsul adı...",
+      "bank": "Bank axtar...",
+      "boktInst": "BOKT axtar..."
+    },
+    "amount": "Məbləğ",
+    "term": "Müddət",
+    "amountWithUnit": "Məbləğ: {{value}} ₼",
+    "termWithUnit": "Müddət: {{value}} ay",
+    "maxRate": "Max faiz: {{value}}%",
+    "minRate": "Min faiz: {{value}}%",
+    "maxFee": "Max illik haqq: {{value}} ₼",
+    "minCashbackVal": "Min cashback: {{value}}%",
+    "banks": "Banklar",
+    "bokts": "BOKT-lar",
+    "collateral": "Zəmanət",
+    "insurance": "Sığorta",
+    "minCashback": "Min cashback",
+    "maxAnnualFee": "Max illik haqq",
+    "extras": "Əlavə",
+    "feeFreeOnly": "Yalnız pulsuz kartlar",
+    "currencyFilter": "Valyuta",
+    "currencyOptions": {
+      "azn": "AZN — Manat",
+      "usd": "USD — Dollar",
+      "eur": "EUR — Avro"
+    },
+    "maxTerm": "Max müddət: {{value}} ay",
+    "minAmountLte": "Min məbləğ ≤ {{value}}",
+    "sort": {
+      "rateAsc": "Ən aşağı faiz",
+      "rateDesc": "Ən yüksək faiz",
+      "amountDesc": "Ən böyük məbləğ",
+      "termDesc": "Ən uzun müddət",
+      "minAsc": "Ən aşağı min məbləğ",
+      "cashbackDesc": "Ən yüksək cashback",
+      "feeAsc": "Ən aşağı illik haqq",
+      "limitDesc": "Ən böyük limit",
+      "ratingDesc": "Ən yüksək reytinq",
+      "nameAsc": "Adına görə (A–Z)",
+      "branchesDesc": "Daha çox filial",
+      "establishedAsc": "Ən qədim"
+    },
+    "compareBar": "{{n}}/3 müqayisə",
+    "clear": "Təmizlə",
+    "noLoans": "Seçilmiş filtrlərə uyğun nəticə tapılmadı.",
+    "noCards": "Seçilmiş filtrlərə uyğun kart tapılmadı.",
+    "noDeposits": "Seçilmiş filtrlərə uyğun depozit tapılmadı."
+  },
+  "institutions": {
+    "breadcrumb": {
+      "banks": "Banklar",
+      "bokt": "BOKT"
+    },
+    "stats": {
+      "bank": "Bank",
+      "bokt": "BOKT",
+      "branches": "Filial",
+      "atms": "Bankomat",
+      "avgRating": "Orta reytinq"
+    },
+    "mini": {
+      "established": "Quruluş",
+      "branches": "Filial",
+      "atms": "Bankomat",
+      "reviews": "Rəy"
+    },
+    "viewProducts": "Məhsulları gör",
+    "details": "Ətraflı"
+  },
+  "calc": {
+    "loan": {
+      "title": "Kredit kalkulyatoru",
+      "subtitle": "Aylıq ödəniş, ümumi faiz və ödəniş cədvəli",
+      "method": {
+        "annuity": "Annuitet",
+        "differentiated": "Diferensial"
+      },
+      "field": {
+        "amount": "Kredit məbləği",
+        "term": "Müddət",
+        "rate": "İllik faiz dərəcəsi"
+      },
+      "showSchedule": "Ödəniş cədvəlini göstər",
+      "hideSchedule": "Cədvəli gizlət",
+      "viewLoans": "Bu şərtlərlə kreditlər",
+      "monthly": "Aylıq ödəniş",
+      "firstLast": "İlk ödəniş • son ödəniş: {{value}} ₼",
+      "totalPayment": "Ümumi ödəniş",
+      "totalInterest": "Ümumi faiz",
+      "principal": "Əsas məbləğ",
+      "termLabel": "Müddət",
+      "disclaimer": "Hesablama yalnız məlumat xarakteri daşıyır. Faktiki şərtlər bankın siyasətindən asılı olaraq dəyişə bilər.",
+      "scheduleTitle": "Ödəniş cədvəli",
+      "scheduleMonths": "{{n}} ay",
+      "th": {
+        "month": "Ay",
+        "payment": "Ödəniş",
+        "principal": "Əsas borc",
+        "interest": "Faiz",
+        "balance": "Qalıq",
+        "ptsCredit": {
+          "title": "Avtomobil girovu ilə kredit",
+          "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+          "maxAmount": "Maksimal məbləğ",
+          "upto80k": "80,000 ₼-dək",
+          "duration": "Müddət",
+          "upto36m": "36 ayadək",
+          "processing": "Rəsmiləşdirmə",
+          "within24h": "24 saat ərzində",
+          "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+          "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+          "multiApply": "Toplu müraciət ilə şansınızı artırın",
+          "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+          "fromPercent": "%-dən",
+          "orgsSelected": "Təşkilat seçildi",
+          "apply": "Müraciət et",
+          "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+          "moreOffers": "Daha çox təklif",
+          "decisionIn5": "5 dəqiqəyə qərar",
+          "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+          "minDocs": "Minimum sənədləşmə",
+          "carStays": "Avtomobil idarəetmədə qalır",
+          "highApproval": "Yüksək təsdiq faizi",
+          "allPtsCredits": "Bütün PTS Kreditləri",
+          "error": "Xəta",
+          "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+          "applySuccess": "Müraciət uğurla göndərildi",
+          "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+        }
+      }
+    },
+    "deposit": {
+      "title": "Depozit kalkulyatoru",
+      "subtitle": "Gəlirinizi anında hesablayın",
+      "mode": {
+        "simple": "Sadə faiz",
+        "capitalized": "Kapitallaşdırma"
+      },
+      "field": {
+        "amount": "Əmanət məbləği",
+        "term": "Müddət",
+        "rate": "İllik faiz"
+      },
+      "viewDeposits": "Uyğun depozitlərə bax",
+      "totalAtEnd": "Müddət sonunda alacağınız",
+      "principalPlusInterest": "İlkin məbləğ + faiz gəliri",
+      "interestEarned": "Faiz gəliri",
+      "monthlyAvg": "Aylıq orta",
+      "initial": "İlkin məbləğ",
+      "effectiveAnnual": "Effektiv illik",
+      "disclaimer": "Hesablama məlumat xarakterlidir. Bankın faktiki şərtləri ilə dəyişə bilər.",
+      "ptsCredit": {
+        "title": "Avtomobil girovu ilə kredit",
+        "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+        "maxAmount": "Maksimal məbləğ",
+        "upto80k": "80,000 ₼-dək",
+        "duration": "Müddət",
+        "upto36m": "36 ayadək",
+        "processing": "Rəsmiləşdirmə",
+        "within24h": "24 saat ərzində",
+        "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+        "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+        "multiApply": "Toplu müraciət ilə şansınızı artırın",
+        "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+        "fromPercent": "%-dən",
+        "orgsSelected": "Təşkilat seçildi",
+        "apply": "Müraciət et",
+        "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+        "moreOffers": "Daha çox təklif",
+        "decisionIn5": "5 dəqiqəyə qərar",
+        "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+        "minDocs": "Minimum sənədləşmə",
+        "carStays": "Avtomobil idarəetmədə qalır",
+        "highApproval": "Yüksək təsdiq faizi",
+        "allPtsCredits": "Bütün PTS Kreditləri",
+        "error": "Xəta",
+        "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+        "applySuccess": "Müraciət uğurla göndərildi",
+        "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+      }
+    }
+  },
+  "rates": {
+    "liveFromCbar": "AMB-dən canlı məzənnələr",
+    "tab": {
+      "cbar": "Mərkəzi Bank",
+      "banksFor": "Banklar üzrə {{code}}"
+    },
+    "cbarTitle": "Mərkəzi Bank rəsmi məzənnələri",
+    "cbarSubtitle": "Bu gün üçün, manat ekvivalentində",
+    "updatedNow": "Yenilənib: indicə",
+    "th": {
+      "currency": "Valyuta",
+      "code": "Kod",
+      "buy": "Alış (₼)",
+      "sell": "Satış (₼)",
+      "avg": "Orta (₼)",
+      "change24": "24s dəyişim",
+      "bank": "Bank",
+      "cashBuy": "Nağd alış",
+      "cashSell": "Nağd satış",
+      "wireBuy": "Köçürmə alış",
+      "wireSell": "Köçürmə satış",
+      "spread": "Spred"
+    },
+    "banksTitle": "Banklar üzrə {{code}}/AZN",
+    "banksSubtitle": "Yuxarıdakı kartlardan başqa valyuta seçin",
+    "bankNotFound": "Bank tapılmadı"
+  },
+  "creditHistory": {
+    "why": [
+      "Kredit reytinqinizi bilmək üçün",
+      "Yeni kredit müraciəti etməzdən əvvəl şansınızı qiymətləndirmək üçün",
+      "Adınıza götürülmüş və ya unudulmuş borcları təyin etmək üçün"
+    ],
+    "metaTitle": "Kredit tarixçəsi yoxlanışı",
+    "metaDesc": "Mərkəzi Kredit Reyestri vasitəsilə kredit tarixçənizi onlayn yoxlayın.",
+    "title": "Kredit tarixçəsi yoxlanışı",
+    "lead": "Hər bir kredit müraciətindən əvvəl tarixçənizə baxmaq təsdiqlənmə şansınızı artırır.",
+    "online": "Onlayn yoxlama",
+    "onlineSub": "FİN kod və ad-soyad ilə",
+    "fields": {
+      "name": "Ad, Soyad",
+      "fin": "FİN kod",
+      "dob": "Doğum tarixi",
+      "phone": "Mobil nömrə"
+    },
+    "placeholders": {
+      "name": "Əli Məmmədov",
+      "fin": "ABC1234",
+      "phone": "+994 (XX) XXX-XX-XX"
+    },
+    "submit": "Tarixçəni yoxla",
+    "features": {
+      "secret": {
+        "t": "Tam məxfi",
+        "d": "Məlumatlar şifrələnir"
+      },
+      "instant": {
+        "t": "Anında nəticə",
+        "d": "30 saniyə ərzində"
+      },
+      "official": {
+        "t": "Rəsmi mənbə",
+        "d": "MKR-dan birbaşa",
+        "ptsCredit": {
+          "title": "Avtomobil girovu ilə kredit",
+          "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+          "maxAmount": "Maksimal məbləğ",
+          "upto80k": "80,000 ₼-dək",
+          "duration": "Müddət",
+          "upto36m": "36 ayadək",
+          "processing": "Rəsmiləşdirmə",
+          "within24h": "24 saat ərzində",
+          "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+          "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+          "multiApply": "Toplu müraciət ilə şansınızı artırın",
+          "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+          "fromPercent": "%-dən",
+          "orgsSelected": "Təşkilat seçildi",
+          "apply": "Müraciət et",
+          "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+          "moreOffers": "Daha çox təklif",
+          "decisionIn5": "5 dəqiqəyə qərar",
+          "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+          "minDocs": "Minimum sənədləşmə",
+          "carStays": "Avtomobil idarəetmədə qalır",
+          "highApproval": "Yüksək təsdiq faizi",
+          "allPtsCredits": "Bütün PTS Kreditləri",
+          "error": "Xəta",
+          "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+          "applySuccess": "Müraciət uğurla göndərildi",
+          "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+        }
+      }
+    },
+    "whyTitle": "Niyə vacibdir?"
+  },
+  "mortgageState": {
+    "terms": [
+      "Azərbaycan Respublikasının vətəndaşlığı",
+      "Rəsmi və sabit gəlirin olması",
+      "Müsbət kredit tarixçəsi",
+      "Həyat sığortasının tələb olunması"
+    ],
+    "title": "Dövlət ipotekası",
+    "lead": "İpoteka Fondunun zəmanəti ilə güzəştli ipoteka — aşağı faiz və uzun müddət.",
+    "stats": {
+      "rate": "İllik faiz",
+      "down": "İlkin ödəniş",
+      "term": "Müddət",
+      "max": "Maks. məbləğ"
+    },
+    "statsValues": {
+      "rate": "4–8 %",
+      "down": "10 %-dən",
+      "term": "30 ilə qədər",
+      "max": "350.000 ₼"
+    },
+    "offersTitle": "Dövlət ipotekası təklifləri",
+    "termsTitle": "Əsas şərtlər",
+    "calcCta": "Aylıq ödənişi hesabla"
+  },
+  "mortgageInternal": {
+    "adv": [
+      "Daha az sənədləşmə tələbi",
+      "Sürətli rəsmiləşdirmə prosesi",
+      "Daha çevik gəlir təsdiqi",
+      "Təkrar bazarda daha çox seçim"
+    ],
+    "title": "Daxili ipoteka",
+    "lead": "Bankların öz vəsaiti hesabına təklif etdiyi ipoteka kreditləri — daha çevik şərtlər.",
+    "offersTitle": "Daxili ipoteka təklifləri",
+    "advTitle": "Üstünlüklər",
+    "calcCta": "Hesabla"
+  },
+  "converter": {
+    "metaTitle": "Valyuta konvertoru",
+    "metaDesc": "Onlayn valyuta konvertoru: USD, EUR, RUB, TRY, GBP, GEL — manata və əksinə.",
+    "title": "Valyuta konvertoru",
+    "lead": "7 valyuta arasında anında çevirmə — Mərkəzi Bankın orta kursu əsasında.",
+    "universal": "Universal konvertor",
+    "pairs": {
+      "usd": "Dollar → Manat",
+      "eur": "Avro → Manat",
+      "rub": "Rubl → Manat"
+    },
+    "pageTitleUsd": "Dollar — Manat konvertoru",
+    "pageTitleEur": "Avro — Manat konvertoru",
+    "pageTitleRub": "Rubl — Manat konvertoru",
+    "metaUsd": "USD/AZN onlayn konvertor — anında çevirmə və cari kurs.",
+    "metaEur": "EUR/AZN onlayn konvertor — anında çevirmə və cari kurs.",
+    "metaRub": "RUB/AZN onlayn konvertor — anında çevirmə və cari kurs.",
+    "youGive": "Verirsiniz",
+    "youGet": "Alırsınız",
+    "cbarRates": "Mərkəzi Bank kursları"
+  },
+  "calcDeposit": {
+    "metaTitle": "Depozit kalkulyatoru",
+    "metaDesc": "Depozit gəlirinizi sadə faiz və kapitallaşdırma metodları ilə onlayn hesablayın.",
+    "title": "Depozit kalkulyatoru",
+    "lead": "Məbləğ, müddət və illik faiz əsasında gəlirinizi əvvəlcədən hesablayın."
+  },
+  "calcLoan": {
+    "metaTitle": "Kredit kalkulyatoru",
+    "metaDesc": "Aylıq ödəniş, ümumi faiz və ödəniş cədvəlini onlayn hesablayın. Annuitet və diferensial ödəniş metodları.",
+    "title": "Kredit kalkulyatoru",
+    "lead": "Məbləğ, müddət və faiz dərəcəsini daxil edin — aylıq ödəniş və ümumi faizi anında görün."
+  },
+  "card": {
+    "annualFee": "İllik",
+    "kindCredit": "Kredit kartı",
+    "kindDebit": "Debet kartı",
+    "cashback": "Cashback",
+    "annual": "İllik",
+    "limit": "Limit",
+    "rate": "Faiz",
+    "amount": "Məbləğ",
+    "term": "Müddət",
+    "min": "Min.",
+    "interestMonthly": "Faizlər aylıq ödənilir",
+    "withCollateral": "Girovlu",
+    "withoutCollateral": "Girovsuz",
+    "lombard": "Lombard",
+    "cash": "Nağd"
+  },
+  "pages": {
+    "credits": {
+      "title": "Bank kreditləri",
+      "desc": "Azərbaycandakı bütün bank kredit təkliflərini müqayisə edin və ən sərfəlisini seçin.",
+      "crumb": "Kreditlər"
+    },
+    "online": {
+      "title": "Onlayn kreditlər",
+      "desc": "Şöbəyə getmədən, sənədsiz onlayn təsdiqlənən kreditlər.",
+      "crumb": "Onlayn kredit"
+    },
+    "cash": {
+      "title": "Nağd pul kreditləri",
+      "desc": "Banklardan nağd pul kreditləri — şərtləri müqayisə edin və müraciət edin.",
+      "crumb": "Nağd pul krediti"
+    },
+    "boktAll": {
+      "title": "BOKT kreditləri",
+      "desc": "Bank Olmayan Kredit Təşkilatlarının nağd və lombard kreditləri.",
+      "crumb": "BOKT kreditləri"
+    },
+    "boktCash": {
+      "title": "BOKT nağd pul kreditləri",
+      "desc": "Sürətli, sənədsiz nağd pul kreditləri — BOKT-lardan.",
+      "crumb": "Nağd pul"
+    },
+    "boktLomb": {
+      "title": "Lombard kreditləri",
+      "desc": "Qızıl, avtomobil və digər girov müqabilində alınan lombard kreditləri.",
+      "crumb": "Lombard"
+    },
+    "creditCards": {
+      "title": "Kredit kartları",
+      "desc": "Faizsiz dövr, cashback və premium imtiyazlar ilə kredit kartı təklifləri.",
+      "parent": "Bank kartları",
+      "crumb": "Kredit kartları"
+    },
+    "debitCards": {
+      "title": "Debet kartları",
+      "desc": "Cashback, bonuslar və pulsuz xidmət ilə debet kart təklifləri.",
+      "parent": "Bank kartları",
+      "crumb": "Debet kartları"
+    },
+    "depositsAll": {
+      "title": "Bank depozitləri",
+      "desc": "Bütün bank depozit təkliflərini müqayisə edin və ən yüksək gəlir gətirəni seçin.",
+      "crumb": "Depozit"
+    },
+    "depositsAzn": {
+      "title": "Manatla depozit",
+      "desc": "AZN valyutasında ən yüksək faizli depozit təklifləri.",
+      "crumb": "Manatla depozit"
+    },
+    "depositsFx": {
+      "title": "Xarici valyutada depozit",
+      "desc": "USD və EUR valyutasında depozit təklifləri.",
+      "crumb": "Xarici valyutada depozit"
+    },
+    "mortgageAll": {
+      "title": "İpoteka kreditləri",
+      "desc": "Bütün dövlət və daxili ipoteka təklifləri bir yerdə.",
+      "crumb": "İpoteka"
+    },
+    "rates": {
+      "title": "Valyuta kursları",
+      "desc": "Mərkəzi Bank və kommersiya banklarının cari alış-satış kursları — bir səhifədə.",
+      "crumb": "Valyuta kursları"
+    },
+    "banks": {
+      "title": "Azərbaycan bankları",
+      "desc": "Azərbaycandakı bütün lisenziyalı bankların reytinqi, filial sayı və əlaqə məlumatları.",
+      "crumb": "Banklar"
+    },
+    "bokt": {
+      "title": "BOKT siyahısı",
+      "desc": "Azərbaycandakı bütün Bank Olmayan Kredit Təşkilatları — reytinq, məhsul və əlaqə.",
+      "crumb": "BOKT-lar"
+    },
+    "converter": {
+      "crumb": "Konvertor"
+    },
+    "creditHistoryCrumb": "Kredit tarixçəsi"
+  },
+  "notFound": {
+    "title": "Səhifə tapılmadı",
+    "subtitle": "Üzr istəyirik, axtardığınız səhifə tapılmadı.",
+    "back": "Ana səhifəyə qayıt"
+  },
+  "offline": {
+    "title": "İnternet Bağlantısı Yoxdur | Pultap.az",
+    "heading": "Siz Offline Rejimdəsiniz",
+    "description": "İnternet bağlantınız yoxdur. Saytın tam funksionallığı üçün bağlantını bərpa edin. Aşağıda yaddaşda qalan son məzənnələri görə bilərsiniz.",
+    "retryBtn": "Yenidən cəhd et",
+    "lastRates": "Son Yaddaşda Qalan Məzənnələr",
+    "offlineData": "Offline Məlumat",
+    "buy": "Alış",
+    "sell": "Satış"
+  },
+  "seo": {
+    "calcDeposit": {
+      "keywords": "depozit kalkulyatoru, əmanət, gəlir"
+    },
+    "calcLoan": {
+      "keywords": "kredit kalkulyatoru, aylıq ödəniş, faiz"
+    },
+    "converter": {
+      "keywords": "valyuta çevirici, məzənnə, konvertor"
+    },
+    "creditHistory": {
+      "keywords": "kredit tarixçəsi, yoxla, reytinq"
+    },
+    "home": {
+      "keywords": "kreditlər, depozitlər, kartlar, ipoteka",
+      "title": "Pultap.az — Kredit, depozit və bank kartlarını müqayisə et",
+      "description": "Azərbaycanın bütün banklarının kredit, depozit, bank kartı və ipoteka təkliflərini bir yerdə müqayisə edin. Pulsuz, sürətli və müstəqil."
+    },
+    "lists": {
+      "keywords": "müqayisə, ən yaxşı təkliflər"
+    },
+    "rates": {
+      "keywords": "valyuta məzənnələri, dollar, avro"
+    },
+    "compare": {
+      "keywords": "kredit müqayisəsi, bank kreditləri, faiz dərəcəsi müqayisə, pultap, ən yaxşı kredit",
+      "ptsCredit": {
+        "title": "Avtomobil girovu ilə kredit",
+        "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+        "maxAmount": "Maksimal məbləğ",
+        "upto80k": "80,000 ₼-dək",
+        "duration": "Müddət",
+        "upto36m": "36 ayadək",
+        "processing": "Rəsmiləşdirmə",
+        "within24h": "24 saat ərzində",
+        "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+        "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+        "multiApply": "Toplu müraciət ilə şansınızı artırın",
+        "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+        "fromPercent": "%-dən",
+        "orgsSelected": "Təşkilat seçildi",
+        "apply": "Müraciət et",
+        "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+        "moreOffers": "Daha çox təklif",
+        "decisionIn5": "5 dəqiqəyə qərar",
+        "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+        "minDocs": "Minimum sənədləşmə",
+        "carStays": "Avtomobil idarəetmədə qalır",
+        "highApproval": "Yüksək təsdiq faizi",
+        "allPtsCredits": "Bütün PTS Kreditləri",
+        "error": "Xəta",
+        "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+        "applySuccess": "Müraciət uğurla göndərildi",
+        "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+      }
+    }
+  },
+  "compare": {
+    "bank": "Bank",
+    "monthlyExample": "Aylıq ödəniş (10 000 ₼, 24 ay)",
+    "pageTitle": "Müqayisə | Pultap.az",
+    "pageDesc": "Kreditləri yan-yana müqayisə edin — faiz, məbləğ, müddət, aylıq ödəniş.",
+    "crumb": "Müqayisə",
+    "title": "Kredit müqayisəsi",
+    "subtitle": "Seçilmiş kreditləri yan-yana müqayisə edin.",
+    "empty": "Müqayisə siyahısı boşdur",
+    "emptyHint": "Kredit siyahısından + düyməsi ilə məhsulları müqayisəyə əlavə edin.",
+    "goToCredits": "Kreditlərə keç",
+    "selected": "kredit müqayisə olunur",
+    "criteria": "Kriter"
+  },
+  "creditDetail": {
+    "bankPage": "Bankın səhifəsi",
+    "calculator": "Kalkulyator",
+    "conditions": "Şərtlər",
+    "req": {
+      "age": "Yaş",
+      "citizenship": "Vətəndaşlıq",
+      "docs": "Sənədlər",
+      "docsValue": "Şəxsiyyət vəsiqəsi",
+      "income": "Gəlir təsdiqi",
+      "incomeValue": "Tələb olunur"
+    },
+    "requirements": "Tələblər",
+    "type": "Növ",
+    "amountRange": "Məbləğ aralığı",
+    "termRange": "Müddət aralığı",
+    "backToList": "Bütün kreditlər"
+  },
+  "qna": {
+    "metaTitle": "Sual-Cavab | Pultap.az",
+    "metaDesc": "Maliyyə və bankçılıqla bağlı suallarınıza ekspertlərdən cavab tapın.",
+    "title": "Sual-Cavab Mərkəzi",
+    "askExpert": "Ekspertlərə Sual Verin",
+    "desc": "Maliyyə, bankçılıq, kreditlər və ipoteka ilə bağlı sizi maraqlandıran sualları ekspertlərimizə ünvanlayın və ya mövcud cavablardan yararlanın.",
+    "searchPlaceholder": "Suallarda axtar...",
+    "experts": "Ekspertlərimiz",
+    "askBtn": "Sual Ver",
+    "topicFilters": "Mövzu Filterləri",
+    "popularExperts": "Populyar Ekspertlər",
+    "answers": "cavab",
+    "askExpertTitle": "Ekspertə Sual Ver",
+    "askDesc": "Sualınız ekspertlərimiz tərəfindən cavablandırıldıqda sizə SMS və E-poçt vasitəsilə bildiriş göndəriləcək. Şəxsi kabinetinizdən də sualınızın statusunu izləyə bilərsiniz.",
+    "nameLabel": "Ad və Soyad",
+    "namePlaceholder": "Məs: Əli Məmmədov",
+    "categoryLabel": "Kategoriya",
+    "emailLabel": "E-poçt ünvanı",
+    "emailPlaceholder": "nümunə@mail.com",
+    "phoneLabel": "Mobil nömrə",
+    "phonePlaceholder": "+994 (00) 000-00-00",
+    "questionLabel": "Sualınız",
+    "questionPlaceholder": "Sualınızı ətraflı şəkildə bura yazın...",
+    "anonymousLabel": "Sualım platformada yayımlanarkən adımın gizli saxlanılmasını istəyirəm",
+    "cancel": "Ləğv et",
+    "submit": "Sualı Göndər",
+    "popularQuestions": "Populyar Suallar",
+    "questionsFor": "{{topic}} üzrə Suallar",
+    "resultsCount": "{{count}} nəticə",
+    "views": "baxış",
+    "answeredBy": "Cavabladı:",
+    "noQuestions": "Heç bir sual tapılmadı",
+    "noQuestionsDesc": "Axtarış meyarlarını dəyişdirin və ya yeni sual verin.",
+    "topics": {
+      "Bütün Mövzular": "Bütün Mövzular",
+      "Kreditlər": "Kreditlər",
+      "Depozitlər": "Depozitlər",
+      "Plastik Kartlar": "Plastik Kartlar",
+      "İpoteka": "İpoteka",
+      "Hüquqi Məsələlər": "Hüquqi Məsələlər",
+      "ptsCredit": {
+        "title": "Avtomobil girovu ilə kredit",
+        "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+        "maxAmount": "Maksimal məbləğ",
+        "upto80k": "80,000 ₼-dək",
+        "duration": "Müddət",
+        "upto36m": "36 ayadək",
+        "processing": "Rəsmiləşdirmə",
+        "within24h": "24 saat ərzində",
+        "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+        "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+        "multiApply": "Toplu müraciət ilə şansınızı artırın",
+        "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+        "fromPercent": "%-dən",
+        "orgsSelected": "Təşkilat seçildi",
+        "apply": "Müraciət et",
+        "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+        "moreOffers": "Daha çox təklif",
+        "decisionIn5": "5 dəqiqəyə qərar",
+        "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+        "minDocs": "Minimum sənədləşmə",
+        "carStays": "Avtomobil idarəetmədə qalır",
+        "highApproval": "Yüksək təsdiq faizi",
+        "allPtsCredits": "Bütün PTS Kreditləri",
+        "error": "Xəta",
+        "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+        "applySuccess": "Müraciət uğurla göndərildi",
+        "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+      }
+    }
+  },
+  "glossary": {
+    "metaTitle": "Maliyyə Lüğəti | Pultap.az",
+    "metaDesc": "Bank, maliyyə və iqtisadi terminlərin sadə dildə izahı.",
+    "title": "Maliyyə Lüğəti",
+    "desc": "Bankçılıq, maliyyə və sığorta terminlərini anlamaq indi daha asandır. 1000-dən çox terminin sadə dildə izahını burada tapın.",
+    "searchPlaceholder": "Termin axtarın (məsələn: Annuitet)...",
+    "alphabetSearch": "Əlifba üzrə axtarış",
+    "all": "Hamısı",
+    "resultsCount": "{{count}} termin",
+    "noResults": "Heç bir termin tapılmadı",
+    "noResultsDesc": "Axtarış meyarlarını dəyişdirin və ya başqa hərf seçin."
+  },
+  "contact": {
+    "metaTitle": "Əlaqə | Pultap.az",
+    "metaDesc": "Pultap.az platforması ilə əlaqə saxlayın.",
+    "title": "Bizimlə Əlaqə",
+    "hero": {
+      "title": "Bizimlə Əlaqə",
+      "desc": "Suallarınız, təklifləriniz və ya əməkdaşlıq üçün bizimlə əlaqə saxlamaqdan çəkinməyin."
+    },
+    "info": {
+      "title": "Əlaqə məlumatları",
+      "phone": {
+        "label": "Telefon"
+      },
+      "email": {
+        "label": "E-mail ünvanı"
+      },
+      "address": {
+        "label": "Ünvan",
+        "value": "Caspian Plaza, biznes mərkəzi,<br />Cəfər Cabbarlı küçəsi, 44, Bakı"
+      }
+    },
+    "hours": {
+      "title": "İş saatları",
+      "desc": "Bazar ertəsi – Cümə, saat 09:00-dan 18:00-dək"
+    },
+    "form": {
+      "title": "Bizə Mesaj Göndərin",
+      "desc": "Fikirləriniz bizim üçün önəmlidir. Formu dolduraraq bizimlə əlaqə saxlaya bilərsiniz.",
+      "fields": {
+        "name": {
+          "label": "Ad və Soyad",
+          "placeholder": "Adınız və soyadınız"
+        },
+        "email": {
+          "label": "E-mail ünvanı",
+          "placeholder": "E-mail ünvanınız"
+        },
+        "phone": {
+          "label": "Telefon nömrəsi",
+          "placeholder": "Əlaqə nömrəniz"
+        },
+        "message": {
+          "label": "Mesajınız",
+          "placeholder": "Bizə nə demək istəyirsiniz?"
+        }
+      },
+      "submitLoading": "Göndərilir...",
+      "submit": "Göndər",
+      "toast": {
+        "fillRequired": "Bütün sahələri doldurmaq məcburidir.",
+        "invalidEmail": "Düzgün e-mail ünvanı daxil edin.",
+        "success": "Mesajınız qəbul edildi. Təşəkkür edirik!",
+        "error": "Mesaj göndərilərkən xəta baş verdi. Zəhmət olmasa, yenidən cəhd edin."
+      }
+    }
+  },
+  "about": {
+    "metaTitle": "Haqqımızda | Pultap.az",
+    "metaDesc": "Pultap.az - Azərbaycanın ən böyük kredit, depozit və maliyyə müqayisə platforması.",
+    "title": "Haqqımızda",
+    "hero": {
+      "title": "Maliyyə Qərarlarınızda Etibarlı Bələdçiniz",
+      "desc": "Pultap.az Azərbaycanın ən qabaqcıl və əhatəli maliyyə məhsulları müqayisəsi platformasıdır. Biz istifadəçilərə bank və bank olmayan kredit təşkilatlarının təkliflərini asanlıqla müqayisə edərək ən doğru qərarı verməkdə kömək edirik."
+    },
+    "stats": {
+      "partners": {
+        "value": "50+",
+        "label": "Tərəfdaş bank və BOKT"
+      },
+      "users": {
+        "value": "350K+",
+        "label": "Aylıq aktiv istifadəçi"
+      },
+      "comparisons": {
+        "value": "1M+",
+        "label": "Aparılmış müqayisə"
+      },
+      "secure": {
+        "value": "100%",
+        "label": "Təhlükəsizlik və məxfilik",
+        "ptsCredit": {
+          "title": "Avtomobil girovu ilə kredit",
+          "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+          "maxAmount": "Maksimal məbləğ",
+          "upto80k": "80,000 ₼-dək",
+          "duration": "Müddət",
+          "upto36m": "36 ayadək",
+          "processing": "Rəsmiləşdirmə",
+          "within24h": "24 saat ərzində",
+          "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+          "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+          "multiApply": "Toplu müraciət ilə şansınızı artırın",
+          "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+          "fromPercent": "%-dən",
+          "orgsSelected": "Təşkilat seçildi",
+          "apply": "Müraciət et",
+          "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+          "moreOffers": "Daha çox təklif",
+          "decisionIn5": "5 dəqiqəyə qərar",
+          "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+          "minDocs": "Minimum sənədləşmə",
+          "carStays": "Avtomobil idarəetmədə qalır",
+          "highApproval": "Yüksək təsdiq faizi",
+          "allPtsCredits": "Bütün PTS Kreditləri",
+          "error": "Xəta",
+          "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+          "applySuccess": "Müraciət uğurla göndərildi",
+          "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+        }
+      }
+    },
+    "description": {
+      "intro": "Məqsədimiz maliyyə xidmətlərini hər kəs üçün əlçatan, şəffaf və anlaşılan etməkdir.",
+      "servicesIntro": "Platformamızda istifadəçilər aşağıdakı xidmətlər üzrə ən sərfəli variantları asanlıqla tapa bilərlər:",
+      "servicesList": {
+        "cash": "<strong>Nağd kreditlər</strong> – müxtəlif bankların təqdim etdiyi faiz dərəcələri və şərtlər,",
+        "mortgage": "<strong>İpoteka kreditləri</strong> – dövlət və daxili ipoteka proqramları,",
+        "nbfc": "<strong>BOKT kreditləri</strong> – bank olmayan kredit təşkilatlarının təklif etdiyi imkanlar,",
+        "cards": "<strong>Bank kartları</strong> – debet və kredit kartları üzrə təkliflər,",
+        "deposits": "<strong>Depozitlər</strong> – manat və valyuta üzrə sərfəli əmanət şərtləri,",
+        "exchange": "<strong>Valyuta kursları</strong> – daim yenilənən bank məzənnələrini öyrənmək və valyuta konvertoru ilə hesablamalar aparmaq imkanı."
+      },
+      "applyOnline": "Saytımız üzərindən seçdiyiniz kredit və ya kart məhsulu üçün birbaşa bankın sisteminə onlayn müraciət edə, vaxtınıza və pulunuza qənaət edə bilərsiniz.",
+      "calculators": "Həmçinin, platformamızda yer alan geniş funksiyalı kredit və depozit kalkulyatorları vasitəsilə gələcək ödənişlərinizi və qazanclarınızı dəqiq hesablaya bilərsiniz.",
+      "blog": "Pultap.az komandası olaraq maliyyə savadlılığının artırılmasına xüsusi önəm veririk və mütəmadi olaraq faydalı məqalələr, bazar xəbərləri dərc edirik."
+    },
+    "features": {
+      "mission": {
+        "title": "Missiyamız",
+        "description": "İstifadəçilərimizə qərəzsiz, dəqiq və ən son yenilənmiş məlumatlar təqdim edərək onlara ən yaxşı maliyyə qərarını verməyə imkan yaratmaq."
+      },
+      "values": {
+        "title": "Dəyərlərimiz",
+        "description": "Şəffaflıq, istifadəçi mərkəzlilik, innovasiya və təhlükəsizlik fəaliyyətimizin əsasını təşkil edir."
+      },
+      "benefits": {
+        "objective": "Tam obyektiv və tərəfsiz müqayisə",
+        "updated": "Daim yenilənən və yoxlanılmış məlumatlar",
+        "userFriendly": "İstifadəsi rahat və sürətli interfeys",
+        "ptsCredit": {
+          "title": "Avtomobil girovu ilə kredit",
+          "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+          "maxAmount": "Maksimal məbləğ",
+          "upto80k": "80,000 ₼-dək",
+          "duration": "Müddət",
+          "upto36m": "36 ayadək",
+          "processing": "Rəsmiləşdirmə",
+          "within24h": "24 saat ərzində",
+          "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+          "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+          "multiApply": "Toplu müraciət ilə şansınızı artırın",
+          "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+          "fromPercent": "%-dən",
+          "orgsSelected": "Təşkilat seçildi",
+          "apply": "Müraciət et",
+          "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+          "moreOffers": "Daha çox təklif",
+          "decisionIn5": "5 dəqiqəyə qərar",
+          "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+          "minDocs": "Minimum sənədləşmə",
+          "carStays": "Avtomobil idarəetmədə qalır",
+          "highApproval": "Yüksək təsdiq faizi",
+          "allPtsCredits": "Bütün PTS Kreditləri",
+          "error": "Xəta",
+          "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+          "applySuccess": "Müraciət uğurla göndərildi",
+          "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+        }
+      }
+    },
+    "team": {
+      "badge": "Komandamız",
+      "title": "Pultap.az Komandası",
+      "desc": "Layihənin arxasında duran peşəkar və təcrübəli komandamız.",
+      "members": {
+        "orxan": {
+          "name": "Orxan Məmmədov",
+          "role": "Layihə Rəhbəri / CEO"
+        },
+        "aysel": {
+          "name": "Aysel Əliyeva",
+          "role": "Maliyyə Analitiki"
+        },
+        "elvin": {
+          "name": "Elvin Quliyev",
+          "role": "Baş Proqramçı (CTO)"
+        },
+        "nezrin": {
+          "name": "Nəzrin Həsənova",
+          "role": "Marketinq Meneceri",
+          "ptsCredit": {
+            "title": "Avtomobil girovu ilə kredit",
+            "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+            "maxAmount": "Maksimal məbləğ",
+            "upto80k": "80,000 ₼-dək",
+            "duration": "Müddət",
+            "upto36m": "36 ayadək",
+            "processing": "Rəsmiləşdirmə",
+            "within24h": "24 saat ərzində",
+            "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+            "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+            "multiApply": "Toplu müraciət ilə şansınızı artırın",
+            "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+            "fromPercent": "%-dən",
+            "orgsSelected": "Təşkilat seçildi",
+            "apply": "Müraciət et",
+            "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+            "moreOffers": "Daha çox təklif",
+            "decisionIn5": "5 dəqiqəyə qərar",
+            "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+            "minDocs": "Minimum sənədləşmə",
+            "carStays": "Avtomobil idarəetmədə qalır",
+            "highApproval": "Yüksək təsdiq faizi",
+            "allPtsCredits": "Bütün PTS Kreditləri",
+            "error": "Xəta",
+            "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+            "applySuccess": "Müraciət uğurla göndərildi",
+            "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+          }
+        },
+        "ptsCredit": {
+          "title": "Avtomobil girovu ilə kredit",
+          "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+          "maxAmount": "Maksimal məbləğ",
+          "upto80k": "80,000 ₼-dək",
+          "duration": "Müddət",
+          "upto36m": "36 ayadək",
+          "processing": "Rəsmiləşdirmə",
+          "within24h": "24 saat ərzində",
+          "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+          "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+          "multiApply": "Toplu müraciət ilə şansınızı artırın",
+          "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+          "fromPercent": "%-dən",
+          "orgsSelected": "Təşkilat seçildi",
+          "apply": "Müraciət et",
+          "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+          "moreOffers": "Daha çox təklif",
+          "decisionIn5": "5 dəqiqəyə qərar",
+          "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+          "minDocs": "Minimum sənədləşmə",
+          "carStays": "Avtomobil idarəetmədə qalır",
+          "highApproval": "Yüksək təsdiq faizi",
+          "allPtsCredits": "Bütün PTS Kreditləri",
+          "error": "Xəta",
+          "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+          "applySuccess": "Müraciət uğurla göndərildi",
+          "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+        }
+      },
+      "ptsCredit": {
+        "title": "Avtomobil girovu ilə kredit",
+        "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+        "maxAmount": "Maksimal məbləğ",
+        "upto80k": "80,000 ₼-dək",
+        "duration": "Müddət",
+        "upto36m": "36 ayadək",
+        "processing": "Rəsmiləşdirmə",
+        "within24h": "24 saat ərzində",
+        "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+        "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+        "multiApply": "Toplu müraciət ilə şansınızı artırın",
+        "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+        "fromPercent": "%-dən",
+        "orgsSelected": "Təşkilat seçildi",
+        "apply": "Müraciət et",
+        "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+        "moreOffers": "Daha çox təklif",
+        "decisionIn5": "5 dəqiqəyə qərar",
+        "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+        "minDocs": "Minimum sənədləşmə",
+        "carStays": "Avtomobil idarəetmədə qalır",
+        "highApproval": "Yüksək təsdiq faizi",
+        "allPtsCredits": "Bütün PTS Kreditləri",
+        "error": "Xəta",
+        "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+        "applySuccess": "Müraciət uğurla göndərildi",
+        "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+      }
+    }
+  },
+  "terms": {
+    "metaTitle": "İstifadə Şərtləri | Pultap.az",
+    "metaDesc": "Pultap.az platformasının istifadə şərtləri.",
+    "title": "İstifadə Şərtləri",
+    "lastUpdated": "Son yenilənmə tarixi: 24 Aprel 2026",
+    "content": {
+      "p1": "1. Ümumi müddəalar",
+      "p2": "1.1 Pultap.az saytı məlumatlandırma və müqayisə xarakteri daşıyan onlayn platformadır. Biz bank və BOKT deyilik, kredit və ya depozit vermirik.",
+      "p3": "1.2 Platformada yerləşdirilən bütün maliyyə məlumatları (faizlər, komissiyalar, şərtlər) yalnız məlumat xarakterlidir. Real şərtlər bankların siyasətindən asılı olaraq fərqlənə bilər.",
+      "p4": "2. Məsuliyyətdən imtina",
+      "p5": "2.1 Sayt rəhbərliyi platformada yerləşdirilmiş məlumatların mütləq dəqiqliyinə və aktuallığına zəmanət vermir.",
+      "p6": "2.2 Pultap.az istifadəçi ilə maliyyə qurumu arasında bağlanan heç bir müqaviləyə, kredit öhdəliyinə və ya maliyyə itkisinə görə məsuliyyət daşımır.",
+      "p7": "3. Müəllif hüquqları",
+      "p8": "3.1 Saytın dizaynı, loqosu, qrafik elementləri və məlumat bazası müəllif hüquqları ilə qorunur. İcazəsiz kopyalama və ya istifadə qadağandır.",
+      "p9": "4. Məxfilik",
+      "p10": "4.1 Sizin şəxsi məlumatlarınız yalnız sizin icazənizlə və müvafiq xidmətlərin göstərilməsi məqsədilə istifadə olunur.",
+      "p11": "4.2 Pultap.az istifadəçi məlumatlarını üçüncü şəxslərə satmır və qanunvericiliklə nəzərdə tutulmayan hallarda paylaşmır.",
+      "p12": "5. Xidmətin dayandırılması və ya dəyişdirilməsi",
+      "p13": "5.1 Sayt rəhbərliyi istənilən vaxt və əvvəlcədən xəbərdarlıq etmədən platformanın fəaliyyətini dayandırmaq və ya dəyişdirmək hüququnu özündə saxlayır.",
+      "p14": "6. Qanunvericilik",
+      "p15": "6.1 Bu şərtlər Azərbaycan Respublikasının qanunvericiliyi ilə tənzimlənir və şərh edilir.",
+      "p16": "6.2 Yarana biləcək hər hansı mübahisələr Azərbaycan Respublikasının məhkəmələrində həll edilir.",
+      "p17": "7. Əlaqə",
+      "p18": "7.1 İstifadə şərtləri ilə bağlı hər hansı sualınız olarsa, bizimlə info@pultap.az ünvanı vasitəsilə əlaqə saxlaya bilərsiniz."
+    },
+    "desc": "Platformadan istifadə qaydaları və hüquqi şərtlər.",
+    "c1_title": "1. Ümumi müddəalar",
+    "c1_desc": "1.1 Pultap.az saytı məlumatlandırma və müqayisə xarakteri daşıyan onlayn platformadır. Biz bank və BOKT deyilik, kredit və ya depozit vermirik.\n\n1.2 Platformada yerləşdirilən bütün maliyyə məlumatları (faizlər, komissiyalar, şərtlər) yalnız məlumat xarakterlidir. Real şərtlər bankların siyasətindən asılı olaraq fərqlənə bilər.",
+    "c2_title": "2. Məsuliyyətdən imtina",
+    "c2_desc": "2.1 Sayt rəhbərliyi platformada yerləşdirilmiş məlumatların mütləq dəqiqliyinə və aktuallığına zəmanət vermir.\n\n2.2 Pultap.az istifadəçi ilə maliyyə qurumu arasında bağlanan heç bir müqaviləyə, kredit öhdəliyinə və ya maliyyə itkisinə görə məsuliyyət daşımır.",
+    "c3_title": "3. Müəllif hüquqları",
+    "c3_desc": "3.1 Saytın dizaynı, loqosu, qrafik elementləri və məlumat bazası müəllif hüquqları ilə qorunur. İcazəsiz kopyalama və ya istifadə qadağandır."
+  },
+  "advertise": {
+    "metaTitle": "Pultap.az - Reklam yerləşdirilməsi",
+    "metaDesc": "Pultap.az platformasında reklam imkanları. Çoxsaylı auditoriyaya çatmaq üçün banner, sponsor və bloq reklamları.",
+    "title": "Reklam",
+    "hero": {
+      "title": "Reklam imkanları",
+      "desc": "Pultap.az platformasında reklam yerləşdirərək doğru və aktiv auditoriyaya çatın."
+    },
+    "benefits": {
+      "audience": {
+        "title": "Geniş Auditoriya",
+        "desc": "Hər ay minlərlə aktiv və potensial müştəriyə çatmaq imkanı."
+      },
+      "conversion": {
+        "title": "Yüksək Konversiya",
+        "desc": "Maliyyə xidmətləri ilə maraqlanan məqsədli auditoriya sayəsində yüksək satış imkanı."
+      },
+      "premium": {
+        "title": "Premium Mövqelər",
+        "desc": "Saytın ən diqqət çəkən və effektiv bölmələrində reklam yerləşdirmək imkanı."
+      }
+    },
+    "formats": {
+      "title": "Reklam Formatları",
+      "desc": "Məqsədlərinizə və büdcənizə uyğun müxtəlif reklam növləri.",
+      "banner": {
+        "title": "Banner Reklamları",
+        "desc": "Ana səhifədə və daxili səhifələrdə premium banner yerləri.",
+        "price": "Əlaqə saxlayın",
+        "features": [
+          "Ana səhifədə prioritet mövqe",
+          "Mobil və desktop uyğunluğu",
+          "Statistika və klik hesabatları"
+        ]
+      },
+      "sponsor": {
+        "title": "Sponsor Məhsullar",
+        "desc": "Kredit və kart siyahılarında seçilmiş və fərqlənən yerlər.",
+        "price": "Əlaqə saxlayın",
+        "features": [
+          "Müqayisə siyahılarında ilk sıralar",
+          "Fərqlənən vizual dizayn",
+          "Daha yüksək dönüşüm (conversion)"
+        ]
+      },
+      "blog": {
+        "title": "Bloq və PR Məqalələr",
+        "desc": "Şirkətiniz və məhsullarınız haqqında geniş məqalələr.",
+        "price": "Əlaqə saxlayın",
+        "features": [
+          "Mütəxəssis tərəfindən yazılmış PR materialı",
+          "Uzunmüddətli SEO faydası",
+          "Sosial mediada paylaşım"
+        ]
+      }
+    },
+    "form": {
+      "title": "Reklam Sifarişi",
+      "desc": "Reklam imkanları haqqında ətraflı məlumat üçün formu doldurun.",
+      "fields": {
+        "name": {
+          "label": "Ad və Soyad",
+          "placeholder": "Adınızı daxil edin"
+        },
+        "company": {
+          "label": "Şirkət",
+          "placeholder": "Şirkətin adını daxil edin"
+        },
+        "email": {
+          "label": "Email ünvanı",
+          "placeholder": "Nümunə: ad@sirket.az"
+        },
+        "phone": {
+          "label": "Mobil nömrə",
+          "placeholder": "+994 (XX) XXX-XX-XX"
+        },
+        "message": {
+          "label": "Mesajınız",
+          "placeholder": "Reklam hədəfləriniz və maraqlandığınız formatlar haqqında yazın..."
+        }
+      },
+      "submitLoading": "Göndərilir...",
+      "submit": "Müraciət et",
+      "consent": "Müraciət edərək şəxsi məlumatlarınızın işlənməsinə razılıq verirsiniz.",
+      "toast": {
+        "fillRequired": "Bütün məcburi xanaları doldurun.",
+        "invalidEmail": "Düzgün email ünvanı daxil edin.",
+        "success": "Müraciətiniz uğurla göndərildi. Tezliklə sizinlə əlaqə saxlayacağıq!"
+      }
+    }
+  },
+  "ptsCredit": {
+    "title": "Avtomobil girovu ilə kredit",
+    "desc": "BOKT-lardan avtomobilinizi girov qoyaraq onlayn kredit alın. Avtomobil sizdə qalır.",
+    "maxAmount": "Maksimal məbləğ",
+    "upto80k": "80,000 ₼-dək",
+    "duration": "Müddət",
+    "upto36m": "36 ayadək",
+    "processing": "Rəsmiləşdirmə",
+    "within24h": "24 saat ərzində",
+    "bestOffers": "Ən yaxşı PTS girovu təklifləri",
+    "bestOffersDesc": "Sizin üçün seçdiyimiz ən sərfəli avto girov kreditləri",
+    "multiApply": "Toplu müraciət ilə şansınızı artırın",
+    "multiApplyDesc": "Bir neçə BOKT-a eyni anda müraciət edərək, kredit almaq şansınızı və ən yaxşı şərtləri tapma ehtimalınızı artırın.",
+    "fromPercent": "%-dən",
+    "orgsSelected": "Təşkilat seçildi",
+    "apply": "Müraciət et",
+    "applyNote": "Müraciət pulsuzdur və kredit tarixçənizə təsir etmir",
+    "moreOffers": "Daha çox təklif",
+    "decisionIn5": "5 dəqiqəyə qərar",
+    "decisionDesc": "Dərhal rəsmiləşdirmə imkanı. Ən əsası isə - avtomobil sizin istifadənizdə qalır!",
+    "minDocs": "Minimum sənədləşmə",
+    "carStays": "Avtomobil idarəetmədə qalır",
+    "highApproval": "Yüksək təsdiq faizi",
+    "allPtsCredits": "Bütün PTS Kreditləri",
+    "error": "Xəta",
+    "selectAtLeastOne": "Zəhmət olmasa ən azı bir təşkilat seçin.",
+    "applySuccess": "Müraciət uğurla göndərildi",
+    "applySuccessDesc": "Seçilmiş {{count}} təşkilata müraciətiniz qeydə alındı."
+  },
+  "auth": {
+    "login": "Giriş",
+    "logout": "Sistemdən çıx",
+    "loginSuccess": "Sistemə uğurla daxil oldunuz!",
+    "loginError": "Giriş zamanı xəta baş verdi",
+    "loginPageTitle": "Sistemə Giriş | Pultap.az",
+    "welcomeTitle": "Pultap-a Xoş Gəlmisiniz",
+    "loginDesc": "Şəxsi kabinetinizə daxil olun",
+    "emailOrPhone": "E-poçt və ya Nömrə",
+    "emailOrPhonePlaceholder": "E-poçt və ya mobil nömrəniz",
+    "password": "Şifrə",
+    "forgotPassword": "Şifrəni unutmusunuz?",
+    "passwordPlaceholder": "••••••••",
+    "loggingIn": "Giriş edilir...",
+    "loginBtn": "Daxil ol",
+    "orWithGoogle": "və ya Google ilə",
+    "noAccount": "Hesabınız yoxdur?",
+    "registerLink": "Qeydiyyatdan keçin",
+    "googleLoginFail": "Google ilə giriş uğursuz oldu",
+    "fillRequiredFields": "Zəhmət olmasa bütün məcburi xanaları doldurun.",
+    "testOtpSent": "Test üçün təsdiq kodu: 123456 (Nömrənizə göndərildi: {{phone}})",
+    "invalidOtp": "Daxil etdiyiniz kod yalnışdır.",
+    "registerSuccess": "Hesabınız uğurla yaradıldı!",
+    "googleRegisterFail": "Google qeydiyyatı uğursuz oldu",
+    "registerPageTitle": "Qeydiyyat | Pultap.az",
+    "registerTitle": "Yeni Hesab Yaradın",
+    "registerDesc1": "Pultap-a qoşulmaq üçün məlumatlarınızı daxil edin",
+    "registerDesc2": "Nömrənizə göndərilən kodu daxil edin",
+    "fullName": "Ad və Soyad *",
+    "fullNamePlaceholder": "Adınız və Soyadınız",
+    "phoneLabel": "Mobil Nömrə *",
+    "emailOptional": "E-poçt (istəyə görə)",
+    "passwordRequired": "Şifrə *",
+    "wait": "Gözləyin...",
+    "registerBtn": "Qeydiyyatdan keç",
+    "alreadyHaveAccount": "Artıq hesabınız var?",
+    "loginInsteadLink": "Sistemə daxil olun",
+    "otpSentMsg": "nömrəsinə 6 rəqəmli təsdiq kodu göndərildi.",
+    "verifying": "Təsdiqlənir...",
+    "verifyAndContinue": "Təsdiqlə və Davam et",
+    "goBackToChangePhone": "Nömrəni dəyişmək üçün geri qayıt"
+  },
+  "errorBoundary": {
+    "title": "Gözlənilməz xəta baş verdi",
+    "description": "Təəssüf ki, səhifəni yükləyərkən problem yarandı. Zəhmət olmasa, bir az sonra yenidən cəhd edin.",
+    "refresh": "Yenilə",
+    "home": "Ana səhifə"
+  },
+  "bankDetail": {
+    "about": "Haqqında",
+    "allCredits": "Bütün kreditlər",
+    "allDeposits": "Bütün depozitlər",
+    "backToList": "Bütün banklar",
+    "cards": "Kartlar",
+    "credits": "Kreditlər",
+    "deposits": "Depozitlər",
+    "since": "Təsis"
+  },
+  "blog": {
+    "backToList": "Bloqlara qayıt",
+    "crumb": "Bloq",
+    "min": "dəq",
+    "noResults": "Nəticə tapılmadı",
+    "pageTitle": "Bloq",
+    "readMore": "Daha çox oxu",
+    "readTime": "Oxuma müddəti",
+    "related": "Oxşar məqalələr",
+    "results": "nəticə",
+    "searchPlaceholder": "Məqalə axtar...",
+    "title": "Bloq"
+  },
+  "creditTypes": {
+    "auto": "Avtomobil",
+    "cash": "Nağd",
+    "mortgage": "İpoteka",
+    "online": "Onlayn"
+  },
+  "credit": {
+    "amount": "Məbləğ",
+    "rate": "Faiz",
+    "term": "Müddət"
+  },
+  "deposit": {
+    "currency": "Valyuta",
+    "rate": "Faiz",
+    "term": "Müddət"
+  },
+  "rate-asc": "Faiz (Artan)",
+  "rate-desc": "Faiz (Azalan)"
+}
