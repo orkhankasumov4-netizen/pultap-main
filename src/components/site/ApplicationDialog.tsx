@@ -41,7 +41,7 @@ export function ApplicationDialog({ trigger, productName, productType }: Applica
     setLoading(true);
 
     try {
-      const response = await fetch(`https://skhzckfbqecahidcogyk.supabase.co/functions/v1/submit-lead`, {
+      const response = await fetch(`https://pultap.duckdns.org/api/v1/leads`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -36,7 +36,7 @@ export default function ContactPage() {
     setLoading(true);
 
     try {
-      const response = await fetch(`https://skhzckfbqecahidcogyk.supabase.co/functions/v1/submit-contact`, {
+      const response = await fetch(`https://pultap.duckdns.org/api/v1/contacts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
