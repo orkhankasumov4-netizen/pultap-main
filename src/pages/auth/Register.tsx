@@ -86,7 +86,7 @@ export const Register = () => {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
-          redirectTo: `${window.location.origin}${lp("/")}`,
+          redirectTo: window.location.origin,
         },
       });
       if (error) {
