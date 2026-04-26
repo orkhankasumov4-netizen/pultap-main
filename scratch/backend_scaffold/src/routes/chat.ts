@@ -140,41 +140,41 @@ router.post('/', async (req, res) => {
 
     const systemPrompt = buildSystemPrompt(financeContext, pageContext);
 
-    const conversationHistory = history
-      .slice(-8)
-      .map((m: {role: string, content: string}) =>
-        m.role === 'user'
-          ? `İstifadəçi: ${m.content}`
-          : `Pultap AI: ${m.content}`
-      )
-      .join('\n');
+    const messages = [
+      { role: "system", content: systemPrompt },
+      ...history.map((m: {role: string, content: string}) => ({
+        role: m.role === 'user' ? 'user' : 'assistant',
+        content: m.content
+      })),
+      { role: "user", content: message }
+    ];
 
-    const fullPrompt = conversationHistory
-      ? `${conversationHistory}\nİstifadəçi: ${message}\nPultap AI:`
-      : `İstifadəçi: ${message}\nPultap AI:`;
+    const apiKey = process.env.GROQ_API_KEY;
+    if (!apiKey) {
+      res.write(`data: {"error": "Groq API Key is not configured."}\n\n`);
+      return res.end();
+    }
 
-    const response = await fetch('http://localhost:11434/api/generate', {
+    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`
+      },
       body: JSON.stringify({
-        model: MODEL,
-        system: systemPrompt,
-        prompt: fullPrompt,
+        model: process.env.GROQ_MODEL || 'llama-3.3-70b-versatile',
+        messages: messages,
         stream: true,
-        options: {
-          temperature: 0.2,
-          top_p: 0.85,
-          top_k: 40,
-          repeat_penalty: 1.15,
-          num_predict: 450,
-          stop: ["İstifadəçi:", "User:", "Human:"]
-        }
+        temperature: 0.2,
+        top_p: 0.85,
+        max_tokens: 400,
+        stop: ["İstifadəçi:", "User:", "Human:", "\n\nİstifadəçi"]
       })
     });
 
     if (!response.ok) {
       const errText = await response.text();
-      res.write(`data: {"error": "Ollama API xətası: ${response.status}"}\n\n`);
+      res.write(`data: {"error": "Groq API xətası: ${response.status}"}\n\n`);
       return res.end();
     }
 
@@ -186,21 +186,31 @@ router.post('/', async (req, res) => {
       return res.end();
     }
 
+    let buffer = '';
+
     while (true) {
       const { done, value } = await reader.read();
       if (done) break;
 
-      const chunk = decoder.decode(value, { stream: true });
-      const lines = chunk.split('\n').filter(l => l.trim() !== '');
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop() || '';
 
       for (const line of lines) {
-        try {
-          const parsed = JSON.parse(line);
-          if (parsed.response) {
-            res.write(`data: ${JSON.stringify({ token: parsed.response })}\n\n`);
+        if (line.trim() === '') continue;
+        if (line.startsWith('data: ')) {
+          const dataStr = line.slice(6).trim();
+          if (dataStr === '[DONE]') continue;
+          
+          try {
+            const parsed = JSON.parse(dataStr);
+            const token = parsed.choices?.[0]?.delta?.content;
+            if (token) {
+              res.write(`data: ${JSON.stringify({ token })}\n\n`);
+            }
+          } catch (e) {
+            // Ignore parse errors on partial chunks
           }
-        } catch (e) {
-          // Ignore parse errors on partial chunks
         }
       }
     }
