@@ -1636,5 +1636,30 @@
     "term": "Müddət"
   },
   "rate-asc": "Faiz (Artan)",
-  "rate-desc": "Faiz (Azalan)"
+  "rate-desc": "Faiz (Azalan)",
+  "application": {
+    "form": {
+      "title": "Müraciət Formu",
+      "desc": "üçün müraciət edirsiniz. Zəhmət olmasa məlumatlarınızı daxil edin.",
+      "toast": {
+        "fillRequired": "Ad və nömrə mütləqdir",
+        "success": "Müraciətiniz uğurla qəbul edildi!",
+        "error": "Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin."
+      },
+      "fields": {
+        "name": {
+          "label": "Ad, Soyad"
+        },
+        "phone": {
+          "label": "Mobil Nömrə"
+        },
+        "fin": {
+          "label": "FİN Kod"
+        },
+        "amount": {
+          "label": "İstədiyiniz məbləğ (₼)"
+        }
+      }
+    }
+  }
 }

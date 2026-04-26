@@ -1143,5 +1143,30 @@
     "term": "Term"
   },
   "rate-asc": "Rate (Ascending)",
-  "rate-desc": "Rate (Descending)"
+  "rate-desc": "Rate (Descending)",
+  "application": {
+    "form": {
+      "title": "Application Form",
+      "desc": "Please enter your details to apply.",
+      "toast": {
+        "fillRequired": "Name and phone number are required",
+        "success": "Your application has been successfully received!",
+        "error": "An error occurred. Please try again."
+      },
+      "fields": {
+        "name": {
+          "label": "Full Name"
+        },
+        "phone": {
+          "label": "Mobile Number"
+        },
+        "fin": {
+          "label": "FIN Code"
+        },
+        "amount": {
+          "label": "Requested Amount (₼)"
+        }
+      }
+    }
+  }
 }
