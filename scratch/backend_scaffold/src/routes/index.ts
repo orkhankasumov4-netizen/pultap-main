@@ -7,9 +7,47 @@ const router = Router();
 
 // Dynamic CRUD Routes
 router.use('/chat', chatRouter);
-router.get('/db-test', async (req, res) => {
+
+// CBAR Proxy — forwards to Azerbaijan Central Bank XML feed and caches result
+const cbarCache: Record<string, { data: string; ts: number }> = {};
+const CBAR_TTL = 30 * 60 * 1000; // 30 minutes
+
+router.get('/cbar/:filename', async (req, res) => {
+  const { filename } = req.params;
+
+  // Validate filename format: DD.MM.YYYY.xml
+  if (!/^\d{2}\.\d{2}\.\d{4}\.xml$/.test(filename)) {
+    return res.status(400).json({ error: 'Invalid filename format' });
+  }
+
+  const now = Date.now();
+  const cached = cbarCache[filename];
+  if (cached && now - cached.ts < CBAR_TTL) {
+    res.set('Content-Type', 'application/xml');
+    res.set('Cache-Control', 'public, max-age=1800');
+    return res.send(cached.data);
+  }
+
+  try {
+    const upstream = await fetch(`https://www.cbar.az/currencies/${filename}`);
+    if (!upstream.ok) {
+      return res.status(upstream.status).json({ error: `CBAR responded with ${upstream.status}` });
+    }
+    const xml = await upstream.text();
+    cbarCache[filename] = { data: xml, ts: now };
+    res.set('Content-Type', 'application/xml');
+    res.set('Cache-Control', 'public, max-age=1800');
+    return res.send(xml);
+  } catch (err: any) {
+    console.error('CBAR proxy error:', err);
+    return res.status(502).json({ error: 'Failed to fetch from CBAR' });
+  }
+});
+
+router.get('/db-test', async (_req, res) => {
   res.json({ message: 'Supabase is connected!' });
 });
+
 
 // Dynamic CRUD Routes
 router.use('/banks', createCrudRouter('banks'));
