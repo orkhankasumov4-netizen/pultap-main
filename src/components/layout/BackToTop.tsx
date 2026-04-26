@@ -33,7 +33,7 @@ export const BackToTop = () => {
       variant="default"
       size="icon"
       className={cn(
-        "fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 rounded-full shadow-glow bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform min-h-[48px] min-w-[48px]",
+        "fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 rounded-full shadow-glow bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform min-h-[48px] min-w-[48px]",
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
       )}
       onClick={scrollToTop}
