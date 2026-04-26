@@ -1,10 +1,12 @@
 import { Router } from 'express';
 import { supabase } from '../db/supabase';
 import { createCrudRouter } from './crud';
+import chatRouter from './chat';
 
 const router = Router();
 
-// Test DB route
+// Dynamic CRUD Routes
+router.use('/chat', chatRouter);
 router.get('/db-test', async (req, res) => {
   res.json({ message: 'Supabase is connected!' });
 });
