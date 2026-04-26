@@ -181,7 +181,7 @@ export function ChatWidget() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Sualınızı yazın..."
-                className="flex-1 py-3 px-4 bg-gray-50 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm transition-all"
+                className="flex-1 py-3 px-4 bg-gray-50 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm text-gray-900 placeholder:text-gray-400 transition-all"
                 disabled={isLoading}
               />
               <button
