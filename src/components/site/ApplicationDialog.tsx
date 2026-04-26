@@ -84,17 +84,17 @@ export function ApplicationDialog({ trigger, productName, productType }: Applica
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <div className="space-y-2">
             <Label htmlFor="full_name">{t("application.form.fields.name.label") || "Ad, Soyad"} <span className="text-destructive">*</span></Label>
-            <Input id="full_name" name="full_name" placeholder="Məsələn: Əli Əliyev" required className="bg-muted/50" />
+            <Input id="full_name" name="full_name" placeholder="Ad və soyadınızı daxil edin" required className="bg-muted/50" />
           </div>
           
           <div className="space-y-2">
             <Label htmlFor="phone">{t("application.form.fields.phone.label") || "Mobil Nömrə"} <span className="text-destructive">*</span></Label>
-            <Input id="phone" name="phone" type="tel" placeholder="055 123 45 67" required className="bg-muted/50" />
+            <Input id="phone" name="phone" type="tel" placeholder="050 000 00 00" required className="bg-muted/50" />
           </div>
 
           <div className="space-y-2">
             <Label htmlFor="fin_code">{t("application.form.fields.fin.label") || "FİN Kod"}</Label>
-            <Input id="fin_code" name="fin_code" placeholder="Məsələn: 7ABCDEF" className="bg-muted/50 uppercase" maxLength={7} />
+            <Input id="fin_code" name="fin_code" placeholder="FİN kodunuzu daxil edin" className="bg-muted/50 uppercase" maxLength={7} />
           </div>
 
           <div className="space-y-2">
