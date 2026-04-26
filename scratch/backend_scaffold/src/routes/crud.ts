@@ -9,11 +9,12 @@ export function createCrudRouter(tableName: string, idField: string = 'id') {
     try {
       const { data, error } = await supabase.from(tableName).select('*');
       if (error) throw error;
-      res.json({ success: true, data });
+      res.json(data ?? []);
     } catch (error: any) {
       res.status(500).json({ error: error.message });
     }
   });
+
 
   // Get one
   router.get(`/:${idField}`, async (req, res) => {
