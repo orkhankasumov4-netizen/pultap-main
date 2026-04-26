@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { GoogleLogin } from "@react-oauth/google";
 import { useAuthStore } from "@/store/auth-store";
-import { ShieldCheck, User, Lock } from "lucide-react";
+import { ShieldCheck, User, Lock, Chrome } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { useLocalePath } from "@/i18n/locale-routing";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useTranslation } from "react-i18next";
+import { supabase } from "@/lib/supabase";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -21,38 +21,64 @@ export const Login = () => {
     password: ""
   });
   const [isLoading, setIsLoading] = useState(false);
+  const [isGoogleLoading, setIsGoogleLoading] = useState(false);
 
-  const handleLoginSubmit = (e: React.FormEvent) => {
+  const handleLoginSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
-    // Simulating login API
-    setTimeout(() => {
-      setIsLoading(false);
-      // For demo purposes, any non-empty input is "accepted"
-      loginUser({
-        id: "usr_" + Math.random().toString(36).substr(2, 9),
-        name: "Test İstifadəçi",
+
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({
         email: formData.username,
+        password: formData.password,
       });
-      toast.success(t("auth.loginSuccess"));
-      navigate(lp("/"));
-    }, 1000);
+
+      if (error) {
+        if (error.message.includes("Invalid login credentials")) {
+          toast.error(t("auth.invalidCredentials") || "Email və ya şifrə yanlışdır");
+        } else if (error.message.includes("Email not confirmed")) {
+          toast.error(t("auth.emailNotConfirmed") || "Email-iniz təsdiqlənməyib");
+        } else {
+          toast.error(error.message);
+        }
+        return;
+      }
+
+      if (data.user) {
+        const meta = data.user.user_metadata;
+        loginUser({
+          id: data.user.id,
+          name: meta?.full_name || meta?.name || data.user.email?.split("@")[0] || "İstifadəçi",
+          email: data.user.email || "",
+          avatar: meta?.avatar_url,
+        });
+        toast.success(t("auth.loginSuccess"));
+        navigate(lp("/"));
+      }
+    } catch {
+      toast.error(t("auth.loginError"));
+    } finally {
+      setIsLoading(false);
+    }
   };
 
-  const handleGoogleSuccess = (credentialResponse: { credential: string }) => {
+  const handleGoogleLogin = async () => {
+    setIsGoogleLoading(true);
     try {
-      const payload = JSON.parse(atob(credentialResponse.credential.split('.')[1]));
-      loginUser({
-        id: payload.sub,
-        name: payload.name,
-        email: payload.email,
-        avatar: payload.picture
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: `${window.location.origin}${lp("/")}`,
+        },
       });
-      toast.success(t("auth.loginSuccess"));
-      navigate(lp("/"));
-    } catch (e) {
-      toast.error(t("auth.loginError"));
+      if (error) {
+        toast.error(error.message);
+        setIsGoogleLoading(false);
+      }
+      // On success, browser redirects — no further action needed here
+    } catch {
+      toast.error(t("auth.googleLoginFail"));
+      setIsGoogleLoading(false);
     }
   };
 
@@ -123,16 +149,16 @@ export const Login = () => {
               </div>
             </div>
 
-            <div className="flex justify-center">
-              <GoogleLogin
-                onSuccess={handleGoogleSuccess}
-                onError={() => toast.error(t("auth.googleLoginFail"))}
-                useOneTap
-                theme="outline"
-                text="continue_with"
-                width="300"
-              />
-            </div>
+            <Button
+              type="button"
+              variant="outline"
+              className="w-full h-11 gap-2"
+              onClick={handleGoogleLogin}
+              disabled={isGoogleLoading}
+            >
+              <Chrome className="h-5 w-5" />
+              {isGoogleLoading ? t("auth.loggingIn") : t("auth.continueWithGoogle") || "Google ilə davam et"}
+            </Button>
 
             <div className="text-center text-sm text-muted-foreground pt-2">
               {t("auth.noAccount")}{" "}

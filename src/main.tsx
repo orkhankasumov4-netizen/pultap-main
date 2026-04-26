@@ -3,13 +3,13 @@ import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
 import "./i18n/config";
+import { useAuthStore } from "./store/auth-store.ts";
 
-import { GoogleOAuthProvider } from "@react-oauth/google";
+// Initialize Supabase auth session on app start
+useAuthStore.getState().initAuth();
 
 createRoot(document.getElementById("root")!).render(
-  <GoogleOAuthProvider clientId="428934047656-g5tbp00r85qgbkpu4cnrjmrhrghg15mm.apps.googleusercontent.com">
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
-  </GoogleOAuthProvider>
+  <HelmetProvider>
+    <App />
+  </HelmetProvider>
 );
