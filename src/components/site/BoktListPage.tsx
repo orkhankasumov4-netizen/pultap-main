@@ -7,8 +7,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { Search, X } from "lucide-react";
-import { boktProducts, bokts, BoktProduct } from "@/data/finance";
+import { Search, X, Loader2 } from "lucide-react";
+import { BoktProduct } from "@/data/finance";
+import { useBokts, useBoktProducts } from "@/hooks/use-finance-api";
 
 type Props = {
   title: string;
@@ -22,6 +23,10 @@ type Sort = "rate-asc" | "rate-desc" | "amount-desc";
 
 export const BoktListPage = ({ title, description, breadcrumbs, initialType = "all", lockType = false }: Props) => {
   const { t, i18n } = useTranslation();
+  
+  const { data: boktProducts = [], isLoading: boktProductsLoading } = useBoktProducts();
+  const { data: bokts = [], isLoading: boktsLoading } = useBokts();
+
   const [type, setType] = useState<BoktProduct["type"] | "all">(initialType);
   const [search, setSearch] = useState("");
   const [amount, setAmount] = useState(2000);
@@ -53,7 +58,7 @@ export const BoktListPage = ({ title, description, breadcrumbs, initialType = "a
       return b.amountMax - a.amountMax;
     });
     return list;
-  }, [type, search, amount, maxRate, selected, sort]);
+  }, [boktProducts, type, search, amount, maxRate, selected, sort]);
 
   const filters = (
     <div>
@@ -115,7 +120,11 @@ export const BoktListPage = ({ title, description, breadcrumbs, initialType = "a
 
   return (
     <ListPageShell title={title} description={description} breadcrumbs={breadcrumbs} filters={filters} toolbar={toolbar} resultsCount={filtered.length}>
-      {filtered.length === 0 ? (
+      {boktProductsLoading || boktsLoading ? (
+        <div className="flex justify-center p-12">
+          <Loader2 className="h-8 w-8 animate-spin text-primary/50" />
+        </div>
+      ) : filtered.length === 0 ? (
         <div className="bg-card border border-border rounded-2xl p-10 text-center">
           <p className="text-sm text-muted-foreground">{t("lists.noLoans")}</p>
           <Button variant="outline" size="sm" onClick={reset} className="mt-4">{t("common.resetFilters")}</Button>

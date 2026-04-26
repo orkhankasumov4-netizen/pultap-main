@@ -3,7 +3,7 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ChevronRight, Clock, Tag, ArrowLeft, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { blogPosts } from "@/data/finance";
+import { useBlogPosts } from "@/hooks/use-finance-api";
 import { useLocalePath } from "@/i18n/locale-routing";
 
 export default function BlogPostPage() {
@@ -11,14 +11,23 @@ export default function BlogPostPage() {
   const lp = useLocalePath();
   const { slug } = useParams<{ slug: string }>();
 
-  const post = blogPosts.find((p) => p.slug === slug);
-
-  if (!post) return <Navigate to={lp("/bloq")} replace />;
+  const { data: blogPosts = [], isLoading } = useBlogPosts();
+  const post = blogPosts.find((p: any) => p.slug === slug);
 
   // Find related posts (same category, excluding current)
-  const related = blogPosts.filter(
-    (p) => p.category === post.category && p.id !== post.id
-  );
+  const related = post ? blogPosts.filter(
+    (p: any) => p.category === post.category && p.id !== post.id
+  ) : [];
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center py-20 min-h-screen">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-500"></div>
+      </div>
+    );
+  }
+
+  if (!post) return <Navigate to={lp("/bloq")} replace />;
 
   return (
     <>

@@ -18,20 +18,35 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { institutions, credits, deposits, cards } from "@/data/finance";
+import { useInstitutions, useCredits, useDeposits, useCards } from "@/hooks/use-finance-api";
 import { useLocalePath } from "@/i18n/locale-routing";
+import type { Credit, Deposit, Card } from "@/data/finance";
 
 export default function BankDetailPage() {
   const { t } = useTranslation();
   const lp = useLocalePath();
   const { id } = useParams<{ id: string }>();
 
-  const inst = institutions.find((i) => i.id === id);
+  const { data: institutions = [], isLoading: instLoading } = useInstitutions();
+  const { data: credits = [], isLoading: creditsLoading } = useCredits();
+  const { data: deposits = [], isLoading: depositsLoading } = useDeposits();
+  const { data: cards = [], isLoading: cardsLoading } = useCards();
+
+  const inst = institutions.find((i: any) => i.id === id);
+
+  if (instLoading || creditsLoading || depositsLoading || cardsLoading) {
+    return (
+      <div className="flex items-center justify-center py-20 min-h-screen">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-500"></div>
+      </div>
+    );
+  }
+
   if (!inst) return <Navigate to={lp("/banks")} replace />;
 
-  const bankCredits = credits.filter((c) => c.bankId === inst?.id);
-  const bankDeposits = deposits.filter((d) => d.bankId === inst?.id);
-  const bankCards = cards.filter((c) => c.bankId === inst?.id);
+  const bankCredits = credits.filter((c: Credit) => c.bankId === inst?.id);
+  const bankDeposits = deposits.filter((d: Deposit) => d.bankId === inst?.id);
+  const bankCards = cards.filter((c: Card) => c.bankId === inst?.id);
 
   const typeLabels: Record<string, string> = {
     online: "Onlayn",

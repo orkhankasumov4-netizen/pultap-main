@@ -9,11 +9,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { Search, X } from "lucide-react";
-import { credits, banks, Credit } from "@/data/finance";
+import { Search, X, Loader2 } from "lucide-react";
+import { Credit } from "@/data/finance";
 import { useCompare } from "@/context/CompareContext";
 import { useLocalePath } from "@/i18n/locale-routing";
 import { filterAndSortCredits } from "@/lib/filters";
+import { useCredits, useBanks } from "@/hooks/use-finance-api";
 
 type Props = {
   title: string;
@@ -39,6 +40,10 @@ export const CreditsListPage = ({
   const { t, i18n } = useTranslation();
   const lp = useLocalePath();
   const { ids: compare, toggle: toggleCompare, clear: clearCompare } = useCompare();
+  
+  const { data: credits = [], isLoading: creditsLoading } = useCredits();
+  const { data: banks = [], isLoading: banksLoading } = useBanks();
+
   const [type, setType] = useState<Credit["type"] | "all">(initialType);
   const [search, setSearch] = useState("");
   const [amount, setAmount] = useState(10000);
@@ -68,7 +73,7 @@ export const CreditsListPage = ({
 
   const filtered = useMemo(() => filterAndSortCredits(credits, {
     type, search, amount, term, maxRate, selectedBanks, collateral, insurance, sort
-  }), [type, search, amount, term, maxRate, selectedBanks, collateral, insurance, sort]);
+  }), [credits, type, search, amount, term, maxRate, selectedBanks, collateral, insurance, sort]);
 
   const filters = (
     <div>
@@ -185,7 +190,11 @@ export const CreditsListPage = ({
       metaTitle={metaTitle}
       metaDescription={metaDescription}
     >
-      {filtered.length === 0 ? (
+      {creditsLoading || banksLoading ? (
+        <div className="flex justify-center p-12">
+          <Loader2 className="h-8 w-8 animate-spin text-primary/50" />
+        </div>
+      ) : filtered.length === 0 ? (
         <div className="bg-card border border-border rounded-2xl p-10 text-center">
           <p className="text-sm text-muted-foreground">{t("lists.noLoans")}</p>
           <Button variant="outline" size="sm" onClick={reset} className="mt-4">{t("common.resetFilters")}</Button>

@@ -7,8 +7,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { Search, X } from "lucide-react";
-import { cards, banks, Card } from "@/data/finance";
+import { Search, X, Loader2 } from "lucide-react";
+import { Card } from "@/data/finance";
+import { useCards, useBanks } from "@/hooks/use-finance-api";
 
 type Props = {
   kind: Card["kind"];
@@ -21,6 +22,9 @@ type Sort = "cashback-desc" | "fee-asc" | "limit-desc";
 
 export const CardsListPage = ({ kind, title, description, breadcrumbs }: Props) => {
   const { t } = useTranslation();
+  const { data: cards = [], isLoading: cardsLoading } = useCards();
+  const { data: banks = [], isLoading: banksLoading } = useBanks();
+
   const [search, setSearch] = useState("");
   const [minCashback, setMinCashback] = useState(0);
   const [maxFee, setMaxFee] = useState(100);
@@ -51,7 +55,7 @@ export const CardsListPage = ({ kind, title, description, breadcrumbs }: Props) 
       return (b.limit ?? 0) - (a.limit ?? 0);
     });
     return list;
-  }, [kind, search, minCashback, maxFee, feeFreeOnly, selectedBanks, sort]);
+  }, [cards, kind, search, minCashback, maxFee, feeFreeOnly, selectedBanks, sort]);
 
   const filters = (
     <div>
@@ -114,7 +118,11 @@ export const CardsListPage = ({ kind, title, description, breadcrumbs }: Props) 
       toolbar={toolbar}
       resultsCount={filtered.length}
     >
-      {filtered.length === 0 ? (
+      {cardsLoading || banksLoading ? (
+        <div className="flex justify-center p-12">
+          <Loader2 className="h-8 w-8 animate-spin text-primary/50" />
+        </div>
+      ) : filtered.length === 0 ? (
         <div className="bg-card border border-border rounded-2xl p-10 text-center">
           <p className="text-sm text-muted-foreground">{t("lists.noCards")}</p>
           <Button variant="outline" size="sm" onClick={reset} className="mt-4">{t("common.resetFilters")}</Button>

@@ -1,15 +1,18 @@
-import { Card, bankById } from "@/data/finance";
+import { Card } from "@/data/finance";
 import { useTranslation } from "react-i18next";
 import { BankLogo } from "./BankLogo";
 import { CreditCard as CCIcon, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useBanks } from "@/hooks/use-finance-api";
 
 const fmt = (n: number) => new Intl.NumberFormat("az-AZ").format(n);
 
 export const BankCardItem = ({ card }: { card: Card }) => {
   const { t } = useTranslation();
-  const bank = bankById(card.bankId);
+  const { data: banks = [] } = useBanks();
+  const bank = banks.find(b => b.id === card.bankId);
+  if (!bank) return null;
   return (
     <article className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all hover:-translate-y-0.5 border border-border">
       <div className="relative h-40 p-5 text-white flex flex-col justify-between"

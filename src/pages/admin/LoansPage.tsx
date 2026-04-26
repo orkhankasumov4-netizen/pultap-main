@@ -15,10 +15,12 @@ import {
   XCircle,
   MoreVertical,
   Eye,
+  Loader2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { credits, bankById, type Credit } from "@/data/finance";
+import { useCredits, useBanks, useDeleteCredit } from "@/hooks/use-finance-api";
+import type { Credit } from "@/data/finance";
 
 type SortField = "name" | "rate" | "amountMax" | "type";
 type SortDir = "asc" | "desc";
@@ -33,6 +35,12 @@ const typeLabels: Record<string, { label: string; color: string; bg: string }> =
 };
 
 export const LoansPage = () => {
+  const { data: credits = [], isLoading: loadingCredits } = useCredits();
+  const { data: banks = [] } = useBanks();
+  const deleteCredit = useDeleteCredit();
+
+  const bankById = (id: string) => banks.find(b => b.id === id) || { id, name: id, logoColor: "#666", rating: 0, reviews: 0 };
+
   const [searchTerm, setSearchTerm] = useState("");
   const [filterType, setFilterType] = useState<string>("all");
   const [page, setPage] = useState(1);
@@ -51,13 +59,13 @@ export const LoansPage = () => {
   };
 
   const filteredLoans = useMemo(() => {
-    let result = credits.filter((c) =>
+    let result = credits.filter((c: Credit) =>
       c.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     if (filterType !== "all") {
-      result = result.filter((c) => c.type === filterType);
+      result = result.filter((c: Credit) => c.type === filterType);
     }
-    result.sort((a, b) => {
+    result.sort((a: Credit, b: Credit) => {
       let cmp = 0;
       if (sortField === "name") cmp = a.name.localeCompare(b.name, "az");
       else if (sortField === "rate") cmp = a.rate - b.rate;
@@ -66,7 +74,7 @@ export const LoansPage = () => {
       return sortDir === "asc" ? cmp : -cmp;
     });
     return result;
-  }, [searchTerm, filterType, sortField, sortDir]);
+  }, [credits, searchTerm, filterType, sortField, sortDir]);
 
   const totalPages = Math.ceil(filteredLoans.length / ITEMS_PER_PAGE);
   const paginatedLoans = filteredLoans.slice(
@@ -113,6 +121,12 @@ export const LoansPage = () => {
 
   return (
     <div className="space-y-5 animate-fade-up">
+      {loadingCredits && (
+        <div className="flex items-center justify-center py-20">
+          <Loader2 className="h-8 w-8 animate-spin text-emerald-500" />
+        </div>
+      )}
+      {!loadingCredits && <>
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
@@ -364,6 +378,7 @@ export const LoansPage = () => {
           </div>
         )}
       </div>
+      </>}
     </div>
   );
 };

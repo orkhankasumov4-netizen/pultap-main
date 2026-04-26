@@ -2,10 +2,10 @@ import { useMemo, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ChevronRight, TrendingUp, TrendingDown, Search, Building2 } from "lucide-react";
+import { ChevronRight, TrendingUp, TrendingDown, Search, Building2, Loader2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { banks } from "@/data/finance";
+import { useBanks } from "@/hooks/use-finance-api";
 import { useCbarRates } from "@/hooks/use-cbar-rates";
 import { useLocalePath } from "@/i18n/locale-routing";
 
@@ -22,13 +22,14 @@ export default function Rates() {
   const { t } = useTranslation();
   const lp = useLocalePath();
   const { currencies: cbarCurrencies, isLoading, isLive } = useCbarRates();
+  const { data: banks = [], isLoading: banksLoading } = useBanks();
   const [view, setView] = useState<View>("cbar");
   const [search, setSearch] = useState("");
   const [activeCurrency, setActiveCurrency] = useState<string>("USD");
 
   const filteredBanks = useMemo(
     () => banks.filter((b) => b.name.toLowerCase().includes(search.toLowerCase())),
-    [search]
+    [search, banks]
   );
 
   const baseCur = cbarCurrencies.find((c) => c.code === activeCurrency)!;
@@ -201,6 +202,11 @@ export default function Rates() {
               </div>
             </div>
             <div className="overflow-x-auto">
+              {banksLoading ? (
+                <div className="flex justify-center p-12">
+                  <Loader2 className="h-8 w-8 animate-spin text-primary/50" />
+                </div>
+              ) : (
               <table className="w-full text-sm">
                 <thead className="bg-muted/60">
                   <tr className="text-left text-xs uppercase text-muted-foreground">
@@ -255,6 +261,7 @@ export default function Rates() {
                   )}
                 </tbody>
               </table>
+              )}
             </div>
           </div>
         )}

@@ -1,15 +1,18 @@
-import { BoktProduct, boktById } from "@/data/finance";
+import { BoktProduct } from "@/data/finance";
 import { useTranslation } from "react-i18next";
 import { Star, Check, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ApplicationDialog } from "./ApplicationDialog";
+import { useBokts } from "@/hooks/use-finance-api";
 
 const fmt = (n: number) => new Intl.NumberFormat("az-AZ").format(n);
 
 export const BoktProductCard = ({ product }: { product: BoktProduct }) => {
   const { t } = useTranslation();
-  const b = boktById(product.boktId);
+  const { data: bokts = [] } = useBokts();
+  const b = bokts.find(bokt => bokt.id === product.boktId);
+  if (!b) return null;
   return (
     <article className="group bg-card flex flex-col h-full rounded-2xl p-5 shadow-card hover:shadow-elegant transition-all hover:-translate-y-0.5 border border-border">
       <div className="flex items-start justify-between gap-3 mb-4">

@@ -1,17 +1,19 @@
-import { Deposit, bankById } from "@/data/finance";
+import { Deposit } from "@/data/finance";
 import { useTranslation } from "react-i18next";
 import { BankLogo } from "./BankLogo";
 import { Star, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-
 import { ApplicationDialog } from "./ApplicationDialog";
+import { useBanks } from "@/hooks/use-finance-api";
 
 const fmt = (n: number) => new Intl.NumberFormat("az-AZ").format(n);
 
 export const DepositCard = ({ deposit }: { deposit: Deposit }) => {
   const { t } = useTranslation();
-  const bank = bankById(deposit.bankId);
+  const { data: banks = [] } = useBanks();
+  const bank = banks.find(b => b.id === deposit.bankId);
+  if (!bank) return null;
   const sym = deposit.currency === "AZN" ? "₼" : deposit.currency === "USD" ? "$" : "€";
   return (
     <article className="group bg-card rounded-2xl p-5 shadow-card hover:shadow-elegant transition-all hover:-translate-y-0.5 border border-border">

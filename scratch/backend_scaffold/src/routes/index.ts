@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { supabase } from '../db/supabase';
+import { createCrudRouter } from './crud';
 
 const router = Router();
 
@@ -7,6 +8,17 @@ const router = Router();
 router.get('/db-test', async (req, res) => {
   res.json({ message: 'Supabase is connected!' });
 });
+
+// Dynamic CRUD Routes
+router.use('/banks', createCrudRouter('banks'));
+router.use('/credits', createCrudRouter('credits'));
+router.use('/deposits', createCrudRouter('deposits'));
+router.use('/cards', createCrudRouter('cards'));
+router.use('/currencies', createCrudRouter('currencies', 'code'));
+router.use('/bokts', createCrudRouter('bokts'));
+router.use('/bokt_products', createCrudRouter('bokt_products'));
+router.use('/institutions', createCrudRouter('institutions'));
+router.use('/blog_posts', createCrudRouter('blog_posts'));
 
 // Contact Submission
 router.post('/contacts', async (req, res) => {
@@ -49,6 +61,17 @@ router.post('/contacts', async (req, res) => {
   }
 });
 
+// Get Contacts
+router.get('/contacts', async (req, res) => {
+  try {
+    const { data, error } = await supabase.from('contacts').select('*').order('created_at', { ascending: false });
+    if (error) throw error;
+    res.json({ success: true, data });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Lead Submission (Credit Application)
 router.post('/leads', async (req, res) => {
   try {
@@ -86,6 +109,17 @@ router.post('/leads', async (req, res) => {
     res.status(201).json({ success: true, data });
   } catch (error: any) {
     console.error('Error inserting lead:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Get Leads
+router.get('/leads', async (req, res) => {
+  try {
+    const { data, error } = await supabase.from('leads').select('*').order('created_at', { ascending: false });
+    if (error) throw error;
+    res.json({ success: true, data });
+  } catch (error: any) {
     res.status(500).json({ error: error.message });
   }
 });

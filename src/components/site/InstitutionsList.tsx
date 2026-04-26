@@ -17,8 +17,9 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { institutions, Institution } from "@/data/finance";
+import { useInstitutions } from "@/hooks/use-finance-api";
 import { useLocalePath } from "@/i18n/locale-routing";
+import type { Institution } from "@/data/finance";
 
 type Sort = "rating-desc" | "name-asc" | "branches-desc" | "established-asc";
 
@@ -35,30 +36,39 @@ export const InstitutionsList = ({ type, title, description, breadcrumbLabel, in
   const lp = useLocalePath();
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState<Sort>("rating-desc");
+  const { data: institutions = [], isLoading } = useInstitutions();
 
   const list = useMemo(() => {
-    let l = institutions.filter((i) => i.type === type);
-    if (search) l = l.filter((i) => i.name.toLowerCase().includes(search.toLowerCase()));
-    l = [...l].sort((a, b) => {
+    let l = institutions.filter((i: Institution) => i.type === type);
+    if (search) l = l.filter((i: Institution) => i.name.toLowerCase().includes(search.toLowerCase()));
+    l = [...l].sort((a: Institution, b: Institution) => {
       if (sort === "rating-desc") return b.rating - a.rating;
       if (sort === "name-asc") return a.name.localeCompare(b.name);
       if (sort === "branches-desc") return b.branches - a.branches;
       return a.established - b.established;
     });
     return l;
-  }, [type, search, sort]);
+  }, [type, search, sort, institutions]);
 
   const totals = useMemo(() => {
-    const all = institutions.filter((i) => i.type === type);
+    const all = institutions.filter((i: Institution) => i.type === type);
     return {
       count: all.length,
-      branches: all.reduce((s, i) => s + i.branches, 0),
-      atms: all.reduce((s, i) => s + (i.atms ?? 0), 0),
-      avgRating: (all.reduce((s, i) => s + i.rating, 0) / all.length).toFixed(1),
+      branches: all.reduce((s, i: Institution) => s + i.branches, 0),
+      atms: all.reduce((s, i: Institution) => s + (i.atms ?? 0), 0),
+      avgRating: all.length ? (all.reduce((s, i: Institution) => s + i.rating, 0) / all.length).toFixed(1) : "0",
     };
-  }, [type]);
+  }, [type, institutions]);
 
   const Icon = type === "bank" ? Building2 : Banknote;
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center py-20">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-500"></div>
+      </div>
+    );
+  }
 
   return (
     <>

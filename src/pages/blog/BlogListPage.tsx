@@ -4,30 +4,31 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ChevronRight, Clock, ArrowRight, Tag, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
-import { blogPosts } from "@/data/finance";
+import { useBlogPosts } from "@/hooks/use-finance-api";
 import { useLocalePath } from "@/i18n/locale-routing";
-
-const categories = [...new Set(blogPosts.map((p) => p.category))];
 
 export default function BlogListPage() {
   const { t } = useTranslation();
   const lp = useLocalePath();
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  
+  const { data: blogPosts = [], isLoading } = useBlogPosts();
+  const categories = useMemo(() => [...new Set(blogPosts.map((p: any) => p.category))], [blogPosts]);
 
   const filtered = useMemo(() => {
     let list = blogPosts;
-    if (activeCategory) list = list.filter((p) => p.category === activeCategory);
+    if (activeCategory) list = list.filter((p: any) => p.category === activeCategory);
     if (search.trim()) {
       const q = search.toLowerCase();
       list = list.filter(
-        (p) =>
+        (p: any) =>
           p.title.toLowerCase().includes(q) ||
           p.excerpt.toLowerCase().includes(q)
       );
     }
     return list;
-  }, [search, activeCategory]);
+  }, [blogPosts, search, activeCategory]);
 
   return (
     <>
@@ -66,6 +67,12 @@ export default function BlogListPage() {
 
       {/* Content */}
       <section className="container py-8 md:py-10">
+        {isLoading && (
+          <div className="flex items-center justify-center py-20">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-500"></div>
+          </div>
+        )}
+        {!isLoading && <>
         {/* Toolbar */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-6">
           <div className="relative flex-1 w-full sm:max-w-xs">
@@ -159,7 +166,9 @@ export default function BlogListPage() {
             <p>{t("blog.noResults", { defaultValue: "Heç bir məqalə tapılmadı." })}</p>
           </div>
         )}
+        </>}
       </section>
+
     </>
   );
 }

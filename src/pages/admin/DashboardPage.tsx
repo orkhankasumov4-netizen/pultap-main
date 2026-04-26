@@ -13,15 +13,25 @@ import {
   Eye,
   FileText,
   Zap,
+  Loader2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { credits, banks, boktProducts, cards } from "@/data/finance";
+import { useCredits, useBanks, useBoktProducts, useCards, useLeads, useContacts } from "@/hooks/use-finance-api";
 
 export const DashboardPage = () => {
+  const { data: credits = [], isLoading: loadingCredits } = useCredits();
+  const { data: banks = [], isLoading: loadingBanks } = useBanks();
+  const { data: boktProducts = [], isLoading: loadingBokts } = useBoktProducts();
+  const { data: cards = [], isLoading: loadingCards } = useCards();
+  const { data: leads = [] } = useLeads();
+  const { data: contacts = [] } = useContacts();
+
+  const isLoading = loadingCredits || loadingBanks || loadingBokts || loadingCards;
+
   const stats = [
     {
       label: "Aktiv Kreditlər",
-      value: credits.length.toString(),
+      value: isLoading ? "..." : credits.length.toString(),
       change: "+12%",
       isPositive: true,
       icon: CreditCard,
@@ -30,7 +40,7 @@ export const DashboardPage = () => {
     },
     {
       label: "Qeydiyyatlı Banklar",
-      value: banks.length.toString(),
+      value: isLoading ? "..." : banks.length.toString(),
       change: "0%",
       isPositive: true,
       icon: Landmark,
@@ -39,7 +49,7 @@ export const DashboardPage = () => {
     },
     {
       label: "BOKT Məhsulları",
-      value: boktProducts.length.toString(),
+      value: isLoading ? "..." : boktProducts.length.toString(),
       change: "+3%",
       isPositive: true,
       icon: Users,
@@ -48,7 +58,7 @@ export const DashboardPage = () => {
     },
     {
       label: "Bank Kartları",
-      value: cards.length.toString(),
+      value: isLoading ? "..." : cards.length.toString(),
       change: "+18%",
       isPositive: true,
       icon: TrendingUp,

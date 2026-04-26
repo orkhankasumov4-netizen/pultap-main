@@ -14,13 +14,14 @@ import {
   ArrowLeft,
   Building2,
   ExternalLink,
+  Loader2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BankLogo } from "@/components/site/BankLogo";
 import { LoanCalculator } from "@/components/site/LoanCalculator";
 import { ApplicationDialog } from "@/components/site/ApplicationDialog";
-import { credits, bankById, institutions } from "@/data/finance";
+import { useCredits, useBanks, useInstitutions } from "@/hooks/use-finance-api";
 import { useLocalePath } from "@/i18n/locale-routing";
 
 const fmt = (n: number) => new Intl.NumberFormat("az-AZ").format(n);
@@ -29,11 +30,26 @@ export default function CreditDetailPage() {
   const { t } = useTranslation();
   const lp = useLocalePath();
   const { id } = useParams<{ id: string }>();
+  const { data: credits = [], isLoading: creditsLoading } = useCredits();
+  const { data: banks = [], isLoading: banksLoading } = useBanks();
+  const { data: institutions = [] } = useInstitutions();
+
+  const isLoading = creditsLoading || banksLoading;
+
+  if (isLoading) {
+    return (
+      <div className="flex-grow flex items-center justify-center py-20">
+        <Loader2 className="h-8 w-8 animate-spin text-primary/50" />
+      </div>
+    );
+  }
 
   const credit = credits.find((c) => c.id === id);
   if (!credit) return <Navigate to={lp("/kreditler")} replace />;
 
-  const bank = bankById(credit.bankId);
+  const bank = banks.find(b => b.id === credit.bankId);
+  if (!bank) return <Navigate to={lp("/kreditler")} replace />;
+
   const inst = institutions.find((i) => i.id === credit.bankId);
 
   const typeLabels: Record<string, string> = {

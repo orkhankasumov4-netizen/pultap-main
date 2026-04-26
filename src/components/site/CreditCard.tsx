@@ -1,4 +1,4 @@
-import { Credit, bankById } from "@/data/finance";
+import { Credit } from "@/data/finance";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { BankLogo } from "./BankLogo";
@@ -6,6 +6,7 @@ import { Star, Check, X, Plus, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useLocalePath } from "@/i18n/locale-routing";
+import { useBanks } from "@/hooks/use-finance-api";
 
 const fmt = (n: number) => new Intl.NumberFormat("az-AZ").format(n);
 
@@ -18,7 +19,9 @@ export const CreditCard = ({
 }) => {
   const { t } = useTranslation();
   const lp = useLocalePath();
-  const bank = bankById(credit.bankId);
+  const { data: banks = [] } = useBanks();
+  const bank = banks.find(b => b.id === credit.bankId);
+  if (!bank) return null;
   return (
     <article className="group bg-card rounded-2xl p-5 shadow-card hover:shadow-elegant transition-all hover:-translate-y-0.5 border">
       <div className="flex items-start justify-between gap-3 mb-4">

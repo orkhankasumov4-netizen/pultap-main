@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ChevronRight, Home, CheckCircle2, AlertCircle, Car, ShieldCheck, Clock, Check } from "lucide-react";
+import { ChevronRight, Home, CheckCircle2, AlertCircle, Car, ShieldCheck, Clock, Check, Loader2 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { useLocalePath } from "@/i18n/locale-routing";
@@ -10,12 +10,15 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 
-import { boktProducts, bokts } from "@/data/finance";
+import { useBoktProducts, useBokts } from "@/hooks/use-finance-api";
 
 const PtsCredit = () => {
   const { t } = useTranslation();
   const getPath = useLocalePath();
   const { toast } = useToast();
+
+  const { data: boktProducts = [], isLoading: productsLoading } = useBoktProducts();
+  const { isLoading: boktsLoading } = useBokts();
 
   const [selectedBokts, setSelectedBokts] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -55,6 +58,16 @@ const PtsCredit = () => {
     });
     setSelectedBokts([]);
   };
+
+  const isLoading = productsLoading || boktsLoading;
+
+  if (isLoading) {
+    return (
+      <div className="flex-grow flex items-center justify-center py-20">
+        <Loader2 className="h-8 w-8 animate-spin text-primary/50" />
+      </div>
+    );
+  }
 
   return (
     <>
@@ -243,7 +256,6 @@ const PtsCredit = () => {
           </div>
         </section>
 
-        {/* 6. Full Listing */}
         {/* 6. Full Listing */}
         <section className="py-12 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

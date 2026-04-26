@@ -7,8 +7,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { Search, X } from "lucide-react";
-import { deposits, banks, Deposit } from "@/data/finance";
+import { Search, X, Loader2 } from "lucide-react";
+import { Deposit } from "@/data/finance";
+import { useDeposits, useBanks } from "@/hooks/use-finance-api";
 
 type Props = {
   title: string;
@@ -24,6 +25,9 @@ export const DepositsListPage = ({
   title, description, breadcrumbs, initialCurrency = "all", lockCurrency = false,
 }: Props) => {
   const { t, i18n } = useTranslation();
+  const { data: deposits = [], isLoading: depositsLoading } = useDeposits();
+  const { data: banks = [], isLoading: banksLoading } = useBanks();
+
   const [currency, setCurrency] = useState<"all" | Deposit["currency"]>(
     initialCurrency === "AZN" ? "AZN" : initialCurrency === "foreign" ? "USD" : "all"
   );
@@ -63,7 +67,7 @@ export const DepositsListPage = ({
       return a.minAmount - b.minAmount;
     });
     return list;
-  }, [currency, search, minRate, maxTerm, maxMinAmount, selectedBanks, sort, lockCurrency, initialCurrency]);
+  }, [deposits, currency, search, minRate, maxTerm, maxMinAmount, selectedBanks, sort, lockCurrency, initialCurrency]);
 
   const filters = (
     <div>
@@ -138,7 +142,11 @@ export const DepositsListPage = ({
       toolbar={toolbar}
       resultsCount={filtered.length}
     >
-      {filtered.length === 0 ? (
+      {depositsLoading || banksLoading ? (
+        <div className="flex justify-center p-12">
+          <Loader2 className="h-8 w-8 animate-spin text-primary/50" />
+        </div>
+      ) : filtered.length === 0 ? (
         <div className="bg-card border border-border rounded-2xl p-10 text-center">
           <p className="text-sm text-muted-foreground">{t("lists.noDeposits")}</p>
           <Button variant="outline" size="sm" onClick={reset} className="mt-4">{t("common.resetFilters")}</Button>
@@ -153,3 +161,4 @@ export const DepositsListPage = ({
     </ListPageShell>
   );
 };
+

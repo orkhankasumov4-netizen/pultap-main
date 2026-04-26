@@ -1,17 +1,27 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ChevronRight, CheckCircle2 } from "lucide-react";
+import { ChevronRight, CheckCircle2, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CreditCard } from "@/components/site/CreditCard";
-import { credits } from "@/data/finance";
+import { useCredits } from "@/hooks/use-finance-api";
 import { useLocalePath } from "@/i18n/locale-routing";
 
 export default function InternalMortgage() {
   const { t } = useTranslation();
   const lp = useLocalePath();
+  const { data: credits = [], isLoading } = useCredits();
   const internal = credits.filter((c) => c.type === "ipoteka" && c.highlight !== "Dövlət ipotekası");
   const adv = t("mortgageInternal.adv", { returnObjects: true }) as string[];
+
+  if (isLoading) {
+    return (
+      <div className="flex-grow flex items-center justify-center py-20">
+        <Loader2 className="h-8 w-8 animate-spin text-primary/50" />
+      </div>
+    );
+  }
+
   return (
     <>
       <Helmet>

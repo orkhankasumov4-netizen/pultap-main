@@ -1,13 +1,13 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ChevronRight, X, ArrowLeft, Scale } from "lucide-react";
+import { ChevronRight, X, ArrowLeft, Scale, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BankLogo } from "@/components/site/BankLogo";
 import { useCompare } from "@/context/CompareContext";
-import { credits, bankById } from "@/data/finance";
 import { useLocalePath } from "@/i18n/locale-routing";
+import { useCredits, useBanks } from "@/hooks/use-finance-api";
 
 const fmt = (n: number) => new Intl.NumberFormat("az-AZ").format(n);
 
@@ -22,6 +22,9 @@ export default function ComparePage() {
   const { t } = useTranslation();
   const lp = useLocalePath();
   const { ids, clear, toggle } = useCompare();
+
+  const { data: credits = [], isLoading: creditsLoading } = useCredits();
+  const { data: banks = [], isLoading: banksLoading } = useBanks();
 
   const items = ids
     .map((id) => credits.find((c) => c.id === id))
@@ -39,15 +42,15 @@ export default function ComparePage() {
         {
           label: t("compare.bank", { defaultValue: "Bank" }),
           values: items.map((c) => {
-            const b = bankById(c.bankId);
+            const b = banks.find((bank) => bank.id === c.bankId);
             return (
               <Link
                 key={c.id}
-                to={lp(`/banks/${b.id}`)}
+                to={b ? lp(`/banks/${b.id}`) : "#"}
                 className="flex items-center gap-2 text-primary hover:underline"
               >
-                <BankLogo id={b.id} size={28} />
-                {b.name}
+                <BankLogo id={b?.id || c.bankId} size={28} />
+                {b ? b.name : c.bankId}
               </Link>
             );
           }),
@@ -138,7 +141,11 @@ export default function ComparePage() {
       </section>
 
       <section className="container py-8 md:py-10">
-        {items.length === 0 ? (
+        {creditsLoading || banksLoading ? (
+          <div className="flex justify-center p-12">
+            <Loader2 className="h-8 w-8 animate-spin text-primary/50" />
+          </div>
+        ) : items.length === 0 ? (
           <div className="bg-card border border-border rounded-2xl p-12 text-center shadow-card">
             <Scale className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
             <h2 className="font-semibold text-lg mb-2">

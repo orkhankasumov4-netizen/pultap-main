@@ -23,6 +23,10 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
     proxy: {
+      '/api/v1': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+      },
       '/api/cbar': {
         target: 'https://cbar.az/currencies',
         changeOrigin: true,

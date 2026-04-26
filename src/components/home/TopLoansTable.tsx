@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { bankById } from "@/data/finance";
+import { useBanks } from "@/hooks/use-finance-api";
 import { useLocalePath } from "@/i18n/locale-routing";
 import { useTopLoans } from "@/hooks/use-top-loans";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -14,6 +14,7 @@ export const TopLoansTable = () => {
   const { t, i18n } = useTranslation();
   const lp = useLocalePath();
   const { loans: top, isLoading } = useTopLoans();
+  const { data: banks = [] } = useBanks();
 
   return (
     <section className="bg-surface border-y border-border py-14 md:py-20">
@@ -72,7 +73,8 @@ export const TopLoansTable = () => {
                     </tr>
                   ))
                 : top.map((c) => {
-                    const b = bankById(c.bankId);
+                    const b = banks.find(bank => bank.id === c.bankId);
+                    if (!b) return null;
                     return (
                       <tr key={c.id} className="hover:bg-muted/40 transition-colors">
                         <td className="px-5 py-4">
@@ -138,7 +140,8 @@ export const TopLoansTable = () => {
                 </div>
               ))
             : top.map((c) => {
-                const b = bankById(c.bankId);
+                const b = banks.find(bank => bank.id === c.bankId);
+                if (!b) return null;
                 return (
                   <div key={c.id} className="bg-card border border-border rounded-lg p-4 shadow-card">
                     <div className="flex items-center justify-between gap-3">
