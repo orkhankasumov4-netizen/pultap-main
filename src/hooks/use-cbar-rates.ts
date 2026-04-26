@@ -1,7 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
 import { currencies as fallbackCurrencies, type Currency } from "@/data/finance";
 
-const CBAR_URL = "/api/cbar";
+// In development, Vite proxies /api/cbar → cbar.az (see vite.config.ts)
+// In production (Cloudflare), we use the backend as a CORS-safe proxy
+const CBAR_URL =
+  import.meta.env.DEV
+    ? "/api/cbar"
+    : `${import.meta.env.VITE_API_URL || "https://pultap.duckdns.org/api/v1"}/cbar`;
 
 /** Build the URL for today's CBAR XML bulletin. */
 const todayXmlUrl = (): string => {
@@ -104,7 +109,8 @@ export const useCbarRates = () => {
     queryFn: fetchCbarRates,
     staleTime: 30 * 60 * 1000,       // 30 min
     gcTime: 60 * 60 * 1000,           // 1 hour
-    retry: 2,
+    retry: 1,
+    retryDelay: 1000,                 // wait 1s before retry
     refetchOnWindowFocus: false,
   });
 
