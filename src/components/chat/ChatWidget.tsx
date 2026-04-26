@@ -16,9 +16,7 @@ export function ChatWidget() {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const API_URL = import.meta.env.DEV 
-    ? 'http://localhost:3000/api/v1/chat' 
-    : 'https://pultap.duckdns.org/api/v1/chat';
+  const API_URL = 'https://pultap.duckdns.org/api/v1/chat';
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
