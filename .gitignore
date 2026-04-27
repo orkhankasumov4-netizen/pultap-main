@@ -27,3 +27,11 @@ bun.lockb
 *.sln
 *.sw?
 .env
+
+# ── SSH Private Keys (NEVER commit these) ──────────────
+*.pem
+*.key
+.kamatera_key
+kamatera_key.pem
+id_rsa
+id_ed25519
