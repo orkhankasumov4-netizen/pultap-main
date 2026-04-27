@@ -1,10 +1,11 @@
 import { Outlet, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { BackToTop } from "./BackToTop";
 import { ChatWidget } from "../chat/ChatWidget";
+import { PageFallback } from "./PageFallback";
 
 export const Layout = () => {
   const { pathname } = useLocation();
@@ -22,7 +23,9 @@ export const Layout = () => {
       </a>
       <Navbar />
       <main id="main-content" className="flex-1 outline-none" tabIndex={-1}>
-        <Outlet />
+        <Suspense fallback={<PageFallback />}>
+          <Outlet />
+        </Suspense>
       </main>
       <Footer />
       <BackToTop />
