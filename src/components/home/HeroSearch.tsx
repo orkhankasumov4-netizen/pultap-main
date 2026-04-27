@@ -78,8 +78,12 @@ export const HeroSearch = () => {
             className="p-4 md:p-5 flex flex-col md:flex-row gap-3"
           >
             <div className="flex-1 relative">
+              <label htmlFor="hero-search-input" className="sr-only">
+                {t(tab.placeholderKey)}
+              </label>
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
+                id="hero-search-input"
                 type="number"
                 value={val}
                 onChange={(e) => setVal(e.target.value)}
