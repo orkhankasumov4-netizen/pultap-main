@@ -134,9 +134,9 @@ export const Footer = () => {
         <div className="container py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-secondary-foreground/60">
           <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
           <div className="flex gap-5">
-            <a href="#" className="hover:text-primary-glow transition">{t("footer.privacy")}</a>
+            <Link to={lp("/mexfilik-siyaseti")} className="hover:text-primary-glow transition">{t("footer.privacy")}</Link>
             <Link to={lp("/istifade-qaydalari")} className="hover:text-primary-glow transition">{t("footer.terms")}</Link>
-            <a href="#" className="hover:text-primary-glow transition">{t("footer.cookies")}</a>
+            <Link to={lp("/kuki-siyaseti")} className="hover:text-primary-glow transition">{t("footer.cookies")}</Link>
           </div>
         </div>
       </div>

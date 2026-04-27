@@ -1428,6 +1428,33 @@
     "c3_title": "3. Müəllif hüquqları",
     "c3_desc": "3.1 Saytın dizaynı, loqosu, qrafik elementləri və məlumat bazası müəllif hüquqları ilə qorunur. İcazəsiz kopyalama və ya istifadə qadağandır."
   },
+  "privacy": {
+    "metaTitle": "Məxfilik Siyasəti | Pultap.az",
+    "metaDesc": "Pultap.az platformasında fərdi məlumatların qorunması və məxfilik siyasəti.",
+    "title": "Məxfilik Siyasəti",
+    "lastUpdated": "Son yenilənmə tarixi: 28 Aprel 2026",
+    "content": {
+      "p1": "1. Ümumi müddəalar",
+      "p2": "1.1 Bu Məxfilik Siyasəti, Pultap.az saytından istifadə edən şəxslərin (bundan sonra \"İstifadəçi\") şəxsi məlumatlarının necə toplanıldığını, istifadə edildiyini və qorunduğunu müəyyən edir.",
+      "p3": "1.2 Saytdan istifadə etməklə siz bu siyasətin şərtləri ilə razılaşırsınız. Əgər bu şərtlərlə razı deyilsinizsə, saytdan istifadəni dayandırmalısınız.",
+      "p4": "2. Hansı məlumatlar toplanır?",
+      "p5": "2.1 Biz, siz saytımızda xidmətlərdən istifadə edərkən aşağıdakı fərdi məlumatları toplaya bilərik:",
+      "p6": "- Adınız və soyadınız (formalar vasitəsilə müraciət edərkən)",
+      "p7": "- E-poçt ünvanınız və əlaqə nömrəniz",
+      "p8": "- IP ünvanınız, istifadə etdiyiniz cihaz və brauzer haqqında texniki məlumatlar",
+      "p9": "3. Məlumatların istifadə məqsədi",
+      "p10": "3.1 Toplanan məlumatlar yalnız aşağıdakı məqsədlər üçün istifadə edilir:",
+      "p11": "- Sizin müraciətlərinizə cavab vermək və maliyyə məhsulları (kredit, depozit və s.) üçün lazımi yönləndirmələri etmək",
+      "p12": "- Saytımızın işini, istifadəçi təcrübəsini təhlil etmək və təkmilləşdirmək",
+      "p13": "- Ehtiyac olarsa, texniki dəstək göstərmək və xəbərdarlıqlar göndərmək",
+      "p14": "4. Məlumatların üçüncü tərəflərə ötürülməsi",
+      "p15": "4.1 Sizin fərdi məlumatlarınız heç bir halda üçüncü tərəflərə satılmır.",
+      "p16": "4.2 Məlumatlar yalnız siz müəyyən bir bankın və ya BOKT-un xidmətinə (məsələn, kredit sifarişi) müraciət etdiyiniz təqdirdə, həmin maliyyə qurumuna ötürülə bilər.",
+      "p17": "5. Məlumatların qorunması (GDPR & KVKK)",
+      "p18": "5.1 Biz istifadəçi məlumatlarının təhlükəsizliyini təmin etmək üçün müasir şifrələmə (SSL) və digər texniki vasitələrdən istifadə edirik.",
+      "p19": "5.2 Hər bir istifadəçi öz məlumatlarının silinməsini və ya dəyişdirilməsini tələb etmək hüququna malikdir. Bunun üçün info@pultap.az ünvanına yaza bilərsiniz."
+    }
+  },
   "advertise": {
     "metaTitle": "Pultap.az - Reklam yerləşdirilməsi",
     "metaDesc": "Pultap.az platformasında reklam imkanları. Çoxsaylı auditoriyaya çatmaq üçün banner, sponsor və bloq reklamları.",
@@ -1661,5 +1688,27 @@
         }
       }
     }
+  },
+  "cookiePolicy": {
+    "title": "Kuki Siyasəti",
+    "lastUpdated": "Son yenilənmə tarixi: 28 Aprel 2026",
+    "content": {
+      "p1": "Kuki (Cookie) nədir?",
+      "p2": "Kukilər (və ya Cookies) vebsaytımızı ziyarət etdiyiniz zaman brauzerinizə və ya cihazınıza yüklənən kiçik mətn fayllarıdır. Onlar saytın daha düzgün işləməsinə, sizin üstünlüklərinizi xatırlamağa və istifadəçi təcrübənizi yaxşılaşdırmağa kömək edir.",
+      "p3": "Hansı növ kukilərdən istifadə edirik?",
+      "p4": "1. Zəruri Kukilər: Vebsaytın əsas funksiyalarının (məsələn, təhlükəsizlik, şəbəkə idarəetməsi) işləməsi üçün vacibdir. Bu kukiləri söndürmək saytın bəzi hissələrinin işləməməsinə səbəb ola bilər.",
+      "p5": "2. Analitik və Performans Kukiləri: Saytımızın necə istifadə edildiyini anlamaq və performansı yaxşılaşdırmaq üçün istifadə olunur (məsələn, Google Analytics).",
+      "p6": "3. Funksional Kukilər: Dil seçimi və ya bölgə kimi fərdi seçimlərinizi yadda saxlamaq üçün istifadə olunur.",
+      "p7": "4. Marketinq və Reklam Kukiləri: Sizə daha uyğun reklamlar göstərmək və reklam kampaniyalarımızın effektivliyini ölçmək üçün istifadə olunur.",
+      "p8": "Kukiləri necə idarə etmək olar?",
+      "p9": "Əksər veb brauzerlər kukiləri avtomatik olaraq qəbul edir, lakin siz brauzerinizin parametrlərini dəyişdirərək kukiləri bloklaya və ya silə bilərsiniz. Nəzərə alın ki, kukiləri bloklamaq saytımızın bəzi funksiyalarından tam istifadə etməyinizə mane ola bilər."
+    }
+  },
+  "cookieConsent": {
+    "title": "Kuki bildirişi",
+    "description": "Saytımız daha yaxşı istifadəçi təcrübəsi üçün kukilərdən istifadə edir. Kukiləri qəbul etməklə siz Kuki Siyasətimizlə razılaşırsınız.",
+    "learnMore": "Daha ətraflı",
+    "accept": "Qəbul et",
+    "decline": "İmtina et"
   }
 }

@@ -1168,5 +1168,27 @@
         }
       }
     }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: April 28, 2026",
+    "content": {
+      "p1": "What are Cookies?",
+      "p2": "Cookies are small text files downloaded to your browser or device when you visit our website. They help the site function properly, remember your preferences, and improve your user experience.",
+      "p3": "What types of cookies do we use?",
+      "p4": "1. Essential Cookies: Crucial for the basic functions of the website (e.g., security, network management). Disabling these may cause some parts of the site to not function properly.",
+      "p5": "2. Analytics and Performance Cookies: Used to understand how our site is used and to improve performance (e.g., Google Analytics).",
+      "p6": "3. Functional Cookies: Used to remember your personal preferences, such as language choice or region.",
+      "p7": "4. Marketing and Advertising Cookies: Used to show you more relevant advertisements and measure the effectiveness of our advertising campaigns.",
+      "p8": "How to manage cookies?",
+      "p9": "Most web browsers automatically accept cookies, but you can block or delete them by changing your browser settings. Please note that blocking cookies may prevent you from fully using some features of our site."
+    }
+  },
+  "cookieConsent": {
+    "title": "Cookie Notice",
+    "description": "Our site uses cookies to provide a better user experience. By accepting cookies, you agree to our Cookie Policy.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

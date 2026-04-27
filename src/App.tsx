@@ -57,6 +57,8 @@ const AboutPage = lazy(() => import("./pages/about/AboutPage"));
 const ContactPage = lazy(() => import("./pages/contact/ContactPage"));
 const AdvertisePage = lazy(() => import("./pages/advertise/AdvertisePage"));
 const TermsOfUsePage = lazy(() => import("./pages/terms/TermsOfUsePage"));
+const PrivacyPolicyPage = lazy(() => import("./pages/terms/PrivacyPolicyPage"));
+const CookiePolicyPage = lazy(() => import("./pages/terms/CookiePolicyPage"));
 const QnaPage = lazy(() => import("./pages/qna/QnaPage"));
 const GlossaryPage = lazy(() => import("./pages/glossary/GlossaryPage"));
 
@@ -71,6 +73,7 @@ const Register = lazy(() => import("./pages/auth/Register").then(m => ({ default
 const AdminLogin = lazy(() => import("./pages/auth/AdminLogin").then(m => ({ default: m.AdminLogin })));
 import { AdminProtectedRoute } from "./components/auth/AdminProtectedRoute";
 import { OfflineBanner } from "./components/site/OfflineBanner";
+import { CookieConsent } from "./components/site/CookieConsent";
 const OfflinePage = lazy(() => import("./pages/OfflinePage").then(m => ({ default: m.OfflinePage })));
 
 const queryClient = new QueryClient();
@@ -136,6 +139,8 @@ const AppRoutes = () => (
     <Route path="elaqe" element={<ContactPage />} />
     <Route path="reklam" element={<AdvertisePage />} />
     <Route path="istifade-qaydalari" element={<TermsOfUsePage />} />
+    <Route path="mexfilik-siyaseti" element={<PrivacyPolicyPage />} />
+    <Route path="kuki-siyaseti" element={<CookiePolicyPage />} />
     <Route path="sual-cavab" element={<QnaPage />} />
     <Route path="luget" element={<GlossaryPage />} />
     <Route path="giris" element={<Login />} />
@@ -160,6 +165,7 @@ const App = () => (
           <Sonner />
           <BrowserRouter>
             <OfflineBanner />
+            <CookieConsent />
             <LocaleSync />
             <ErrorBoundary>
               <Suspense fallback={<div className="h-screen w-full flex items-center justify-center"><div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" /></div>}>
