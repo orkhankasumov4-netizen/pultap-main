@@ -4,7 +4,7 @@ import path from "path";
 
 import { generateSitemap } from "./scripts/sitemap-generator";
 import { VitePWA } from "vite-plugin-pwa";
-
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 function sitemapPlugin() {
   return {
     name: 'sitemap-generator',
@@ -45,6 +45,23 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(), 
+    ViteImageOptimizer({
+      svg: {
+        multipass: true,
+      },
+      png: {
+        quality: 80,
+      },
+      jpeg: {
+        quality: 80,
+      },
+      jpg: {
+        quality: 80,
+      },
+      webp: {
+        lossless: true,
+      },
+    }),
 
     sitemapPlugin(),
     VitePWA({
