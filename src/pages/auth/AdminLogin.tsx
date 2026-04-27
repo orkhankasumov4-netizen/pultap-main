@@ -2,30 +2,54 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "@/store/auth-store";
+import { supabase } from "@/lib/supabase";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ShieldAlert, Lock, User } from "lucide-react";
+import { ShieldAlert, Lock, Mail } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { toast } from "sonner";
 
 export const AdminLogin = () => {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
   const loginAdmin = useAuthStore((state) => state.loginAdmin);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError("");
+    setIsLoading(true);
 
-    const expectedUsername = import.meta.env.VITE_ADMIN_USERNAME || "admin";
-    const expectedPassword = import.meta.env.VITE_ADMIN_PASSWORD || "Admin123";
+    try {
+      // 1. Supabase vasitəsilə təhlükəsiz giriş yoxlanışı
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
 
-    if (username === expectedUsername && password === expectedPassword) {
+      if (error) {
+        toast.error("E-poçt və ya şifrə yanlışdır.");
+        return;
+      }
+
+      // 2. Təhlükəsizlik üçün yalnız xüsusi admin e-poçtuna icazə veririk
+      // (VITE_ADMIN_EMAIL .env faylında qeyd edilə bilər, edilməsə admin@pultap.az sayılır)
+      const allowedAdminEmail = import.meta.env.VITE_ADMIN_EMAIL || "admin@pultap.az";
+      
+      if (data.user?.email !== allowedAdminEmail && allowedAdminEmail !== "*") {
+        await supabase.auth.signOut();
+        toast.error("Bu hesabın admin panelinə giriş hüququ yoxdur.");
+        return;
+      }
+
+      // 3. Hər şey qaydasındadırsa Admin kimi daxil ol
       loginAdmin();
+      toast.success("Admin panelinə uğurla daxil oldunuz");
       navigate("/admin");
-    } else {
-      setError("İstifadəçi adı və ya şifrə yalnışdır.");
+    } catch (err: any) {
+      toast.error(err.message || "Sistemə giriş zamanı xəta baş verdi.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -45,25 +69,19 @@ export const AdminLogin = () => {
         </div>
         
         <div className="p-8">
-          {error && (
-            <div className="bg-destructive/10 text-destructive text-sm p-3 rounded-lg mb-6 border border-destructive/20 text-center">
-              {error}
-            </div>
-          )}
-
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="space-y-2">
-              <label className="text-sm font-medium">İstifadəçi adı</label>
+              <label className="text-sm font-medium">Admin E-poçt</label>
               <div className="relative">
-                <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input 
-                  type="text" 
+                  type="email" 
                   required 
                   autoComplete="username"
                   className="pl-9 h-11"
-                  placeholder="admin"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
+                  placeholder="admin@pultap.az"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
             </div>
@@ -84,8 +102,8 @@ export const AdminLogin = () => {
               </div>
             </div>
             
-            <Button type="submit" className="w-full h-11 bg-primary hover:bg-primary-hover font-semibold">
-              Sistemə daxil ol
+            <Button type="submit" disabled={isLoading} className="w-full h-11 bg-primary hover:bg-primary-hover font-semibold">
+              {isLoading ? "Yoxlanılır..." : "Sistemə daxil ol"}
             </Button>
           </form>
         </div>
