@@ -5,6 +5,7 @@ import { Cookie, X, Check, Settings2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLocalePath } from "@/i18n/locale-routing";
 import { cn } from "@/lib/utils";
+import { grantConsent, denyConsent } from "@/lib/analytics";
 
 const CONSENT_KEY = "pultap-cookie-consent";
 
@@ -18,14 +19,25 @@ export const CookieConsent = () => {
 
   useEffect(() => {
     const stored = localStorage.getItem(CONSENT_KEY) as ConsentStatus;
+    // If previously accepted, silently grant consent to GA on revisit
+    if (stored === "accepted") {
+      grantConsent();
+      return;
+    }
     if (!stored) {
-      // Delay slightly so it doesn't flash on initial load
       const timer = setTimeout(() => setVisible(true), 1200);
       return () => clearTimeout(timer);
     }
   }, []);
 
   const dismiss = (status: "accepted" | "declined") => {
+    // Update GA consent based on user choice
+    if (status === "accepted") {
+      grantConsent();
+    } else {
+      denyConsent();
+    }
+
     setLeaving(true);
     setTimeout(() => {
       localStorage.setItem(CONSENT_KEY, status);

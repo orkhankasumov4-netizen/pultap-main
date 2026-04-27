@@ -1,6 +1,6 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,6 +9,16 @@ import { LocaleSync } from "./i18n/locale-routing";
 import { CompareProvider } from "./context/CompareContext";
 import { ThemeProvider } from "next-themes";
 import { ErrorBoundary } from "./components/layout/ErrorBoundary";
+import { trackPageView } from "./lib/analytics";
+
+/** Fires a GA4 page_view on every route change (no-op if consent denied) */
+const RouteTracker = () => {
+  const location = useLocation();
+  useEffect(() => {
+    trackPageView(location.pathname + location.search);
+  }, [location]);
+  return null;
+};
 
 const Index = lazy(() => import("./pages/Index"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -166,6 +176,7 @@ const App = () => (
           <BrowserRouter>
             <OfflineBanner />
             <CookieConsent />
+            <RouteTracker />
             <LocaleSync />
             <ErrorBoundary>
               <Suspense fallback={<div className="h-screen w-full flex items-center justify-center"><div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" /></div>}>
