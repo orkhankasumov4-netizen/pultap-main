@@ -105,6 +105,26 @@ export type Institution = {
   logoUrl?: string;
 };
 
+export type Lead = {
+  id: string;
+  full_name: string;
+  phone: string;
+  fin_code?: string;
+  amount?: number;
+  credit_type?: string;
+  status: "pending" | "contacted" | "approved" | "rejected";
+  created_at: string;
+};
+
+export type Contact = {
+  id: string;
+  name: string;
+  phone: string;
+  email?: string;
+  message?: string;
+  created_at: string;
+};
+
 // ── Fallback data (used when CBAR API is unavailable) ───
 
 export const currencies: Currency[] = [

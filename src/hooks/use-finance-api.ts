@@ -1,6 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { apiClient } from '@/api/client';
-import type { Bank, Credit, Deposit, Card, Currency, Bokt, BoktProduct, Institution } from '@/data/finance';
+import type { Bank, Credit, Deposit, Card, Currency, Bokt, BoktProduct, Institution, Lead, Contact } from '@/data/finance';
 
 // ─── Banks ────────────────────────────────────────────
 export const useBanks = () =>
@@ -63,9 +63,33 @@ export const useBlogPosts = () =>
   useQuery<Record<string, unknown>[]>({ queryKey: ['blog_posts'], queryFn: () => apiClient.get('/blog_posts') });
 
 // ─── Leads ────────────────────────────────────────────
+// API returns: { success: true, data: Lead[] }
 export const useLeads = () =>
-  useQuery<Record<string, unknown>[]>({ queryKey: ['leads'], queryFn: () => apiClient.get('/leads') });
+  useQuery<Lead[]>({
+    queryKey: ['leads'],
+    queryFn: async () => {
+      const res = await apiClient.get('/leads');
+      // Handle both wrapped { success, data } and direct array
+      return Array.isArray(res) ? res : (res?.data ?? []);
+    },
+  });
+
+export const useUpdateLead = () => {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: ({ id, ...body }: Partial<Lead> & { id: string }) =>
+      apiClient.put(`/leads/${id}`, body),
+    onSuccess: () => qc.invalidateQueries({ queryKey: ['leads'] }),
+  });
+};
 
 // ─── Contacts ─────────────────────────────────────────
+// API returns: { success: true, data: Contact[] }
 export const useContacts = () =>
-  useQuery<Record<string, unknown>[]>({ queryKey: ['contacts'], queryFn: () => apiClient.get('/contacts') });
+  useQuery<Contact[]>({
+    queryKey: ['contacts'],
+    queryFn: async () => {
+      const res = await apiClient.get('/contacts');
+      return Array.isArray(res) ? res : (res?.data ?? []);
+    },
+  });

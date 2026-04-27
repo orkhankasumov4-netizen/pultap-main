@@ -20,14 +20,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useAuthStore } from "@/store/auth-store";
 import { useTheme } from "next-themes";
-
-const navItems = [
-  { name: "İdarə Paneli", path: "/admin", icon: LayoutDashboard, badge: null },
-  { name: "Kreditlər", path: "/admin/loans", icon: Banknote, badge: "12" },
-  { name: "Banklar və BOKT", path: "/admin/institutions", icon: Landmark, badge: null },
-  { name: "Kartlar", path: "/admin/cards", icon: CreditCard, badge: null },
-  { name: "Tənzimləmələr", path: "/admin/settings", icon: Settings, badge: null },
-];
+import { useLeads } from "@/hooks/use-finance-api";
 
 export const AdminLayout = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -36,6 +29,16 @@ export const AdminLayout = () => {
   const navigate = useNavigate();
   const logout = useAuthStore((state) => state.logout);
   const { theme, setTheme } = useTheme();
+  const { data: leads = [] } = useLeads();
+  const pendingLeadCount = leads.filter(l => l.status === "pending").length;
+
+  const navItems = [
+    { name: "İdarə Paneli", path: "/admin", icon: LayoutDashboard, badge: null },
+    { name: "Kreditlər", path: "/admin/loans", icon: Banknote, badge: null },
+    { name: "Müraciətlər", path: "/admin/leads", icon: CreditCard, badge: pendingLeadCount > 0 ? pendingLeadCount.toString() : null },
+    { name: "Banklar və BOKT", path: "/admin/institutions", icon: Landmark, badge: null },
+    { name: "Tənzimləmələr", path: "/admin/settings", icon: Settings, badge: null },
+  ];
 
   // Close mobile menu on route change
   useEffect(() => {
