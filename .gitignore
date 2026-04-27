@@ -26,3 +26,4 @@ bun.lockb
 *.njsproj
 *.sln
 *.sw?
+.env
