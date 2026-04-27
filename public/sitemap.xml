@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://pultap.az/</loc>
+  </url>
+  <url>
+    <loc>https://pultap.az/en</loc>
+  </url>
+  <url>
+    <loc>https://pultap.az/ru</loc>
+  </url>
+  <url>
     <loc>https://pultap.az/kreditler</loc>
   </url>
   <url>
@@ -280,6 +289,24 @@
     <loc>https://pultap.az/ru/istifade-qaydalari</loc>
   </url>
   <url>
+    <loc>https://pultap.az/mexfilik-siyaseti</loc>
+  </url>
+  <url>
+    <loc>https://pultap.az/en/mexfilik-siyaseti</loc>
+  </url>
+  <url>
+    <loc>https://pultap.az/ru/mexfilik-siyaseti</loc>
+  </url>
+  <url>
+    <loc>https://pultap.az/kuki-siyaseti</loc>
+  </url>
+  <url>
+    <loc>https://pultap.az/en/kuki-siyaseti</loc>
+  </url>
+  <url>
+    <loc>https://pultap.az/ru/kuki-siyaseti</loc>
+  </url>
+  <url>
     <loc>https://pultap.az/sual-cavab</loc>
   </url>
   <url>
@@ -361,22 +388,22 @@
     <loc>https://pultap.az/ru/banklar</loc>
   </url>
   <url>
-    <loc>https://pultap.az//admin/login</loc>
+    <loc>https://pultap.az/admin/login</loc>
   </url>
   <url>
-    <loc>https://pultap.az/en//admin/login</loc>
+    <loc>https://pultap.az/en/admin/login</loc>
   </url>
   <url>
-    <loc>https://pultap.az/ru//admin/login</loc>
+    <loc>https://pultap.az/ru/admin/login</loc>
   </url>
   <url>
-    <loc>https://pultap.az//admin</loc>
+    <loc>https://pultap.az/admin</loc>
   </url>
   <url>
-    <loc>https://pultap.az/en//admin</loc>
+    <loc>https://pultap.az/en/admin</loc>
   </url>
   <url>
-    <loc>https://pultap.az/ru//admin</loc>
+    <loc>https://pultap.az/ru/admin</loc>
   </url>
   <url>
     <loc>https://pultap.az/loans</loc>
@@ -386,23 +413,5 @@
   </url>
   <url>
     <loc>https://pultap.az/ru/loans</loc>
-  </url>
-  <url>
-    <loc>https://pultap.az//</loc>
-  </url>
-  <url>
-    <loc>https://pultap.az/en//</loc>
-  </url>
-  <url>
-    <loc>https://pultap.az/ru//</loc>
-  </url>
-  <url>
-    <loc>https://pultap.az</loc>
-  </url>
-  <url>
-    <loc>https://pultap.az/en</loc>
-  </url>
-  <url>
-    <loc>https://pultap.az/ru</loc>
   </url>
 </urlset>

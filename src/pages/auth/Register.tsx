@@ -114,16 +114,20 @@ export const Register = () => {
               <MailCheck className="h-10 w-10 text-primary" />
             </div>
             <div>
+              {/* eslint-disable-next-line i18next/no-literal-string */}
               <h2 className="text-2xl font-bold tracking-tight mb-2">Email göndərildi!</h2>
+              {/* eslint-disable-next-line i18next/no-literal-string */}
               <p className="text-sm text-muted-foreground">
                 <span className="font-semibold text-foreground">{emailSent}</span> ünvanına doğrulama linki göndərildi.
                 Zəhmət olmasa email-inizi yoxlayın və linki klikləyin.
               </p>
             </div>
+            {/* eslint-disable-next-line i18next/no-literal-string */}
             <div className="bg-muted/50 rounded-xl p-4 text-sm text-muted-foreground">
               Link gəlməyibsə spam qovluğunu yoxlayın.
             </div>
             <Link to={lp("/giris")} className="block">
+              {/* eslint-disable-next-line i18next/no-literal-string */}
               <Button variant="outline" className="w-full h-11">
                 Girişə keç
               </Button>

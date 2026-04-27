@@ -14,17 +14,17 @@ export default function BlogListPage() {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   
   const { data: blogPosts = [], isLoading } = useBlogPosts();
-  const categories = useMemo(() => [...new Set(blogPosts.map((p: any) => p.category))], [blogPosts]);
+  const categories = useMemo(() => [...new Set(blogPosts.map((p: Record<string, unknown>) => String(p.category)))], [blogPosts]);
 
   const filtered = useMemo(() => {
     let list = blogPosts;
-    if (activeCategory) list = list.filter((p: any) => p.category === activeCategory);
+    if (activeCategory) list = list.filter((p: Record<string, unknown>) => String(p.category) === activeCategory);
     if (search.trim()) {
       const q = search.toLowerCase();
       list = list.filter(
-        (p: any) =>
-          p.title.toLowerCase().includes(q) ||
-          p.excerpt.toLowerCase().includes(q)
+        (p: Record<string, unknown>) =>
+          String(p.title).toLowerCase().includes(q) ||
+          String(p.excerpt).toLowerCase().includes(q)
       );
     }
     return list;

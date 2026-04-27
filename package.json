@@ -12,7 +12,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
-    "test:ci": "vitest run"
+    "test:ci": "vitest run",
+    "postbuild": "npx tsx scripts/prerender.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

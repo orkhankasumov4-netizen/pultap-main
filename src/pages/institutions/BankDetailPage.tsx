@@ -32,7 +32,7 @@ export default function BankDetailPage() {
   const { data: deposits = [], isLoading: depositsLoading } = useDeposits();
   const { data: cards = [], isLoading: cardsLoading } = useCards();
 
-  const inst = institutions.find((i: any) => i.id === id);
+  const inst = institutions.find((i: Record<string, unknown>) => i.id === id);
 
   if (instLoading || creditsLoading || depositsLoading || cardsLoading) {
     return (

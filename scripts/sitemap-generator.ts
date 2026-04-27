@@ -1,5 +1,9 @@
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export function generateSitemap() {
   try {
@@ -15,21 +19,27 @@ export function generateSitemap() {
     while ((match = routeRegex.exec(appTsxContent)) !== null) {
       const route = match[1];
       if (!route.includes(":") && route !== "*") {
-        staticRoutes.add("/" + route);
+        const fullRoute = route.startsWith("/") ? route : "/" + route;
+        if (fullRoute !== "/") {
+          staticRoutes.add(fullRoute);
+        }
       }
     }
     
-    staticRoutes.add("/");
+    // Convert to array and put "/" at the beginning
+    const allRoutes = ["/", ...Array.from(staticRoutes)];
     
     const langs = ["az", "en", "ru"];
     const baseUrl = "https://pultap.az"; 
     
     let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
     
-    staticRoutes.forEach(route => {
-      xml += `  <url>\n    <loc>${baseUrl}${route === "/" ? "" : route}</loc>\n  </url>\n`;
+    allRoutes.forEach(route => {
+      const pathPart = route === "/" ? "/" : route;
+      const langPathPart = route === "/" ? "" : route;
+      xml += `  <url>\n    <loc>${baseUrl}${pathPart}</loc>\n  </url>\n`;
       langs.slice(1).forEach(lang => {
-        xml += `  <url>\n    <loc>${baseUrl}/${lang}${route === "/" ? "" : route}</loc>\n  </url>\n`;
+        xml += `  <url>\n    <loc>${baseUrl}/${lang}${langPathPart}</loc>\n  </url>\n`;
       });
     });
     

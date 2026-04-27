@@ -46,8 +46,9 @@ export const AdminLogin = () => {
       loginAdmin();
       toast.success("Admin panelinə uğurla daxil oldunuz");
       navigate("/admin");
-    } catch (err: any) {
-      toast.error(err.message || "Sistemə giriş zamanı xəta baş verdi.");
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message : "Sistemə giriş zamanı xəta baş verdi.";
+      toast.error(errorMessage);
     } finally {
       setIsLoading(false);
     }

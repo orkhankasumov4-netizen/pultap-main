@@ -13,14 +13,14 @@ export const apiClient = {
   get: (endpoint: string) =>
     fetch(`${API_BASE_URL}${endpoint}`).then(handleResponse),
 
-  post: (endpoint: string, body: any) =>
+  post: (endpoint: string, body: unknown) =>
     fetch(`${API_BASE_URL}${endpoint}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     }).then(handleResponse),
 
-  put: (endpoint: string, body: any) =>
+  put: (endpoint: string, body: unknown) =>
     fetch(`${API_BASE_URL}${endpoint}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },

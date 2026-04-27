@@ -12,11 +12,11 @@ export default function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();
 
   const { data: blogPosts = [], isLoading } = useBlogPosts();
-  const post = blogPosts.find((p: any) => p.slug === slug);
+  const post = blogPosts.find((p: Record<string, unknown>) => p.slug === slug);
 
   // Find related posts (same category, excluding current)
   const related = post ? blogPosts.filter(
-    (p: any) => p.category === post.category && p.id !== post.id
+    (p: Record<string, unknown>) => p.category === post.category && p.id !== post.id
   ) : [];
 
   if (isLoading) {

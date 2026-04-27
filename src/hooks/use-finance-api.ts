@@ -60,12 +60,12 @@ export const useInstitutions = () =>
 
 // ─── Blog Posts ───────────────────────────────────────
 export const useBlogPosts = () =>
-  useQuery<any[]>({ queryKey: ['blog_posts'], queryFn: () => apiClient.get('/blog_posts') });
+  useQuery<Record<string, unknown>[]>({ queryKey: ['blog_posts'], queryFn: () => apiClient.get('/blog_posts') });
 
 // ─── Leads ────────────────────────────────────────────
 export const useLeads = () =>
-  useQuery<any[]>({ queryKey: ['leads'], queryFn: () => apiClient.get('/leads') });
+  useQuery<Record<string, unknown>[]>({ queryKey: ['leads'], queryFn: () => apiClient.get('/leads') });
 
 // ─── Contacts ─────────────────────────────────────────
 export const useContacts = () =>
-  useQuery<any[]>({ queryKey: ['contacts'], queryFn: () => apiClient.get('/contacts') });
+  useQuery<Record<string, unknown>[]>({ queryKey: ['contacts'], queryFn: () => apiClient.get('/contacts') });

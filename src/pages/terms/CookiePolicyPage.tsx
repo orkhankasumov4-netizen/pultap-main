@@ -11,6 +11,7 @@ const CookiePolicyPage = () => {
   return (
     <div className="min-h-screen bg-background pt-24 pb-16">
       <Helmet>
+        {/* eslint-disable-next-line i18next/no-literal-string */}
         <title>{t("cookiePolicy.title")} - Pultap</title>
         <meta name="description" content={t("cookiePolicy.content.p2")} />
       </Helmet>

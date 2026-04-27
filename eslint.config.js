@@ -6,7 +6,7 @@ import tseslint from "typescript-eslint";
 import i18nextPlugin from "eslint-plugin-i18next";
 
 export default tseslint.config(
-  { ignores: ["dist"] },
+  { ignores: ["dist", "scratch"] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ["**/*.{ts,tsx}"],
