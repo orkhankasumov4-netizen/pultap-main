@@ -15,7 +15,10 @@ const routes = [
   { path: '/valyuta-kurslar', title: 'Valyuta Kursları | Pultap.az', desc: 'Bankların və Mərkəzi Bankın ən son valyuta kursları və konvertor.' },
   { path: '/banks', title: 'Banklar və BOKT-lar | Pultap.az', desc: 'Azərbaycanda fəaliyyət göstərən bütün banklar və Bank Olmayan Kredit Təşkilatları haqqında məlumat.' },
   { path: '/haqqimizda', title: 'Haqqımızda | Pultap.az', desc: 'Pultap.az maliyyə xidmətlərini asan və əlçatan etmək üçün yaradılmış platformadır.' },
-  { path: '/elaqe', title: 'Əlaqə | Pultap.az', desc: 'Pultap.az komandası ilə əlaqə saxlayın.' }
+  { path: '/elaqe', title: 'Əlaqə | Pultap.az', desc: 'Pultap.az komandası ilə əlaqə saxlayın.' },
+  { path: '/mexfilik-siyaseti', title: 'Məxfilik Siyasəti | Pultap.az', desc: 'Pultap.az platformasında fərdi məlumatların qorunması və məxfilik siyasəti.' },
+  { path: '/istifade-qaydalari', title: 'İstifadə Şərtləri | Pultap.az', desc: 'Platformadan istifadə qaydaları və hüquqi şərtlər.' },
+  { path: '/kuki-siyaseti', title: 'Kuki Siyasəti | Pultap.az', desc: 'Pultap.az saytında kuki (cookie) fayllarından istifadə qaydaları.' }
 ];
 
 async function generateStaticMeta() {
